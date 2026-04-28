@@ -1,0 +1,39 @@
+{
+  "modelo": "M4_multiagent_mixto",
+  "replicas": [
+    {
+      "rep": 1,
+      "modelo": "M4 â€” Multi-Agent Mixto (8b+70b)",
+      "total_casos": 50,
+      "ARR": 100.0,
+      "HDA": 0.0,
+      "DER": 26.0,
+      "PT": 1.74,
+      "TCC": 0
+    },
+    {
+      "rep": 2,
+      "ARR": 98.0,
+      "HDA": 7.7,
+      "DER": 28.0,
+      "PT": 1.7212
+    },
+    {
+      "rep": 3,
+      "ARR": 98.0,
+      "HDA": 7.7,
+      "DER": 28.0,
+      "PT": 1.6102
+    }
+  ],
+  "estadisticas": {
+    "ARR_media": 98.7,
+    "ARR_std": 0.9,
+    "HDA_media": 5.1,
+    "HDA_std": 3.6,
+    "DER_media": 27.3,
+    "DER_std": 0.9,
+    "PT_media": 1.69,
+    "PT_std": 0.06
+  }
+}

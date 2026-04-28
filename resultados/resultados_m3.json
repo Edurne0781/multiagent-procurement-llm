@@ -1,0 +1,2349 @@
+{
+  "modelo": "M3",
+  "metricas": {
+    "modelo": "M3 — Multi-Agent CrewAI (llama-3.1-8b-instant)",
+    "total_casos": 50,
+    "ARR": 68.0,
+    "HDA": 30.8,
+    "DER": 28.0,
+    "PT": 1.74,
+    "TCC": 0
+  },
+  "resultados_por_caso": [
+    {
+      "caso_id": "C01",
+      "nivel": "Simple",
+      "importe": 150,
+      "decision_m3": "aprobado",
+      "razon": "La solicitud C01 de 150€ aprobada. Recurso financiero para el presupuesto IT aprobado con éxitoto",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.21,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C02",
+      "nivel": "Simple",
+      "importe": 80,
+      "decision_m3": "aprobado",
+      "razon": "La operación ha sido aprobada, por lo que se procede a su ejecución.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.3,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C03",
+      "nivel": "Simple",
+      "importe": 200,
+      "decision_m3": "aprobado",
+      "razon": "el monto de la solicitud C03 coincide con la información proporcionada como 200€",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 2.41,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C04",
+      "nivel": "Simple",
+      "importe": 160,
+      "decision_m3": "escalado_hil",
+      "razon": "El presupuesto IT supera la cantidad de 160€. El proveedor deberá de justificar este aumento y pedir autorización expresa al cliente.",
+      "escalo_hil": true,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.21,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C05",
+      "nivel": "Simple",
+      "importe": 300,
+      "decision_m3": "aprobado",
+      "razon": "El Proveedor ya ha sido aprobado y se encuentra en proceso operativo válido, y además se ha confirmado el presupuesto y se ha agregado la cláusula de contratación como parte del proceso de aprobación del presupuesto.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.8,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C06",
+      "nivel": "Simple",
+      "importe": 350,
+      "decision_m3": "aprobado",
+      "razon": "Se han completado todos los pasos de verificación y los datos proporcionados se ajustan a las previsiones. El presupuesto IT de 350€ está dentro de los límites establecidos y se ha recibido aprobación final para proceder con la operación presupuestaria. El riesgo es bajo y la prioridad es alta, por lo que se aprueba la operación.",
+      "escalo_hil": true,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.55,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C07",
+      "nivel": "Simple",
+      "importe": 120,
+      "decision_m3": "aprobado",
+      "razon": "La renovación automática del contrato no afectará negativamente al presupuesto y la cláusula de renovación está configurada de manera que se activará tras 12 meses de operación siempre y cuando el presupuesto no haya sido rebajado.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.76,
+      "ground_truth": {
+        "resultado": "aprobacion_con_nota",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C08",
+      "nivel": "Simple",
+      "importe": 95,
+      "decision_m3": "aprobado",
+      "razon": "Estado aprobado del proveedor y presupuesto dentro de los límites establecidos",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.34,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C09",
+      "nivel": "Simple",
+      "importe": 900,
+      "decision_m3": "aprobado",
+      "razon": "Se ha aprobado el presupuesto correspondiente para el proveedor PRV-004, dado que opera efectivamente y se han incluido las clausulas necesarias para garantizar el cumplimiento de los compromisos establecidos y asegurar la efectividad en la ejecución del contrato.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.76,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C10",
+      "nivel": "Simple",
+      "importe": 75,
+      "decision_m3": "aprobado",
+      "razon": "El proveedor PRV-001 cuenta con estado aprobado y ha sido autorizado para realizar operaciones, por lo que no existe riesgo en solicitar un presupuesto para cubrir las necesidades de IT por un importe de 75€ y se le puede incluir la cláusula de responsabilidad.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.27,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C11",
+      "nivel": "Simple",
+      "importe": 250,
+      "decision_m3": "error",
+      "razon": "litellm.RateLimitError: RateLimitError: GroqException - {\"er",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.36,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C12",
+      "nivel": "Simple",
+      "importe": 60,
+      "decision_m3": "aprobado",
+      "razon": "El proveedor PRV-003 ha sido validado exitosamente en función de los datos proporcionados en su backstory. El presupuesto IT ha sido aprobado con un valor de 60€. El riesgo del contrato se considera bajo.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 2.0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C13",
+      "nivel": "Simple",
+      "importe": 40,
+      "decision_m3": "aprobado",
+      "razon": "El Proveedor PRV-001 tiene un estado de 'aprobado' y 'opera=True', y no parece haber riesgos significativos asociados con el presupuesto IT de 40€.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.76,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C14",
+      "nivel": "Simple",
+      "importe": 140,
+      "decision_m3": "escalado_hil",
+      "razon": "Hay otra solicitud C14 registrada y aceptada por 140€",
+      "escalo_hil": true,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.19,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C15",
+      "nivel": "Simple",
+      "importe": 180,
+      "decision_m3": "escalado_hil",
+      "razon": "La inclusión de estas cláusulas debe estar en el contrato.",
+      "escalo_hil": true,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.37,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C16",
+      "nivel": "Simple",
+      "importe": 450,
+      "decision_m3": "aprobado",
+      "razon": "La Solicitud C16 por valor de 450€ ha sido aprobada y se incluirá dentro del presupuesto de inversiones para el momento actual.",
+      "escalo_hil": true,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.27,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C17",
+      "nivel": "Simple",
+      "importe": 240,
+      "decision_m3": "aprobado",
+      "razon": "Puede proceder con el presupuesto y el proveedor PRV-003 tiene un estado aprobado y está operativo.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.48,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C18",
+      "nivel": "Simple",
+      "importe": 120,
+      "decision_m3": "aprobado",
+      "razon": "La solicitud C18 es correcta y se realizan los pagos correspondientes.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.47,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C19",
+      "nivel": "Simple",
+      "importe": 85,
+      "decision_m3": "aprobado",
+      "razon": "El proveedor está aprobado y opera con éxito. El presupuesto también se encuentra actualizado. Sin embargo, se requieren más datos precisos sobre los presupuestos restantes para asegurar un riesgo bajo. Por lo tanto, se agregará una cláusula para garantizar la precisión de los datos financieros y la aprobación del proveedor para evitar cualquier riesgo bajo.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.88,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C20",
+      "nivel": "Simple",
+      "importe": 50,
+      "decision_m3": "rechazado",
+      "razon": "debido a que el presupuesto asignado de 50€ puede no ser suficiente para cubrir todos los gastos relacionados con el marketing del proveedor PRV-001",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.47,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C21",
+      "nivel": "Medio",
+      "importe": 800,
+      "decision_m3": "puedo proceder con la revisión de las cláusulas 'cesion_ip' ",
+      "razon": "no se proporcionan suficientes razones para rechazar la revisión.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.57,
+      "ground_truth": {
+        "resultado": "registro_proveedor_y_validacion_legal",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C22",
+      "nivel": "Medio",
+      "importe": 3500,
+      "decision_m3": "aprobado",
+      "razon": "La cantidad de 3500€ está dentro de los límites aprobados y el estado del proveedor (PRV-003) está verificado, por lo que se puede continuar con la implementación del presupuesto de 3500€.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.48,
+      "ground_truth": {
+        "resultado": "escalacion_finance_reasignacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C23",
+      "nivel": "Medio",
+      "importe": 1200,
+      "decision_m3": "aprobado",
+      "razon": "El presupuesto aprobado de 1200€ ya está configurado para la solicitud C23 y se ha cumplido con el objetivo personal de validar el estado y operación del proveedor para lograr su aprobación.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 2.22,
+      "ground_truth": {
+        "resultado": "validacion_legal_y_aprobacion_condicionada",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C24",
+      "nivel": "Medio",
+      "importe": 5000,
+      "decision_m3": "aprobado",
+      "razon": "El proveedor se encuentra aprobado, opera con éxito y se han incorporado las cláusulas de exclusividad y renovación automática al contrato.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.57,
+      "ground_truth": {
+        "resultado": "revision_legal_obligatoria_antes_de_firmar",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C25",
+      "nivel": "Medio",
+      "importe": 4800,
+      "decision_m3": "aprobado",
+      "razon": "El proveedor PRV-003 cumple con los requisitos establecidos en el contrato para el proyecto Presupuesto IT y ha mantenido disponible sus servicios durante la duración del contrato. La inclusión de las cláusulas de contrato específicas para el proyecto no ha planteado problemas relevantes y se ha confirmado la disponibilidad de sus servicios y los precios actuales. Además, se ha verificado que el proveedor tiene una buena reputación y ha cumplido con los plazos y la calidad de los servicios en el pasado.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 2.0,
+      "ground_truth": {
+        "resultado": "reasignacion_presupuestaria_o_fraccionamiento",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C26",
+      "nivel": "Medio",
+      "importe": 2000,
+      "decision_m3": "aprobado o rechazado o escalado_hil",
+      "razon": "Presupuesto RRHH y estado del proveedor no validados",
+      "escalo_hil": true,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.44,
+      "ground_truth": {
+        "resultado": "validacion_legal_compliance_y_registro",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C27",
+      "nivel": "Medio",
+      "importe": 1500,
+      "decision_m3": "aprobado",
+      "razon": "se ha aprobado el presupuesto IT de 1500€ y se ha incluido el método opera",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 2.03,
+      "ground_truth": {
+        "resultado": "fast_track_con_validacion_posterior",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C28",
+      "nivel": "Medio",
+      "importe": 6000,
+      "decision_m3": "error",
+      "razon": "litellm.RateLimitError: RateLimitError: GroqException - {\"er",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.96,
+      "ground_truth": {
+        "resultado": "revision_legal_clausulas_penalizacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C29",
+      "nivel": "Medio",
+      "importe": 2800,
+      "decision_m3": "error",
+      "razon": "Expecting ',' delimiter: line 10 column 6 (char 245)",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.18,
+      "ground_truth": {
+        "resultado": "escalacion_reasignacion_presupuestaria",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C30",
+      "nivel": "Medio",
+      "importe": 950,
+      "decision_m3": "rechazado",
+      "razon": "Necesitamos obtener los datos de las cláusulas antes de avanzar",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.67,
+      "ground_truth": {
+        "resultado": "validacion_nda_y_aprobacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C31",
+      "nivel": "Medio",
+      "importe": 8000,
+      "decision_m3": "aprobado",
+      "razon": "Solicitud C31 dentro del presupuesto autorizado, precio correcto y clausulas aceptadas",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.58,
+      "ground_truth": {
+        "resultado": "revision_legal_garantias_y_aprobacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C32",
+      "nivel": "Medio",
+      "importe": 2200,
+      "decision_m3": "aprobado",
+      "razon": "La cláusula sobre el valor de 2200€ es baja de riesgo, por lo que se procede a confirmar la solicitud C32.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.17,
+      "ground_truth": {
+        "resultado": "aprobacion_fast_track_con_justificacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C33",
+      "nivel": "Medio",
+      "importe": 5500,
+      "decision_m3": "error",
+      "razon": "litellm.RateLimitError: RateLimitError: GroqException - {\"er",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.88,
+      "ground_truth": {
+        "resultado": "fraccionamiento_o_rechazo_parcial",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C34",
+      "nivel": "Medio",
+      "importe": 1800,
+      "decision_m3": "aprobado",
+      "razon": "La empresa tiene experiencia previa en el sector, ha sido establecida como empresa con independencia y el importe de la solicitud (1800€) es bajo, considerando que el objetivo principal es el Contrato y no se presenta ningún riesgo alto.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 8.64,
+      "ground_truth": {
+        "resultado": "compliance_y_legal_validacion_completa",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C35",
+      "nivel": "Medio",
+      "importe": 12000,
+      "decision_m3": "rechazado",
+      "razon": "El proveedor no ha renunciado a la renovación automática y el contrato no establece exclusividad, lo que supone un riesgo alto.",
+      "escalo_hil": true,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.45,
+      "ground_truth": {
+        "resultado": "legal_finance_aprobacion_direccion",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C36",
+      "nivel": "Medio",
+      "importe": 3200,
+      "decision_m3": "aprobado",
+      "razon": "El valor del contrato es de 3200€ y el estado de la solicitud es Aprobado.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.34,
+      "ground_truth": {
+        "resultado": "fast_track_registro_posterior",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C37",
+      "nivel": "Medio",
+      "importe": 7500,
+      "decision_m3": "aprobado",
+      "razon": "La clausula de riesgo bajo es adecuada para el proveedor PRV-001, dadas las condiciones del contrato.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.49,
+      "ground_truth": {
+        "resultado": "reasignacion_entre_departamentos",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C38",
+      "nivel": "Medio",
+      "importe": 3000,
+      "decision_m3": "rechazado",
+      "razon": "Se estableció en Finanzas que el proveedor PRV-007 se encuentra en el estado aprobado pero se reportó en el contexto que la celda de validación de cédulas no puede ser actualizada y el proveedor se encuentra en 'no_aprobado', lo que genera inconsistencia.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.15,
+      "ground_truth": {
+        "resultado": "validacion_ip_nda_y_aprobacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C39",
+      "nivel": "Complejo",
+      "importe": 15000,
+      "decision_m3": "aprobado",
+      "razon": "Los datos proporcionados del proveedor fueron verificados y todos aparecen correctos.",
+      "escalo_hil": true,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 3.53,
+      "ground_truth": {
+        "resultado": "rechazo_hasta_certificacion_ce",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C40",
+      "nivel": "Complejo",
+      "importe": 8000,
+      "decision_m3": "escalado_hil",
+      "razon": "Debemos verificar el presupuesto inicial de 8000€ y asegurarnos de que esté disponible para realizar las operaciones correspondientes. Antes de continuar, debemos incluir una cláusula en el contrato que establezca la disponibilidad y el uso del presupuesto, así como las consecuencias de su no cumplimiento.",
+      "escalo_hil": true,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.2,
+      "ground_truth": {
+        "resultado": "bloqueo_gdpr_escalacion_hil_obligatoria",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C41",
+      "nivel": "Complejo",
+      "importe": 45000,
+      "decision_m3": "aprobado",
+      "razon": "La solicitud C41 es válida ya que está relacionada con el proveedor PRV-003, que tiene un estado de aprobado y opera de manera verdadera. El importe aceptado es de 45000€, que es el correspondiente a esta solicitud, por lo que se cumple con la condición de acuerdo al contrato.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.36,
+      "ground_truth": {
+        "resultado": "aprobacion_escalonada_multidepartamento",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C42",
+      "nivel": "Complejo",
+      "importe": 2500,
+      "decision_m3": "rechazado",
+      "razon": "",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.95,
+      "ground_truth": {
+        "resultado": "bloqueo_hasta_fichas_seguridad",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C43",
+      "nivel": "Complejo",
+      "importe": 20000,
+      "decision_m3": "aprobado",
+      "razon": "El proveedor PRV-012 ha sido aprobado y está operativo. El riesgo es bajo debido a la aprobación del proveedor.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.49,
+      "ground_truth": {
+        "resultado": "escalacion_hil_obligatoria_conflicto_interes",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C44",
+      "nivel": "Complejo",
+      "importe": 18000,
+      "decision_m3": "aprobado",
+      "razon": "Se ha confirmado la solicitud C44 por un importe de 18000€ y se está en proceso de validación del proveedor PRV-006, por lo que es procedente aprobar la gestión del presupuesto para la elaboración del contrato.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.42,
+      "ground_truth": {
+        "resultado": "bloqueo_hasta_licencia_aesa",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C45",
+      "nivel": "Complejo",
+      "importe": 120000,
+      "decision_m3": "rechazado",
+      "razon": "La solicitud C45 solo ha sido aprobada, pero la informacion del proveedor PRV-006 no ha sido validada.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.31,
+      "ground_truth": {
+        "resultado": "escalacion_hil_aprobacion_consejo",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C46",
+      "nivel": "Complejo",
+      "importe": 5000,
+      "decision_m3": "aprobado",
+      "razon": "Presupuesto aprobado: 5000€. Fecha de aprobación: 23/04/2024. Tipo de gasto: Presupuesto RRHH. Descripción del gasto: Solicitud C46.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.07,
+      "ground_truth": {
+        "resultado": "bloqueo_legal_compliance_alternativa_propuesta",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C47",
+      "nivel": "Complejo",
+      "importe": 35000,
+      "decision_m3": "error",
+      "razon": "litellm.RateLimitError: RateLimitError: GroqException - {\"er",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 2.9,
+      "ground_truth": {
+        "resultado": "evaluacion_tecnica_legal_financiera_larga",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C48",
+      "nivel": "Complejo",
+      "importe": 60000,
+      "decision_m3": "aprobado",
+      "razon": "El presupuesto aprobado para la sección IT es de 60000€, superando el límite mínimo de 60000€. Además, el proveedor está aprobado y la operación está configurada como 'true'.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.28,
+      "ground_truth": {
+        "resultado": "renegociacion_o_cambio_proveedor",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C49",
+      "nivel": "Complejo",
+      "importe": 25000,
+      "decision_m3": "error",
+      "razon": "litellm.RateLimitError: RateLimitError: GroqException - {\"er",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.36,
+      "ground_truth": {
+        "resultado": "bloqueo_total_hasta_homologacion",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C50",
+      "nivel": "Complejo",
+      "importe": 200000,
+      "decision_m3": "rechazado",
+      "razon": "La inclusión de cláusulas de exclusividad, penalización de salida y arbitraje extranjero es necesaria para un riesgo alto, por lo que esta operación debe ser escalada a un nivel superior.",
+      "escalo_hil": true,
+      "agentes_usados": [
+        "Requester",
+        "Procurement",
+        "Finance",
+        "Legal",
+        "Compliance"
+      ],
+      "mensajes_entre_agentes": [
+        [
+          "Requester",
+          "Procurement"
+        ],
+        [
+          "Procurement",
+          "Finance"
+        ],
+        [
+          "Finance",
+          "Legal"
+        ],
+        [
+          "Legal",
+          "Compliance"
+        ]
+      ],
+      "num_mensajes": 4,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.61,
+      "ground_truth": {
+        "resultado": "licitacion_formal_aprobacion_consejo",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    }
+  ]
+}

@@ -1,0 +1,995 @@
+{
+  "metricas": {
+    "ARR": 100.0,
+    "HDA": 0.0,
+    "DER": 30.0,
+    "PT": 0.4202
+  },
+  "resultados_por_caso": [
+    {
+      "caso_id": "C01",
+      "nivel": "Simple",
+      "importe": 150,
+      "decision_m2": "aprobado",
+      "razon": "La solicitud cumple con todos los criterios establecidos y el proveedor está aprobado.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.32,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C02",
+      "nivel": "Simple",
+      "importe": 80,
+      "decision_m2": "aprobado",
+      "razon": "El pedido de papel A4 a un proveedor habitual cumple con la normativa y no supera el presupuesto, por lo que se aprueba la solicitud.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.22,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C03",
+      "nivel": "Simple",
+      "importe": 200,
+      "decision_m2": "aprobado",
+      "razon": "La solicitud de renovación de la suscripción antivirus anual cumple con todos los criterios establecidos y no presenta riesgos significativos.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.19,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C04",
+      "nivel": "Simple",
+      "importe": 160,
+      "decision_m2": "aprobado",
+      "razon": "La compra de 2 teclados ergonómicos cumple con la normativa y no supera el presupuesto, por lo que se aprueba la solicitud.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.24,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C05",
+      "nivel": "Simple",
+      "importe": 300,
+      "decision_m2": "aprobado",
+      "razon": "El pedido de material de oficina mensual cumple con todos los criterios establecidos y no presenta riesgos significativos.",
+      "escalo_hil": false,
+      "tiempo_seg": 7.63,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C06",
+      "nivel": "Simple",
+      "importe": 350,
+      "decision_m2": "aprobado",
+      "razon": "La compra cumple con la normativa y el presupuesto, y el proveedor está aprobado.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.23,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C07",
+      "nivel": "Simple",
+      "importe": 120,
+      "decision_m2": "aprobado",
+      "razon": "La solicitud cumple con la normativa y el presupuesto, y el proveedor está aprobado.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.27,
+      "ground_truth": {
+        "resultado": "aprobacion_con_nota",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C08",
+      "nivel": "Simple",
+      "importe": 95,
+      "decision_m2": "aprobado",
+      "razon": "La compra de cartuchos de tinta para impresora es necesaria y cumple con todos los criterios establecidos, por lo que se aprueba la solicitud.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.37,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C09",
+      "nivel": "Simple",
+      "importe": 900,
+      "decision_m2": "aprobado",
+      "razon": "El pedido cumple con la normativa y el presupuesto, y el proveedor es habitual y aprobado, por lo que se aprueba el pedido.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.24,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C10",
+      "nivel": "Simple",
+      "importe": 75,
+      "decision_m2": "aprobado",
+      "razon": "La compra de webcam HD para reuniones remotas es necesaria para mejorar la comunicación con los clientes y empleados, y se ajusta a los presupuesto y normativa establecidos.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.23,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C11",
+      "nivel": "Simple",
+      "importe": 250,
+      "decision_m2": "aprobado",
+      "razon": "La solicitud cumple con la normativa y no supera el presupuesto establecido, por lo que se aprueba la adquisición de 5 auriculares para el call center.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.23,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C12",
+      "nivel": "Simple",
+      "importe": 60,
+      "decision_m2": "aprobado",
+      "razon": "La renovación del dominio web corporativo anual es una tarea necesaria y habitual, y se ha cumplido con la normativa y el presupuesto establecido. Además, el proveedor está aprobado y no hay riesgo ni cláusulas legales que afecten la decisión.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.32,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C13",
+      "nivel": "Simple",
+      "importe": 40,
+      "decision_m2": "aprobado",
+      "razon": "La compra de cables HDMI es necesaria y cumple con la normativa y el presupuesto, por lo que se aprueba la solicitud.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.21,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C14",
+      "nivel": "Simple",
+      "importe": 140,
+      "decision_m2": "aprobado",
+      "razon": "El pedido cumple con la normativa y el presupuesto, y el proveedor está aprobado, por lo que se aprueba la solicitud.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.23,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C15",
+      "nivel": "Simple",
+      "importe": 180,
+      "decision_m2": "aprobado",
+      "razon": "La compra de café y material de cafetería mensual cumple con todos los criterios establecidos y no presenta riesgos significativos.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.22,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C16",
+      "nivel": "Simple",
+      "importe": 450,
+      "decision_m2": "aprobado",
+      "razon": "La solicitud cumple con la normativa y no supera el presupuesto, por lo que se aprueba la adquisición de la impresora multifunción.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.23,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C17",
+      "nivel": "Simple",
+      "importe": 240,
+      "decision_m2": "aprobado",
+      "razon": "El servicio de antispam email es esencial para la seguridad de la empresa y se encuentra dentro del presupuesto y cumple con la normativa.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.22,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C18",
+      "nivel": "Simple",
+      "importe": 120,
+      "decision_m2": "aprobado",
+      "razon": "La compra cumple con la normativa y no supera el presupuesto",
+      "escalo_hil": false,
+      "tiempo_seg": 0.29,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C19",
+      "nivel": "Simple",
+      "importe": 85,
+      "decision_m2": "aprobado",
+      "razon": "El pedido cumple con la normativa y el presupuesto, y el proveedor está aprobado.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.27,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C20",
+      "nivel": "Simple",
+      "importe": 50,
+      "decision_m2": "aprobado",
+      "razon": "La compra cumple con la normativa y no supera el presupuesto",
+      "escalo_hil": false,
+      "tiempo_seg": 0.27,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C21",
+      "nivel": "Medio",
+      "importe": 800,
+      "decision_m2": "rechazado",
+      "razon": "El proveedor no está registrado y el riesgo legal es crítico",
+      "escalo_hil": false,
+      "tiempo_seg": 0.43,
+      "ground_truth": {
+        "resultado": "registro_proveedor_y_validacion_legal",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C22",
+      "nivel": "Medio",
+      "importe": 3500,
+      "decision_m2": "aprobado",
+      "razon": "La solicitud cumple con la normativa y no supera el límite de presupuesto, por lo que se aprueba la compra de 10 licencias software.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.22,
+      "ground_truth": {
+        "resultado": "escalacion_finance_reasignacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C23",
+      "nivel": "Medio",
+      "importe": 1200,
+      "decision_m2": "aprobado",
+      "razon": "El servicio de catering para evento con proveedor local cumple con los requisitos de presupuesto y normativa, y no presenta riesgos ni cláusulas legales problemáticas.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.37,
+      "ground_truth": {
+        "resultado": "validacion_legal_y_aprobacion_condicionada",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C24",
+      "nivel": "Medio",
+      "importe": 5000,
+      "decision_m2": "aprobado",
+      "razon": "El contrato de mantenimiento IT anual cumple con la normativa y está dentro del presupuesto, por lo que se aprueba.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.28,
+      "ground_truth": {
+        "resultado": "revision_legal_obligatoria_antes_de_firmar",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C25",
+      "nivel": "Medio",
+      "importe": 4800,
+      "decision_m2": "aprobado",
+      "razon": "La renovación del servidor cloud es necesaria para mantener la disponibilidad y seguridad de la infraestructura, y se encuentra dentro del presupuesto aprobado.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.27,
+      "ground_truth": {
+        "resultado": "reasignacion_presupuestaria_o_fraccionamiento",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C26",
+      "nivel": "Medio",
+      "importe": 2000,
+      "decision_m2": "rechazado",
+      "razon": "La empresa no está registrada, lo que genera un riesgo para la empresa.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.37,
+      "ground_truth": {
+        "resultado": "validacion_legal_compliance_y_registro",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C27",
+      "nivel": "Medio",
+      "importe": 1500,
+      "decision_m2": "aprobado",
+      "razon": "La compra es urgente y cumple con la normativa, además no hay riesgo ni cláusulas legales que lo impidan",
+      "escalo_hil": false,
+      "tiempo_seg": 0.28,
+      "ground_truth": {
+        "resultado": "fast_track_con_validacion_posterior",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C28",
+      "nivel": "Medio",
+      "importe": 6000,
+      "decision_m2": "aprobado",
+      "razon": "El importe de 6000€ está dentro del presupuesto y cumple con la normativa, pero el riesgo legal es alto, pero se aprueba el arrendamiento vehículo comercial",
+      "escalo_hil": false,
+      "tiempo_seg": 0.26,
+      "ground_truth": {
+        "resultado": "revision_legal_clausulas_penalizacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C29",
+      "nivel": "Medio",
+      "importe": 2800,
+      "decision_m2": "rechazado",
+      "razon": "El importe de 2800€ supera el límite RRH y no cumple con el presupuesto",
+      "escalo_hil": false,
+      "tiempo_seg": 0.26,
+      "ground_truth": {
+        "resultado": "escalacion_reasignacion_presupuestaria",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C30",
+      "nivel": "Medio",
+      "importe": 950,
+      "decision_m2": "aprobado",
+      "razon": "El servicio de traducción de documentos legales con agente importa 950€ y cumple con la normativa, por lo que se aprueba la solicitud.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.29,
+      "ground_truth": {
+        "resultado": "validacion_nda_y_aprobacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C31",
+      "nivel": "Medio",
+      "importe": 8000,
+      "decision_m2": "rechazado",
+      "razon": "El riesgo legal es alto, lo que puede afectar la seguridad y la confiabilidad del equipo.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.27,
+      "ground_truth": {
+        "resultado": "revision_legal_garantias_y_aprobacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C32",
+      "nivel": "Medio",
+      "importe": 2200,
+      "decision_m2": "aprobado",
+      "razon": "La sustitución urgente del ordenador averiado para el director es una necesidad imperiosa para mantener la productividad y la continuidad del trabajo, por lo que se aprueba la solicitud.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.38,
+      "ground_truth": {
+        "resultado": "aprobacion_fast_track_con_justificacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C33",
+      "nivel": "Medio",
+      "importe": 5500,
+      "decision_m2": "rechazado",
+      "razon": "El presupuesto no está aprobado",
+      "escalo_hil": false,
+      "tiempo_seg": 0.28,
+      "ground_truth": {
+        "resultado": "fraccionamiento_o_rechazo_parcial",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C34",
+      "nivel": "Medio",
+      "importe": 1800,
+      "decision_m2": "aprobado",
+      "razon": "El servicio de seguridad física de la oficina con la empresa nueva cumple con el presupuesto y la normativa, y no presenta riesgos ni cláusulas legales problemáticas.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.33,
+      "ground_truth": {
+        "resultado": "compliance_y_legal_validacion_completa",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C35",
+      "nivel": "Medio",
+      "importe": 12000,
+      "decision_m2": "rechazado",
+      "razon": "El módulo adicional de Software ERP tiene un alto importe y no cumple con el presupuesto establecido, por lo que se rechaza la solicitud.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.31,
+      "ground_truth": {
+        "resultado": "legal_finance_aprobacion_direccion",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C36",
+      "nivel": "Medio",
+      "importe": 3200,
+      "decision_m2": "aprobado",
+      "razon": "La reparación urgente de la climatización de la oficina es necesaria para mantener un ambiente de trabajo adecuado y el importe de 3200€ está dentro del presupuesto aprobado.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.28,
+      "ground_truth": {
+        "resultado": "fast_track_registro_posterior",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C37",
+      "nivel": "Medio",
+      "importe": 7500,
+      "decision_m2": "rechazado",
+      "razon": "El presupuesto no se cumple",
+      "escalo_hil": false,
+      "tiempo_seg": 0.18,
+      "ground_truth": {
+        "resultado": "reasignacion_entre_departamentos",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C38",
+      "nivel": "Medio",
+      "importe": 3000,
+      "decision_m2": "rechazado",
+      "razon": "El riesgo legal es crítico, lo que hace que la solicitud sea inaceptable.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.27,
+      "ground_truth": {
+        "resultado": "validacion_ip_nda_y_aprobacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C39",
+      "nivel": "Complejo",
+      "importe": 15000,
+      "decision_m2": "rechazado",
+      "razon": "La importación de equipos electrónicos sin certificación no cumple con la normativa y presenta un riesgo medio, lo que hace que no sea aprobada.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.24,
+      "ground_truth": {
+        "resultado": "rechazo_hasta_certificacion_ce",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C40",
+      "nivel": "Complejo",
+      "importe": 8000,
+      "decision_m2": "rechazado",
+      "razon": "El contrato no cumple con la normativa y el proveedor no está aprobado",
+      "escalo_hil": false,
+      "tiempo_seg": 0.19,
+      "ground_truth": {
+        "resultado": "bloqueo_gdpr_escalacion_hil_obligatoria",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C41",
+      "nivel": "Complejo",
+      "importe": 45000,
+      "decision_m2": "aprobado",
+      "razon": "El proyecto cumple con la normativa y el presupuesto está aprobado, por lo que se aprueba la solicitud.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.27,
+      "ground_truth": {
+        "resultado": "aprobacion_escalonada_multidepartamento",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C42",
+      "nivel": "Complejo",
+      "importe": 2500,
+      "decision_m2": "rechazado",
+      "razon": "El producto no cumple con la normativa y el proveedor no está aprobado",
+      "escalo_hil": false,
+      "tiempo_seg": 0.22,
+      "ground_truth": {
+        "resultado": "bloqueo_hasta_fichas_seguridad",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C43",
+      "nivel": "Complejo",
+      "importe": 20000,
+      "decision_m2": "rechazado",
+      "razon": "La compra a una empresa vinculada con un directivo de la organización puede generar conflictos de intereses y afectar la integridad de la organización, por lo que se rechaza la solicitud.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.26,
+      "ground_truth": {
+        "resultado": "escalacion_hil_obligatoria_conflicto_interes",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C44",
+      "nivel": "Complejo",
+      "importe": 18000,
+      "decision_m2": "rechazado",
+      "razon": "El proyecto no cumple con la normativa y no tiene licencia para realizar inspecciones en instalaciones.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.22,
+      "ground_truth": {
+        "resultado": "bloqueo_hasta_licencia_aesa",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C45",
+      "nivel": "Complejo",
+      "importe": 120000,
+      "decision_m2": "rechazado",
+      "razon": "El importe de 120000€ supera el presupuesto y el riesgo legal es alto",
+      "escalo_hil": false,
+      "tiempo_seg": 0.19,
+      "ground_truth": {
+        "resultado": "escalacion_hil_aprobacion_consejo",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C46",
+      "nivel": "Complejo",
+      "importe": 5000,
+      "decision_m2": "rechazado",
+      "razon": "El software de vigilancia de empleados no cumple con la normativa y no tiene cláusulas legales, lo que lo convierte en un riesgo medio para la empresa.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.29,
+      "ground_truth": {
+        "resultado": "bloqueo_legal_compliance_alternativa_propuesta",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C47",
+      "nivel": "Complejo",
+      "importe": 35000,
+      "decision_m2": "rechazado",
+      "razon": "El riesgo legal es crítico y no se ha aprobado el proveedor, lo que hace que la solicitud no sea viable.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.28,
+      "ground_truth": {
+        "resultado": "evaluacion_tecnica_legal_financiera_larga",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C48",
+      "nivel": "Complejo",
+      "importe": 60000,
+      "decision_m2": "rechazado",
+      "razon": "El proveedor ha incumplido el SL y el contrato debe ser renovado, pero no se puede aprobar la renovación debido al incumplimiento.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.38,
+      "ground_truth": {
+        "resultado": "renegociacion_o_cambio_proveedor",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C49",
+      "nivel": "Complejo",
+      "importe": 25000,
+      "decision_m2": "rechazado",
+      "razon": "El equipo médico para salud laboral no tiene homologación y no cumple con la normativa, lo que representa un riesgo medio para la empresa.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.37,
+      "ground_truth": {
+        "resultado": "bloqueo_total_hasta_homologacion",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C50",
+      "nivel": "Complejo",
+      "importe": 200000,
+      "decision_m2": "rechazado",
+      "razon": "El proyecto presenta un alto riesgo legal y no se ha aprobado el proveedor, lo que hace que la operación no sea segura y no cumpla con los requisitos establecidos.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.34,
+      "ground_truth": {
+        "resultado": "licitacion_formal_aprobacion_consejo",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    }
+  ]
+}

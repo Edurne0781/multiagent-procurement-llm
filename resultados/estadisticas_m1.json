@@ -1,0 +1,44 @@
+{
+  "modelo": "M1_baseline_RPA",
+  "replicas": [
+    {
+      "rep": 1,
+      "modelo": "M1 â€” Baseline RPA",
+      "total_casos": 50,
+      "ARR": 100.0,
+      "ARR_objetivo": ">70%",
+      "HDA": 0.0,
+      "HDA_objetivo": ">90%",
+      "DER": 34.0,
+      "DER_objetivo": "<10%",
+      "PT": 0.0,
+      "PT_unidad": "seg/caso",
+      "TCC": 0,
+      "TCC_unidad": "tokens/caso"
+    },
+    {
+      "rep": 2,
+      "ARR": 100.0,
+      "HDA": 0.0,
+      "DER": 34.0,
+      "PT": 0.0
+    },
+    {
+      "rep": 3,
+      "ARR": 100.0,
+      "HDA": 0.0,
+      "DER": 34.0,
+      "PT": 0.0
+    }
+  ],
+  "estadisticas": {
+    "ARR_media": 100.0,
+    "ARR_std": 0.0,
+    "HDA_media": 0.0,
+    "HDA_std": 0.0,
+    "DER_media": 34.0,
+    "DER_std": 0.0,
+    "PT_media": 0.0,
+    "PT_std": 0.0
+  }
+}

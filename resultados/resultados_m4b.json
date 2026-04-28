@@ -1,0 +1,1399 @@
+{
+  "modelo": "M4b",
+  "metricas": {
+    "modelo": "M4b — Multi-Agent homogéneo potente (llama-3.3-70b×5)",
+    "total_casos": 50,
+    "ARR": 98.0,
+    "HDA": 0.0,
+    "DER": 26.0,
+    "PT": 2.4,
+    "TCC": 0
+  },
+  "resultados_por_caso": [
+    {
+      "caso_id": "C01",
+      "nivel": "Simple",
+      "importe": 150,
+      "decision_m4b": "aprobado",
+      "razon": "proceso completado con exito y confirmacion de registro emitida",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.1,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C02",
+      "nivel": "Simple",
+      "importe": 80,
+      "decision_m4b": "aprobado",
+      "razon": "Evaluacion Exitosa",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 1.74,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C03",
+      "nivel": "Simple",
+      "importe": 200,
+      "decision_m4b": "aprobado",
+      "razon": "cumple con los requisitos legales y de confidencialidad necesarios",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.65,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C04",
+      "nivel": "Simple",
+      "importe": 160,
+      "decision_m4b": "aprobado",
+      "razon": "Solicitud registrada y aprobada con exito",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 1.94,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C05",
+      "nivel": "Simple",
+      "importe": 300,
+      "decision_m4b": "aprobado",
+      "razon": "Solicitud registrada con éxito y aprobada",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.27,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C06",
+      "nivel": "Simple",
+      "importe": 350,
+      "decision_m4b": "aprobado",
+      "razon": "Solicitud C06 aprobada con comprobante de registro",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.4,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C07",
+      "nivel": "Simple",
+      "importe": 120,
+      "decision_m4b": "aprobado",
+      "razon": "Solicitud C07 registrada con éxito y aprobada",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.16,
+      "ground_truth": {
+        "resultado": "aprobacion_con_nota",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C08",
+      "nivel": "Simple",
+      "importe": 95,
+      "decision_m4b": "aprobado",
+      "razon": "SolicitudRegistradaConExitoYBajoRiesgo",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C09",
+      "nivel": "Simple",
+      "importe": 900,
+      "decision_m4b": "aprobado",
+      "razon": "Solicitud registrada con éxito y cumplimiento de procedimientos",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 1.66,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C10",
+      "nivel": "Simple",
+      "importe": 75,
+      "decision_m4b": "aprobado",
+      "razon": "Solicitud C10 registrada y aprobada con éxito",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.37,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C11",
+      "nivel": "Simple",
+      "importe": 250,
+      "decision_m4b": "aprobado",
+      "razon": "cumplimiento de todos los requisitos y clausulas necesarias",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.27,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C12",
+      "nivel": "Simple",
+      "importe": 60,
+      "decision_m4b": "aprobado",
+      "razon": "La solicitud C12 ha sido registrada correctamente y se ha generado un comprobante de registro",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.86,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C13",
+      "nivel": "Simple",
+      "importe": 40,
+      "decision_m4b": "aprobado",
+      "razon": "Se considera que el riesgo es bajo y se puede proceder a firmar",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 1.93,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C14",
+      "nivel": "Simple",
+      "importe": 140,
+      "decision_m4b": "aprobado",
+      "razon": "Solicitud C14 aprobada y lista para firma",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.71,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C15",
+      "nivel": "Simple",
+      "importe": 180,
+      "decision_m4b": "aprobado",
+      "razon": "La solicitud C15 ha sido aprobada y cumple con los términos y condiciones del contrato",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.68,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C16",
+      "nivel": "Simple",
+      "importe": 450,
+      "decision_m4b": "aprobado",
+      "razon": "cumple con los términos y condiciones",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 1.93,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C17",
+      "nivel": "Simple",
+      "importe": 240,
+      "decision_m4b": "aprobado",
+      "razon": "Solicitud C17 aprobada con importe de 240 euros",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.73,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C18",
+      "nivel": "Simple",
+      "importe": 120,
+      "decision_m4b": "aprobado",
+      "razon": "riesgo bajo y Registro exitoso",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 1.73,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C19",
+      "nivel": "Simple",
+      "importe": 85,
+      "decision_m4b": "aprobado",
+      "razon": "Solicitud C19 registrada con éxito",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.6,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C20",
+      "nivel": "Simple",
+      "importe": 50,
+      "decision_m4b": "aprobado",
+      "razon": "Solicitud registrada con éxito y número de referencia proporcionado",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.49,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C21",
+      "nivel": "Medio",
+      "importe": 800,
+      "decision_m4b": "rechazado",
+      "razon": "Riesgo crítico en la cláusula de cesión de derechos de propiedad intelectual",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 4.29,
+      "ground_truth": {
+        "resultado": "registro_proveedor_y_validacion_legal",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C22",
+      "nivel": "Medio",
+      "importe": 3500,
+      "decision_m4b": "aprobado",
+      "razon": "Solicitud C22 aprobada con comprobante de registro y riesgo bajo",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.14,
+      "ground_truth": {
+        "resultado": "escalacion_finance_reasignacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C23",
+      "nivel": "Medio",
+      "importe": 1200,
+      "decision_m4b": "aprobado",
+      "razon": "se han cumplido los requisitos necesarios",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 3.01,
+      "ground_truth": {
+        "resultado": "validacion_legal_y_aprobacion_condicionada",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C24",
+      "nivel": "Medio",
+      "importe": 5000,
+      "decision_m4b": "aprobado",
+      "razon": "Cumple con los procedimientos establecidos y el importe es razonable",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.6,
+      "ground_truth": {
+        "resultado": "revision_legal_obligatoria_antes_de_firmar",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C25",
+      "nivel": "Medio",
+      "importe": 4800,
+      "decision_m4b": "aprobado",
+      "razon": "Solicitud registrada con éxito y aprobada",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.64,
+      "ground_truth": {
+        "resultado": "reasignacion_presupuestaria_o_fraccionamiento",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C26",
+      "nivel": "Medio",
+      "importe": 2000,
+      "decision_m4b": "aprobado",
+      "razon": "Solicitud registrada con éxito y aprobada",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.13,
+      "ground_truth": {
+        "resultado": "validacion_legal_compliance_y_registro",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C27",
+      "nivel": "Medio",
+      "importe": 1500,
+      "decision_m4b": "aprobado",
+      "razon": "Solicitud registrada y aprobada con éxito",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.1,
+      "ground_truth": {
+        "resultado": "fast_track_con_validacion_posterior",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C28",
+      "nivel": "Medio",
+      "importe": 6000,
+      "decision_m4b": "aprobado",
+      "razon": "La solicitud C28 ha sido registrada con éxito y aprobada por un importe de 6000 euros",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.35,
+      "ground_truth": {
+        "resultado": "revision_legal_clausulas_penalizacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C29",
+      "nivel": "Medio",
+      "importe": 2800,
+      "decision_m4b": "aprobado",
+      "razon": "Solicitud registrada con éxito y ajuste a términos acordados",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.55,
+      "ground_truth": {
+        "resultado": "escalacion_reasignacion_presupuestaria",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C30",
+      "nivel": "Medio",
+      "importe": 950,
+      "decision_m4b": "aprobado",
+      "razon": "el contrato ha sido aprobado y el importe ha sido registrado con éxito",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.22,
+      "ground_truth": {
+        "resultado": "validacion_nda_y_aprobacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C31",
+      "nivel": "Medio",
+      "importe": 8000,
+      "decision_m4b": "escalado_hil",
+      "razon": "Revisión detallada de cláusulas de contrato necesaria para evaluar protección y claridad en transacción de alto riesgo",
+      "escalo_hil": true,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.47,
+      "ground_truth": {
+        "resultado": "revision_legal_garantias_y_aprobacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C32",
+      "nivel": "Medio",
+      "importe": 2200,
+      "decision_m4b": "aprobado",
+      "razon": "Solicitud C32 registrada y aprobada con éxito",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.61,
+      "ground_truth": {
+        "resultado": "aprobacion_fast_track_con_justificacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C33",
+      "nivel": "Medio",
+      "importe": 5500,
+      "decision_m4b": "aprobado",
+      "razon": "Solicitud registrada y aprobada con éxito",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.31,
+      "ground_truth": {
+        "resultado": "fraccionamiento_o_rechazo_parcial",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C34",
+      "nivel": "Medio",
+      "importe": 1800,
+      "decision_m4b": "aprobado",
+      "razon": "Solicitud registrada con éxito y aprobada",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.16,
+      "ground_truth": {
+        "resultado": "compliance_y_legal_validacion_completa",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C35",
+      "nivel": "Medio",
+      "importe": 12000,
+      "decision_m4b": "rechazado",
+      "razon": "Falta de informacion especifica sobre clausulas de renovacion automatica y exclusividad",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 3.14,
+      "ground_truth": {
+        "resultado": "legal_finance_aprobacion_direccion",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C36",
+      "nivel": "Medio",
+      "importe": 3200,
+      "decision_m4b": "aprobado",
+      "razon": "La solicitud C36 ha sido aprobada con éxito por un total de 3200 euros.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 1.9,
+      "ground_truth": {
+        "resultado": "fast_track_registro_posterior",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C37",
+      "nivel": "Medio",
+      "importe": 7500,
+      "decision_m4b": "aprobado",
+      "razon": "Solicitud C37 cumplió con todos los requisitos y firmado con éxito",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.03,
+      "ground_truth": {
+        "resultado": "reasignacion_entre_departamentos",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C38",
+      "nivel": "Medio",
+      "importe": 3000,
+      "decision_m4b": "aprobado",
+      "razon": "La solicitud C38 ha sido aprobada y solo se requiere revisar la cláusula de cesión de derechos de propiedad intelectual",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.47,
+      "ground_truth": {
+        "resultado": "validacion_ip_nda_y_aprobacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C39",
+      "nivel": "Complejo",
+      "importe": 15000,
+      "decision_m4b": "aprobado",
+      "razon": "Solicitud registrada y aprobada con éxito",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.21,
+      "ground_truth": {
+        "resultado": "rechazo_hasta_certificacion_ce",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C40",
+      "nivel": "Complejo",
+      "importe": 8000,
+      "decision_m4b": "rechazado",
+      "razon": "no cumple con los requisitos de aprobacion",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.33,
+      "ground_truth": {
+        "resultado": "bloqueo_gdpr_escalacion_hil_obligatoria",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C41",
+      "nivel": "Complejo",
+      "importe": 45000,
+      "decision_m4b": "aprobado",
+      "razon": "Solicitud C41 registrada con éxito y estado aprobado",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.83,
+      "ground_truth": {
+        "resultado": "aprobacion_escalonada_multidepartamento",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C42",
+      "nivel": "Complejo",
+      "importe": 2500,
+      "decision_m4b": "aprobado",
+      "razon": "Solicitud registrada con éxito y aprobada",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 3.02,
+      "ground_truth": {
+        "resultado": "bloqueo_hasta_fichas_seguridad",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C43",
+      "nivel": "Complejo",
+      "importe": 20000,
+      "decision_m4b": "aprobado",
+      "razon": "Solicitud registrada con éxito",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 3.05,
+      "ground_truth": {
+        "resultado": "escalacion_hil_obligatoria_conflicto_interes",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C44",
+      "nivel": "Complejo",
+      "importe": 18000,
+      "decision_m4b": "rechazado",
+      "razon": "no ha sido validado",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.74,
+      "ground_truth": {
+        "resultado": "bloqueo_hasta_licencia_aesa",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C45",
+      "nivel": "Complejo",
+      "importe": 120000,
+      "decision_m4b": "aprobado",
+      "razon": "cumple con los términos y condiciones",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.1,
+      "ground_truth": {
+        "resultado": "escalacion_hil_aprobacion_consejo",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C46",
+      "nivel": "Complejo",
+      "importe": 5000,
+      "decision_m4b": "aprobado",
+      "razon": "Solicitud C46 aprobada para un monto de 5000 euros",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.54,
+      "ground_truth": {
+        "resultado": "bloqueo_legal_compliance_alternativa_propuesta",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C47",
+      "nivel": "Complejo",
+      "importe": 35000,
+      "decision_m4b": "aprobado",
+      "razon": "se ajusta a los términos y condiciones acordados",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 1.93,
+      "ground_truth": {
+        "resultado": "evaluacion_tecnica_legal_financiera_larga",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C48",
+      "nivel": "Complejo",
+      "importe": 60000,
+      "decision_m4b": "aprobado",
+      "razon": "Solicitud C48 aprobada y renovación automática con riesgo moderado",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.52,
+      "ground_truth": {
+        "resultado": "renegociacion_o_cambio_proveedor",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C49",
+      "nivel": "Complejo",
+      "importe": 25000,
+      "decision_m4b": "rechazado",
+      "razon": "Estado de solicitud es no_aprobado",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.23,
+      "ground_truth": {
+        "resultado": "bloqueo_total_hasta_homologacion",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C50",
+      "nivel": "Complejo",
+      "importe": 200000,
+      "decision_m4b": "aprobado",
+      "razon": "Solicitud C50 registrada con éxito y proceso completado con éxito",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester(70b)",
+        "Procurement(70b)",
+        "Finance(70b)",
+        "Legal(70b)",
+        "Compliance(70b)"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 1.93,
+      "ground_truth": {
+        "resultado": "licitacion_formal_aprobacion_consejo",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    }
+  ]
+}
