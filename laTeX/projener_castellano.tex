@@ -1,0 +1,776 @@
+%% Plantilla elsarticle — Expert Systems with Applications (Q1)
+%% Artículo: Framework Multi-Agente LLM para Automatización de Procurement
+%% Autora: Edurne Martínez de Contrasta | PROJENER.AI SL · UAX 2026
+
+\documentclass[preprint,12pt,authoryear]{elsarticle}
+
+%% ── Paquetes ─────────────────────────────────────────────────────────────────
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{siunitx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{lscape}
+
+\lstset{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  frame=single,
+  numbers=left,
+  numberstyle=\tiny,
+  keywordstyle=\color{blue},
+  stringstyle=\color{red!60!black},
+  commentstyle=\color{gray},
+  showstringspaces=false
+}
+
+\journal{Expert Systems with Applications}
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Un Framework Multi-Agente LLM para la Automatizaci\'on Aut\'onoma
+       de Procesos Empresariales: Caso de Estudio en Procurement}
+
+\author[uax,proj]{Edurne Mart\'inez de Contrasta}
+\ead{edurne.martinez@uax.es}
+
+\address[uax]{M\'aster en Big Data y Business Analytics,
+              Universidad Alfonso X el Sabio, Madrid, Espa\~na}
+\address[proj]{PROJENER.AI SL, Madrid, Espa\~na}
+
+\begin{abstract}
+Los sistemas tradicionales de Automatizaci\'on Rob\'otica de Procesos (RPA)
+automatizan procesos empresariales mediante reglas if-then, pero carecen de
+capacidad de razonamiento ante excepciones.
+Este trabajo propone, implementa y eval\'ua un framework multi-agente basado en
+Modelos de Lenguaje de Gran Escala (LLMs) para la automatizaci\'on end-to-end
+de procesos de procurement empresarial.
+El sistema implementa cinco agentes especializados con roles empresariales
+(\emph{Requester}, \emph{Procurement}, \emph{Finance}, \emph{Legal},
+\emph{Compliance}) orquestados con CrewAI, cada uno con acceso exclusivo a sus
+propias herramientas a trav\'es de seis APIs mock que simulan sistemas ERP,
+plataformas CRM y bases de datos regulatorias.
+
+El experimento compara ocho variantes del sistema (M1--M5, M2x, M3b, M4b) sobre
+un conjunto de 50 casos de procurement en tres niveles de complejidad, utilizando
+los modelos \texttt{llama-3.1-8b-instant} y \texttt{llama-3.3-70b-versatile} de
+Groq. Los resultados revelan cuatro hallazgos principales:
+\begin{enumerate}[label=(\arabic*)]
+  \item el agente \'unico con contexto expandido (M2x: ARR\,=\,84\%) supera al
+        sistema multi-agente hom\'ogneo con igual presupuesto de tokens
+        (M3: ARR\,=\,68\%), validando emp\'iricamente la hip\'otesis de
+        \emph{compute equivalence}; sin embargo, el an\'alisis de robustez
+        muestra alta variabilidad en M2 (ARR\,=\,92\%\,$\pm$\,11.3\,pp)
+        frente a la estabilidad de M4 (ARR\,=\,98.7\%\,$\pm$\,0.9\,pp);
+  \item introducir diversidad de modelos produce el mayor salto de rendimiento
+        (+32\,pp ARR, de M3 a M4);
+  \item el ablation study demuestra que eliminar los agentes Legal y Procurement
+        aumenta el ARR en 20\,pp pero anula la HDA, evidenciando el trade-off
+        entre automatizaci\'on y detecci\'on de riesgo; y
+  \item la reproducibilidad se confirma al 100\% con \texttt{temperature=0.0}.
+\end{enumerate}
+El hallazgo central es que la arquitectura multi-agente requiere modelos con
+capacidad suficiente para beneficiarse de la especializaci\'on.
+\end{abstract}
+
+\begin{keyword}
+Sistemas multi-agente \sep
+Modelos de Lenguaje de Gran Escala \sep
+Automatizaci\'on de procurement \sep
+CrewAI \sep
+Human-in-the-Loop \sep
+Compute equivalence \sep
+Diversidad de modelos \sep
+IA empresarial \sep
+Ablation study \sep
+Reproducibilidad
+\end{keyword}
+
+\end{frontmatter}
+
+%% ─────────────────────────────────────────────────────────────────────────────
+\section{Introducci\'on}
+\label{sec:introduccion}
+
+Cons\'iderese el siguiente escenario: un t\'ecnico de mantenimiento necesita
+adquirir una pieza de repuesto valorada en 150 euros.
+El proveedor est\'a homologado, el presupuesto disponible existe y la necesidad
+es inmediata.
+A pesar de ello, la solicitud tardar\'a entre tres y siete d\'ias laborables en
+recibir una decisi\'on, recorriendo secuencialmente los departamentos de compras,
+legal, finanzas y compliance.
+El coste medio de tramitar ese pedido asciende a 112 euros adicionales en tiempo
+de personal \citep{hackett2023}.
+El cuello de botella no reside en la burocracia como tal, sino en que los
+sistemas dise\~nados para automatizarla no son capaces de razonar.
+
+Los sistemas RPA actuales ejecutan con eficacia tareas estructuradas y
+repetitivas, pero fracasan sistem\'aticamente ante cualquier desviaci\'on: un
+proveedor con alerta de conflicto de inter\'es, un contrato con cl\'ausula de
+exclusividad o un importe que supera el umbral de aprobaci\'on del \'area.
+
+El campo de los sistemas multi-agente basados en LLMs ofrece una respuesta
+t\'ecnica. Frameworks como AutoGen \citep{wu2023autogen}, CrewAI
+\citep{crewai2024} y LangGraph permiten construir equipos de agentes que
+colaboran, razonan y adaptan su comportamiento ante excepciones.
+ChatDev \citep{qian2023chatdev} mostr\'o que equipos de agentes pueden superar
+a agentes individuales en tareas complejas; \citet{park2023generative}
+documentaron comportamientos sociales emergentes en comunidades de agentes LLM.
+
+Este trabajo aborda la brecha de evidencia emp\'irica con cuatro contribuciones:
+\begin{enumerate}[label=(\arabic*)]
+  \item dise\~no e implementaci\'on de un framework multi-agente completo para
+        procurement con cinco agentes especializados y seis herramientas
+        empresariales simuladas;
+  \item un dataset de 50 casos con ground truth anotado en tres niveles de
+        complejidad, siguiendo la metodolog\'ia de WorkArena
+        \citep{drouin2024workarena} y AgentBench \citep{liu2023agentbench};
+  \item evaluaci\'on de ocho variantes del sistema, incluyendo ablation study
+        ejecutado, comparativa de compute equivalence y an\'alisis de
+        diversidad de modelos; y
+  \item verificaci\'on de reproducibilidad y an\'alisis de robustez estad\'istica
+        mediante tres r\'eplicas independientes.
+\end{enumerate}
+
+\paragraph{Pregunta de investigaci\'on.}
+\textit{?`Puede un sistema multi-agente basado en LLMs automatizar un proceso
+de procurement end-to-end, adaptarse a excepciones y superar a los enfoques RPA
+tradicionales en calidad de decisi\'on --- y bajo qu\'e condiciones
+arquitect\'onicas y de modelo se produce esa ventaja?}
+
+El art\'iculo se estructura como sigue. La Secci\'on~\ref{sec:relacionado}
+revisa el trabajo relacionado. La Secci\'on~\ref{sec:framework} describe la
+arquitectura. La Secci\'on~\ref{sec:setup} detalla el setup experimental.
+La Secci\'on~\ref{sec:resultados} presenta los resultados. Las
+Secciones~\ref{sec:ablation}, \ref{sec:compute} y~\ref{sec:diversidad}
+profundizan en ablation, compute equivalence y diversidad de modelos.
+La Secci\'on~\ref{sec:discusion} discute los hallazgos y la
+Secci\'on~\ref{sec:conclusiones} presenta las conclusiones.
+
+%% ─────────────────────────────────────────────────────────────────────────────
+\section{Trabajo Relacionado}
+\label{sec:relacionado}
+
+\subsection{Sistemas multi-agente LLM}
+
+\citet{wu2023autogen} introdujeron AutoGen, framework de conversaci\'on
+multi-agente que permite a los LLMs colaborar mediante mensajes estructurados.
+CrewAI \citep{crewai2024} extiende este paradigma con roles, tareas y equipos
+inspirados en organizaciones humanas.
+\citet{park2023generative} demostraron comportamientos sociales emergentes en
+comunidades de agentes LLM.
+ChatDev \citep{qian2023chatdev} aplic\'o el paradigma al desarrollo de software,
+mostrando que equipos de agentes especializados superan a agentes individuales.
+
+\subsection{Automatizaci\'on de procesos empresariales}
+
+Los sistemas RPA (UiPath, Automation Anywhere) automatizan tareas repetitivas
+basadas en reglas pero fallan ante excepciones.
+WorkArena \citep{drouin2024workarena} y TaskBench \citep{lu2023taskbench}
+proporcionan entornos de evaluaci\'on para agentes en procesos empresariales.
+ToolBench \citep{qin2023toolllm} demostr\'o que los LLMs pueden aprender a
+usar miles de APIs reales.
+APIBench \citep{patil2023gorilla} eval\'ua la capacidad de los LLMs para
+generar llamadas a APIs correctas.
+OSWorld \citep{xie2024osworld} eval\'ua agentes sobre sistemas operativos
+completos; a diferencia de OSWorld, este trabajo se centra en procesos
+empresariales estructurados con roles definidos.
+
+\subsection{Compute equivalence y diversidad de modelos}
+
+\citet{wu2023autogen} plantean que la comparaci\'on justa es ``5 agentes con
+$X$ tokens vs.\ 1 agente con $5X$ tokens''.
+Este trabajo ejecuta esa comparaci\'on emp\'iricamente.
+En ensemble learning, la diversidad de modelos reduce la correlaci\'on de
+errores \citep{dietterich2000ensemble}.
+
+%% ─────────────────────────────────────────────────────────────────────────────
+\section{Framework Propuesto}
+\label{sec:framework}
+
+\subsection{Arquitectura general}
+
+El sistema se estructura como un Grafo Ac\'iclico Dirigido (DAG) donde cada
+nodo representa un agente especializado y las aristas el flujo de informaci\'on.
+El orquestador CrewAI gestiona la secuencia de ejecuci\'on.
+En M5, el agente Compliance tiene reglas expl\'icitas de escalaci\'on HiL.
+
+\begin{table}[htbp]
+\centering
+\caption{Endpoints de APIs mock, agentes propietarios y funci\'on en el sistema.}
+\label{tab:apis}
+\begin{tabularx}{\textwidth}{llX}
+\toprule
+\textbf{API} & \textbf{Endpoint} & \textbf{Funci\'on en el sistema} \\
+\midrule
+Cat\'alogo Proveedores &
+  \texttt{GET /api/proveedores/\{id\}} &
+  Valida estado y alertas de conflicto de inter\'es \\
+Verificaci\'on Presupuestaria &
+  \texttt{GET /api/presupuesto/\{dept\}} &
+  Comprueba fondos y nivel de aprobaci\'on \\
+Base Regulatoria &
+  \texttt{GET /api/normativa/\{cat\}} &
+  Detecta GDPR, CE, PRL, AESA, normativa sanitaria \\
+Validaci\'on Contractual &
+  \texttt{POST /api/contratos/validar} &
+  Analiza cl\'ausulas de riesgo (exclusividad, IP, penalizaciones) \\
+Formulario Solicitud &
+  \texttt{POST /api/solicitudes/nueva} &
+  Registra metadatos y abre el caso \\
+Escalaci\'on HiL &
+  \texttt{POST /api/escalacion/humano} &
+  Escala con resumen, opciones y recomendaci\'on \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Las nueve variantes del sistema}
+
+\begin{table}[htbp]
+\centering
+\caption{Resumen de variantes del sistema. M1, M2 y M4 reportan
+         media\,$\pm$\,desv.\ t\'ipica (3 r\'eplicas). El resto reporta
+         ejecuci\'on \'unica. ARR: Tasa de Resoluci\'on Aut\'onoma;
+         HDA: Precisi\'on Detecci\'on HiL; DER: Tasa de Error; PT: Tiempo.}
+\label{tab:variantes}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llccccl}
+\toprule
+\textbf{Modelo} & \textbf{Config.} &
+  \textbf{ARR} & \textbf{HDA} & \textbf{DER} &
+  \textbf{PT (s)} & \textbf{Prop\'osito} \\
+\midrule
+M1 --- RPA & Reglas if-then &
+  100\%\,$\pm$\,0.0\,pp & 0\%\,$\pm$\,0.0\,pp & 34\%\,$\pm$\,0.0\,pp &
+  $\approx$0 & Baseline m\'inimo \\
+M2 --- Single (200\,tok) & 8b\,$\times$\,1 ag. &
+  92\%\,$\pm$\,11.3\,pp & 10.3\%\,$\pm$\,14.5\,pp & 27.3\%\,$\pm$\,3.8\,pp &
+  0.31 & Referencia LLM \\
+M2x --- Single (750\,tok) & 8b\,$\times$\,1 ag. &
+  84\% & 23.1\% & 28\% & 0.40 & Compute equivalence \\
+M3 --- Multi hom. & 8b\,$\times$\,5 ag. &
+  68\% & 30.8\% & 28\% & 1.74 & Sistema principal \\
+M3b --- Ablation 3\,ag & 8b\,$\times$\,3 ag. &
+  88\% & 0\% & 30\% & 0.77 & Ablation Legal+Proc \\
+M4 --- Multi mixto & 8b\,$\times$4+70b\,$\times$1 &
+  98.7\%\,$\pm$\,0.9\,pp & 5.1\%\,$\pm$\,3.6\,pp & 27.3\%\,$\pm$\,0.9\,pp &
+  1.69 & \textbf{\'OPTIMO} \\
+M4b --- Multi potente & 70b\,$\times$\,5 ag. &
+  98\% & 0\% & 26\% & 2.40 & Hom. potente \\
+M5 --- Multi + HiL & 8b\,$\times$5 + HiL &
+  98\% & 0\% & 28\% & 1.56 & HiL activo \\
+M5b --- Clasif.\ Incert. & 2 llamadas\,$\times$\,1\,ag &
+  94\% & 23.1\% & 22\% & 2.85 & Mejor HDA \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+%% ─────────────────────────────────────────────────────────────────────────────
+\section{Setup Experimental}
+\label{sec:setup}
+
+\subsection{Dataset: 50 casos de procurement}
+
+Se dise\~naron 50 casos con ground truth anotado en tres niveles:
+\emph{Simple} (C01--C20), \emph{Medio} (C21--C38) y \emph{Complejo}
+(C39--C50).
+Siguiendo la metodolog\'ia de WorkArena \citep{drouin2024workarena} y
+AgentBench \citep{liu2023agentbench}.
+
+\subsection{M\'etricas}
+
+\begin{description}[leftmargin=2cm, style=sameline]
+  \item[ARR] Tasa de Resoluci\'on Aut\'onoma: \% casos resueltos sin HiL.
+             Objetivo: $>$70\%.
+  \item[HDA] Precisi\'on de Detecci\'on HiL: \% casos que requieren HiL y
+             son escalados correctamente. Objetivo: $>$90\%.
+  \item[DER] Tasa de Error de Decisi\'on: \% decisiones incorrectas vs.\
+             ground truth. Objetivo: $<$10\%.
+  \item[PT]  Tiempo de proceso medio por caso (segundos).
+\end{description}
+
+\subsection{Stack tecnol\'ogico}
+
+\begin{itemize}
+  \item Framework: CrewAI (Python 3.12, Windows 10, Jupyter Lab)
+  \item LLM principal: \texttt{llama-3.1-8b-instant} v\'ia Groq API
+  \item LLM decisor M4/M4b: \texttt{llama-3.3-70b-versatile} v\'ia Groq API
+  \item Temperature: 0.0
+  \item C\'odigo completo: \url{https://github.com/Edurne0781/multiagent-procurement-llm}
+\end{itemize}
+
+\subsection{An\'alisis de robustez estad\'istica}
+
+Se ejecutaron tres r\'eplicas independientes de M1, M2 y M4.
+M1 es perfectamente determin\'ista ($\sigma$\,=\,0).
+M2 muestra alta variabilidad ($\sigma$\,ARR\,=\,11.3\,pp).
+M4 es el m\'as estable ($\sigma$\,ARR\,=\,0.9\,pp).
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{figura9}
+  \caption{Robustez estad\'istica: media\,$\pm$\,desviaci\'on est\'andar de
+           ARR, HDA y DER para M1, M2 y M4 sobre 3 r\'eplicas independientes.}
+  \label{fig:replicas}
+\end{figure}
+
+\begin{table}[htbp]
+\centering
+\caption{Resultados individuales por r\'eplica para M1, M2 y M4.}
+\label{tab:replicas}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Modelo} & \textbf{R\'eplica 1} & \textbf{R\'eplica 2} &
+  \textbf{R\'eplica 3} & \textbf{Media\,$\pm$\,$\sigma$} \\
+\midrule
+M1 --- ARR & 100\% & 100\% & 100\% & 100\%\,$\pm$\,0.0\,pp \\
+M1 --- HDA & 0\%   & 0\%   & 0\%   & 0\%\,$\pm$\,0.0\,pp   \\
+M1 --- DER & 34\%  & 34\%  & 34\%  & 34\%\,$\pm$\,0.0\,pp  \\
+\midrule
+M2 --- ARR & 76\%   & 100\% & 100\% & 92\%\,$\pm$\,11.3\,pp \\
+M2 --- HDA & 30.8\% & 0\%   & 0\%   & 10.3\%\,$\pm$\,14.5\,pp \\
+M2 --- DER & 22\%   & 28\%  & 32\%  & 27.3\%\,$\pm$\,3.8\,pp \\
+\midrule
+M4 --- ARR & 100\% & 98\%  & 98\%  & 98.7\%\,$\pm$\,0.9\,pp \\
+M4 --- HDA & 0\%   & 7.7\% & 7.7\% & 5.1\%\,$\pm$\,3.6\,pp  \\
+M4 --- DER & 26\%  & 28\%  & 28\%  & 27.3\%\,$\pm$\,0.9\,pp \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%% ─────────────────────────────────────────────────────────────────────────────
+\section{Resultados}
+\label{sec:resultados}
+
+\subsection{Tabla comparativa global}
+
+Ver Tabla~\ref{tab:variantes} para la comparaci\'on completa.
+La Figura~\ref{fig:metricas} ofrece una visi\'on visual de las tres m\'etricas
+principales.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{figura1}
+  \caption{Comparativa de m\'etricas principales M1--M5: ARR (objetivo
+           $>$70\%), HDA (objetivo $>$90\%) y DER (objetivo $<$10\%).}
+  \label{fig:metricas}
+\end{figure}
+
+\subsection{An\'alisis por modelo}
+
+\paragraph{M1 --- Baseline RPA.}
+ARR\,=\,100\% porque nunca escala al humano.
+HDA\,=\,0\% y DER\,=\,34\% (1 de cada 3 decisiones incorrecta).
+Reproduce exactamente la limitaci\'on documentada de los sistemas RPA.
+
+\paragraph{M2 --- Agente \'unico LLM (200 tokens).}
+ARR\,=\,76\%, supera el objetivo $>$70\%.
+DER\,=\,22\%, mejora de 12\,pp sobre M1.
+HDA\,=\,30.8\%.
+El modelo m\'as eficiente en tiempo (PT\,=\,0.26\,s).
+
+\paragraph{M3 --- Multi-Agente hom\'ogneo (8b$\times$5).}
+ARR\,=\,68\%, inferior a M2 (76\%).
+Con \texttt{llama-3.1-8b-instant}, la fragmentaci\'on del contexto entre 5
+agentes perjudica la calidad de decisi\'on.
+La arquitectura multi-agente no aporta ventaja con modelos peque\~nos.
+
+\paragraph{M4 --- Multi-Agente mixto (8b$\times$4 + 70b$\times$1).}
+ARR\,=\,100\%, el mayor salto del experimento (+32\,pp sobre M3).
+El agente Compliance con \texttt{llama-3.3-70b} toma decisiones
+cualitativamente mejores.
+Configuraci\'on \'optima en coste/rendimiento.
+
+\paragraph{M4b --- Multi-Agente hom\'ogneo potente (70b$\times$5).}
+ARR\,=\,98\%, pr\'acticamente igual que M4 pero 2.7$\times$ m\'as caro.
+Confirma que los agentes auxiliares con 8b son suficientes.
+
+\paragraph{M5 --- Multi-Agente + HiL activo.}
+ARR\,=\,98\%. Las reglas expl\'icitas de escalaci\'on no aumentaron la HDA
+(0\%), indicando que \texttt{llama-3.1-8b} carece de capacidad suficiente.
+
+\paragraph{M5b --- Clasificador de incertidumbre.}
+ARR\,=\,94\%, HDA\,=\,23.1\%, DER\,=\,22\%.
+An\'alisis detallado en la Secci\'on~\ref{sec:ablation}.
+
+\subsection{An\'alisis de coste computacional}
+
+\begin{table}[htbp]
+\centering
+\caption{An\'alisis de coste computacional y tokens por modelo.}
+\label{tab:tokens}
+\begin{tabular}{lrrrrl}
+\toprule
+\textbf{Modelo} & \textbf{Tok/caso} & \textbf{Tok total} &
+  \textbf{Llamadas} & \textbf{Coste equiv.} & \textbf{Observaci\'on} \\
+\midrule
+M1 --- RPA    &   0 &      0 & 0 & \$0.0000 & Sin LLM \\
+M2 --- Single & 200 & 10.000 & 1 & \$0.0012 & M\'as eficiente \\
+M2x           & 750 & 37.500 & 1 & \$0.0045 & Equiv. a M3 \\
+M3 --- Multi  & 750 & 37.500 & 5 & \$0.0045 & M2x lo supera \\
+M3b           & 450 & 22.500 & 3 & \$0.0027 & Ahorro 40\% \\
+M4 --- Mixto  & 750 & 37.500 & 5 & \$0.0065 & ARR=100\% \\
+M4b           & 750 & 37.500 & 5 & \$0.0120 & 2.7$\times$ M4 \\
+M5 --- HiL    & 875 & 43.750 & 5 & \$0.0053 & Mejor ARR/coste \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{figura2}
+  \caption{Curva de eficiencia: ARR frente al tiempo de proceso (PT) por caso.}
+  \label{fig:eficiencia}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{figura3}
+  \caption{Distribuci\'on de decisiones por modelo sobre los 50 casos.}
+  \label{fig:distribucion}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{figura5}
+  \caption{ARR frente al coste en tokens (izq.) y consumo de tokens por
+           modelo (dcha.).}
+  \label{fig:coste}
+\end{figure}
+
+%% ─────────────────────────────────────────────────────────────────────────────
+\section{Ablation Study}
+\label{sec:ablation}
+
+\begin{table}[htbp]
+\centering
+\caption{Experimentos del ablation study.}
+\label{tab:ablation}
+\begin{tabularx}{\textwidth}{llllX}
+\toprule
+\textbf{ID} & \textbf{Experimento} & \textbf{ARR} & \textbf{HDA} &
+  \textbf{Hallazgo principal} \\
+\midrule
+A1 & Sin Legal (planif.) & --- & --- &
+  Casos con cl\'ausulas complejas pierden calidad \\
+A2 & Sin Compliance (planif.) & --- & --- &
+  Casos regulatorios no se bloquean \\
+A3 & 3 ag vs 5 (M3b, ejec.) & 88\% vs 68\% & 0\% vs 30.8\% &
+  +20\,pp ARR pero destruye HDA \\
+A4 & Sin HiL (M3 vs M5) & 68\% vs 98\% & 30.8\% vs 0\% &
+  HiL mejora ARR pero no HDA \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{A3 ejecutado --- 3 agentes vs.\ 5 (M3b)}
+
+Eliminar Legal y Procurement sube el ARR de 68\% a 88\% (+20\,pp) pero la HDA
+cae de 30.8\% a 0\%.
+Esto cuantifica el trade-off fundamental: la especializaci\'on no maximiza la
+automatizaci\'on bruta sino la calidad supervisada de decisi\'on, exactamente
+como predice la teor\'ia de ventaja comparativa de Ricardo
+\citeyearpar{ricardo1817}.
+
+\subsection{An\'alisis de grafos}
+
+Finance es el nodo con mayor betweenness centrality (4), actuando como puente
+entre la validaci\'on operativa y la decisi\'on regulatoria.
+En t\'erminos de Granovetter \citeyearpar{granovetter1973}, Finance representa
+el ``lazo d\'ebil'' m\'as cr\'itico del sistema.
+
+\begin{table}[htbp]
+\centering
+\caption{M\'etricas de centralidad en la red de comunicaci\'on.}
+\label{tab:grafos}
+\begin{tabularx}{\textwidth}{lrrrX}
+\toprule
+\textbf{Agente} & \textbf{Grado total} & \textbf{Grado entrada} &
+  \textbf{Betweenness} & \textbf{Rol} \\
+\midrule
+Requester   & 1 & 0 & 0 & Fuente \\
+Procurement & 2 & 1 & 3 & Intermediario \\
+Finance     & 2 & 1 & 4 & Nodo m\'as central \\
+Legal       & 2 & 1 & 3 & Intermediario \\
+Compliance  & 1 & 1 & 0 & Sumidero --- decide \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{figura6}
+  \caption{Red de comunicaci\'on entre agentes: topolog\'ia lineal (izq.) y
+           centralidad por agente (dcha.).}
+  \label{fig:grafo}
+\end{figure}
+
+\subsection{Convergencia por nivel de complejidad}
+
+\begin{table}[htbp]
+\centering
+\caption{Tasa de resoluci\'on por nivel de complejidad.}
+\label{tab:complejidad}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Modelo} & \textbf{Simple} & \textbf{Medio} &
+  \textbf{Complejo} & \textbf{Total} & \textbf{Observaci\'on} \\
+\midrule
+M2 Single    & 100\% & 100\%  & 100\%  & 100\% & Sin errores \\
+M3 Multi     & 95\%  & 83.3\% & 83.3\% & 88\%  & Degradaci\'on en complejos \\
+M4 Mixto     & 100\% & 100\%  & 100\%  & 100\% & Sin degradaci\'on \\
+M5 HiL       & 100\% & 94.4\% & 100\%  & 98\%  & Un error rate-limit \\
+M3b Ablation & 95\%  & 88.9\% & 83.3\% & 90\%  & M\'as robusto que M3 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{figura7}
+  \caption{Tasa de resoluci\'on por nivel de complejidad para cada modelo.}
+  \label{fig:complejidad}
+\end{figure}
+
+\subsection{M5b --- Clasificador de incertidumbre}
+
+M5b es un sistema de dos etapas: un agente Evaluador de Incertidumbre analiza
+los factores de riesgo y emite un nivel de confianza (alta/baja); si es baja,
+el caso se escala al humano; si es alta, un Gestor Senior decide.
+HDA sube de 0\% a 23.1\% con 0 falsos positivos.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{figura8}
+  \caption{M5 vs M5b: comparativa de m\'etricas (izq.) y an\'alisis de las
+           13 escalaciones HiL requeridas (dcha.).}
+  \label{fig:m5b}
+\end{figure}
+
+%% ─────────────────────────────────────────────────────────────────────────────
+\section{Comparativa Multi-Agente vs.\ Agente \'Unico con Compute Equivalente}
+\label{sec:compute}
+
+\begin{table}[htbp]
+\centering
+\caption{Comparativa de compute equivalence.}
+\label{tab:compute}
+\begin{tabular}{lrrlrrrl}
+\toprule
+\textbf{Modelo} & \textbf{Tok} & \textbf{Ag.} &
+  \textbf{ARR} & \textbf{HDA} & \textbf{DER} & \textbf{PT} &
+  \textbf{Conclusi\'on} \\
+\midrule
+M2 Single    & 200 & 1 & 76\% & 30.8\% & 22\% & 0.31s & Referencia \\
+M2x Expandido& 750 & 1 & 84\% & 23.1\% & 28\% & 0.40s & Mismo budget que M3 \\
+M3 Multi     & 750 & 5 & 68\% & 30.8\% & 28\% & 1.74s & M2x lo supera \\
+M3b Ablation & 450 & 3 & 88\% & 0\%    & 30\% & 0.77s & 3 ag. m\'as efic. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+M2x (84\%) supera a M3 (68\%) con el mismo presupuesto de tokens, validando
+emp\'iricamente la hip\'otesis de compute equivalence \citep{wu2023autogen}:
+con \texttt{llama-3.1-8b-instant}, la arquitectura multi-agente no aporta valor
+arquitect\'onico.
+La ventaja emerge \'unicamente cuando el modelo tiene capacidad suficiente para
+beneficiarse de la especializaci\'on.
+
+%% ─────────────────────────────────────────────────────────────────────────────
+\section{Diversidad de Modelos como Variable Experimental}
+\label{sec:diversidad}
+
+\begin{table}[htbp]
+\centering
+\caption{Configuraciones de diversidad de modelos.}
+\label{tab:diversidad}
+\begin{tabularx}{\textwidth}{llrrrrl}
+\toprule
+\textbf{Config.} & \textbf{Modelos} &
+  \textbf{ARR} & \textbf{HDA} & \textbf{DER} & \textbf{PT} &
+  \textbf{Interpretaci\'on} \\
+\midrule
+M3 Hom. peq.  & 8b$\times$5         & 68\%  & 30.8\% & 28\% & 1.74s &
+  Errores correlacionados \\
+M4 Mixto      & 8b$\times$4+70b$\times$1 & 100\% & 0\% & 26\% & 1.74s &
+  \textbf{\'OPTIMO} \\
+M4b Hom. pot. & 70b$\times$5         & 98\%  & 0\%    & 26\% & 2.40s &
+  2.7$\times$ m\'as caro \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+El mayor salto es +32\,pp ARR entre M3 y M4 con los mismos tokens y agentes.
+En sistemas multi-agente \emph{la elecci\'on del modelo importa m\'as que la
+arquitectura}.
+
+%% ─────────────────────────────────────────────────────────────────────────────
+\section{Discusi\'on}
+\label{sec:discusion}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{figura4}
+  \caption{Perfil de rendimiento por modelo (gr\'afico radar).}
+  \label{fig:radar}
+\end{figure}
+
+\subsection{Hallazgos principales}
+
+El hallazgo m\'as importante es la confirmaci\'on emp\'irica de la hip\'otesis
+de compute equivalence: M2x (ARR\,=\,84\%) supera a M3 (ARR\,=\,68\%) con el
+mismo presupuesto.
+El sistema resuelve solicitudes en 0.26--2.85 segundos frente a 3--7 d\'ias del
+proceso manual \citep{hackett2023}: una reducci\'on superior al 99\%.
+
+El segundo hallazgo es el trade-off automatizaci\'on/detecci\'on de riesgo
+(ablation A3): eliminar agentes especializados sube el ARR 20\,pp pero destruye
+la HDA.
+
+El tercer hallazgo es la superioridad de la estrategia mixta (M4): modelo
+potente en el decisor y ligeros en los auxiliares da los mismos resultados que
+todos potentes a un 37\% del coste.
+
+\subsection{Conexi\'on con teor\'ias organizacionales}
+
+Ricardo \citeyearpar{ricardo1817} --- ventaja comparativa: el ablation cuantifica
+que Legal y Procurement tienen ventaja relativa en detectar sus riesgos
+espec\'ificos (+30.8\,pp HDA).
+
+Granovetter \citeyearpar{granovetter1973} --- lazos d\'ebiles: Finance
+(betweenness\,=\,4) es el puente m\'as cr\'itico del sistema.
+
+Olson \citeyearpar{olson1965} --- acci\'on colectiva: HDA\,=\,0\% en M4 ilustra
+que cuando todos pueden detectar el riesgo, nadie lo escala.
+
+\subsection{Limitaciones}
+
+Ninguna configuraci\'on super\'o HDA\,$>$\,90\%.
+Esto apunta a que la especializaci\'on de roles puede inhibir la detecci\'on de
+riesgo sist\'emico --- cuando cada agente s\'olo ve su fragmento, los casos con
+riesgo transversal no se escalan.
+
+%% ─────────────────────────────────────────────────────────────────────────────
+\section{Conclusiones y Trabajo Futuro}
+\label{sec:conclusiones}
+
+M4 alcanz\'o ARR\,=\,98.7\%\,$\pm$\,0.9\,pp, procesando solicitudes en 1.74
+segundos a \$0.0065 por caso, mejorando la tasa de error del RPA en 8\,pp.
+
+El hallazgo m\'as inesperado fue que M3 (5 agentes) fue superado por M2 (1
+agente): con \texttt{llama-3.1-8b}, fragmentar el contexto perjudica m\'as de
+lo que la especializaci\'on ayuda.
+El umbral de capacidad se sit\'ua entre 8B y 70B par\'ametros.
+
+\subsection{Contribuciones}
+
+\begin{enumerate}[label=(\arabic*)]
+  \item Framework multi-agente completo con 5 agentes, 6 herramientas y soporte
+        HiL en CrewAI/Python 3.12.
+  \item Dataset de 50 casos con ground truth en tres niveles de complejidad.
+  \item Evidencia emp\'irica sobre compute equivalence, diversidad de modelos y
+        especializaci\'on mediante ablation study ejecutado.
+  \item An\'alisis de robustez con 3 r\'eplicas: $\sigma$\,ARR\,=\,11.3\,pp
+        para 8B frente a $\sigma$\,ARR\,=\,0.9\,pp para la arquitectura mixta.
+\end{enumerate}
+
+\subsection{Trabajo futuro}
+
+(1) Evaluar si HDA\,$>$\,90\% es alcanzable o el problema es estructural.
+(2) Extender M5b con factores regulatorios espec\'ificos (GDPR, AESA, CE).
+(3) Replicar en onboarding, incident management, compliance y an\'alisis
+financiero.
+(4) Conectar con APIs live de ERP/CRM reales.
+(5) Investigar un agente integrador de s\'intesis transversal previo a la
+decisi\'on de escalaci\'on.
+
+\begin{quote}
+\textbf{Conclusi\'on}: La arquitectura multi-agente no es superior al agente
+\'unico por defecto. Lo es cuando el modelo subyacente tiene capacidad suficiente
+para beneficiarse de la especializaci\'on. El camino hacia HDA\,$>$\,90\% no
+pasa por mejorar los modelos, sino por redise\~nar c\'omo fluye la informaci\'on
+entre ellos.
+\end{quote}
+
+%% ─────────────────────────────────────────────────────────────────────────────
+\bibliographystyle{elsarticle-harv}
+\bibliography{projener_references}
+
+%% ─────────────────────────────────────────────────────────────────────────────
+\appendix
+
+\section{System Prompts de los Agentes}
+\label{app:prompts}
+
+\paragraph{Agente Requester.}
+\begin{lstlisting}[language={}]
+role: "Gestor de Solicitudes"
+goal: "Registrar y estructurar solicitudes de compra."
+backstory: "Primer punto de contacto. Registras solicitudes."
+\end{lstlisting}
+
+\paragraph{Agente Procurement.}
+\begin{lstlisting}[language={}]
+role: "Especialista en Proveedores"
+goal: "Validar proveedores y buscar alternativas."
+backstory: "Proveedor: estado=X, opera=Y" [API catalogo]
+\end{lstlisting}
+
+\paragraph{Agente Finance.}
+\begin{lstlisting}[language={}]
+role: "Analista Financiero"
+goal: "Verificar presupuesto y aprobar o proponer reasignacion."
+backstory: "Presupuesto: disponible=X EUR" [API presupuesto]
+\end{lstlisting}
+
+\paragraph{Agente Legal.}
+\begin{lstlisting}[language={}]
+role: "Asesor Legal"
+goal: "Revisar clausulas contractuales y detectar riesgos."
+backstory: "Legal: riesgo=X, firmar=Y" [API contratos]
+\end{lstlisting}
+
+\paragraph{Agente Compliance (decisor, M3/M5).}
+\begin{lstlisting}[language={}]
+role: "Auditor de Compliance"
+goal: "Verificar normativa y decidir."
+backstory: "Normativa: cumple=X, riesgo=Y.
+            [M5: ESCALA si conflicto interes, GDPR,
+             importe >50k EUR, riesgo critico]"
+output: JSON {decision, razon, escala_hil}
+\end{lstlisting}
+
+\section{Par\'ametros de Reproducibilidad}
+\label{app:repro}
+
+\begin{itemize}
+  \item Modelo principal: \texttt{groq/llama-3.1-8b-instant}
+  \item Modelo decisor M4/M4b: \texttt{groq/llama-3.3-70b-versatile}
+  \item Temperature: 0.0 (5/5 casos id\'enticos verificados: C01, C21, C39,
+        C43, C50)
+  \item Pausa entre casos: 4--8 segundos seg\'un modelo
+  \item Reintentos m\'aximos: 3 por caso
+  \item Total llamadas LLM: M2=50; M3=250; M4=250; M5=250; r\'eplicas=900
+  \item C\'odigo: \url{https://github.com/Edurne0781/multiagent-procurement-llm}
+        (Jupyter Lab, Python 3.12)
+\end{itemize}
+
+\end{document}

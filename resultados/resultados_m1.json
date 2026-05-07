@@ -1,0 +1,1204 @@
+{
+  "modelo": "M1_baseline_RPA",
+  "metricas": {
+    "modelo": "M1 — Baseline RPA",
+    "total_casos": 50,
+    "ARR": 100.0,
+    "ARR_objetivo": ">70%",
+    "HDA": 0.0,
+    "HDA_objetivo": ">90%",
+    "DER": 34.0,
+    "DER_objetivo": "<10%",
+    "PT": 0.0,
+    "PT_unidad": "seg/caso",
+    "TCC": 0,
+    "TCC_unidad": "tokens/caso"
+  },
+  "resultados_por_caso": [
+    {
+      "caso_id": "C01",
+      "nivel": "Simple",
+      "importe": 150,
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático (≤500€)",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C02",
+      "nivel": "Simple",
+      "importe": 80,
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático (≤500€)",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C03",
+      "nivel": "Simple",
+      "importe": 200,
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático (≤500€)",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C04",
+      "nivel": "Simple",
+      "importe": 160,
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático (≤500€)",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C05",
+      "nivel": "Simple",
+      "importe": 300,
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático (≤500€)",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C06",
+      "nivel": "Simple",
+      "importe": 350,
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático (≤500€)",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C07",
+      "nivel": "Simple",
+      "importe": 120,
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático (≤500€)",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "aprobacion_con_nota",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C08",
+      "nivel": "Simple",
+      "importe": 95,
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático (≤500€)",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C09",
+      "nivel": "Simple",
+      "importe": 900,
+      "decision_m1": "aprobado",
+      "razon": "Proveedor OK + presupuesto OK. Categoría no regulada.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C10",
+      "nivel": "Simple",
+      "importe": 75,
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático (≤500€)",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C11",
+      "nivel": "Simple",
+      "importe": 250,
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático (≤500€)",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C12",
+      "nivel": "Simple",
+      "importe": 60,
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático (≤500€)",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C13",
+      "nivel": "Simple",
+      "importe": 40,
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático (≤500€)",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C14",
+      "nivel": "Simple",
+      "importe": 140,
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático (≤500€)",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C15",
+      "nivel": "Simple",
+      "importe": 180,
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático (≤500€)",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C16",
+      "nivel": "Simple",
+      "importe": 450,
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático (≤500€)",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C17",
+      "nivel": "Simple",
+      "importe": 240,
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático (≤500€)",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C18",
+      "nivel": "Simple",
+      "importe": 120,
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático (≤500€)",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C19",
+      "nivel": "Simple",
+      "importe": 85,
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático (≤500€)",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C20",
+      "nivel": "Simple",
+      "importe": 50,
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático (≤500€)",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C21",
+      "nivel": "Medio",
+      "importe": 800,
+      "decision_m1": "rechazado",
+      "razon": "Proveedor PRV-007 no aprobado. RPA no puede gestionar altas.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "registro_proveedor_y_validacion_legal",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C22",
+      "nivel": "Medio",
+      "importe": 3500,
+      "decision_m1": "aprobado",
+      "razon": "Proveedor OK + presupuesto OK. Categoría no regulada.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "escalacion_finance_reasignacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C23",
+      "nivel": "Medio",
+      "importe": 1200,
+      "decision_m1": "rechazado",
+      "razon": "Proveedor PRV-006 no aprobado. RPA no puede gestionar altas.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "validacion_legal_y_aprobacion_condicionada",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C24",
+      "nivel": "Medio",
+      "importe": 5000,
+      "decision_m1": "aprobado",
+      "razon": "Proveedor OK + presupuesto OK. Categoría no regulada.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "revision_legal_obligatoria_antes_de_firmar",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C25",
+      "nivel": "Medio",
+      "importe": 4800,
+      "decision_m1": "aprobado",
+      "razon": "Proveedor OK + presupuesto OK. Categoría no regulada.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "reasignacion_presupuestaria_o_fraccionamiento",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C26",
+      "nivel": "Medio",
+      "importe": 2000,
+      "decision_m1": "rechazado",
+      "razon": "Proveedor PRV-006 no aprobado. RPA no puede gestionar altas.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "validacion_legal_compliance_y_registro",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C27",
+      "nivel": "Medio",
+      "importe": 1500,
+      "decision_m1": "rechazado",
+      "razon": "Proveedor PRV-009 no aprobado. RPA no puede gestionar altas.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "fast_track_con_validacion_posterior",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C28",
+      "nivel": "Medio",
+      "importe": 6000,
+      "decision_m1": "aprobado",
+      "razon": "Proveedor OK + presupuesto OK. Categoría no regulada.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "revision_legal_clausulas_penalizacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C29",
+      "nivel": "Medio",
+      "importe": 2800,
+      "decision_m1": "rechazado",
+      "razon": "Presupuesto insuficiente. Déficit: 1300€. RPA no puede reasignar.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "escalacion_reasignacion_presupuestaria",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C30",
+      "nivel": "Medio",
+      "importe": 950,
+      "decision_m1": "rechazado",
+      "razon": "Proveedor PRV-011 no aprobado. RPA no puede gestionar altas.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "validacion_nda_y_aprobacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C31",
+      "nivel": "Medio",
+      "importe": 8000,
+      "decision_m1": "rechazado",
+      "razon": "Presupuesto insuficiente. Déficit: 4800€. RPA no puede reasignar.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "revision_legal_garantias_y_aprobacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C32",
+      "nivel": "Medio",
+      "importe": 2200,
+      "decision_m1": "aprobado",
+      "razon": "Proveedor OK + presupuesto OK. Categoría no regulada.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "aprobacion_fast_track_con_justificacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C33",
+      "nivel": "Medio",
+      "importe": 5500,
+      "decision_m1": "rechazado",
+      "razon": "Presupuesto insuficiente. Déficit: 2300€. RPA no puede reasignar.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "fraccionamiento_o_rechazo_parcial",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C34",
+      "nivel": "Medio",
+      "importe": 1800,
+      "decision_m1": "rechazado",
+      "razon": "Proveedor PRV-006 no aprobado. RPA no puede gestionar altas.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "compliance_y_legal_validacion_completa",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C35",
+      "nivel": "Medio",
+      "importe": 12000,
+      "decision_m1": "rechazado",
+      "razon": "Presupuesto insuficiente. Déficit: 7000€. RPA no puede reasignar.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "legal_finance_aprobacion_direccion",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C36",
+      "nivel": "Medio",
+      "importe": 3200,
+      "decision_m1": "rechazado",
+      "razon": "Proveedor PRV-009 no aprobado. RPA no puede gestionar altas.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "fast_track_registro_posterior",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C37",
+      "nivel": "Medio",
+      "importe": 7500,
+      "decision_m1": "rechazado",
+      "razon": "Presupuesto insuficiente. Déficit: 2500€. RPA no puede reasignar.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "reasignacion_entre_departamentos",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C38",
+      "nivel": "Medio",
+      "importe": 3000,
+      "decision_m1": "rechazado",
+      "razon": "Proveedor PRV-007 no aprobado. RPA no puede gestionar altas.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "validacion_ip_nda_y_aprobacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C39",
+      "nivel": "Complejo",
+      "importe": 15000,
+      "decision_m1": "rechazado",
+      "razon": "Proveedor PRV-008 no aprobado. RPA no puede gestionar altas.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "rechazo_hasta_certificacion_ce",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C40",
+      "nivel": "Complejo",
+      "importe": 8000,
+      "decision_m1": "rechazado",
+      "razon": "Proveedor PRV-008 no aprobado. RPA no puede gestionar altas.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "bloqueo_gdpr_escalacion_hil_obligatoria",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C41",
+      "nivel": "Complejo",
+      "importe": 45000,
+      "decision_m1": "aprobado",
+      "razon": "Proveedor OK + presupuesto OK. Categoría no regulada.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "aprobacion_escalonada_multidepartamento",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C42",
+      "nivel": "Complejo",
+      "importe": 2500,
+      "decision_m1": "rechazado",
+      "razon": "Proveedor PRV-006 no aprobado. RPA no puede gestionar altas.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "bloqueo_hasta_fichas_seguridad",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C43",
+      "nivel": "Complejo",
+      "importe": 20000,
+      "decision_m1": "rechazado",
+      "razon": "Presupuesto insuficiente. Déficit: 15000€. RPA no puede reasignar.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "escalacion_hil_obligatoria_conflicto_interes",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C44",
+      "nivel": "Complejo",
+      "importe": 18000,
+      "decision_m1": "rechazado",
+      "razon": "Proveedor PRV-006 no aprobado. RPA no puede gestionar altas.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "bloqueo_hasta_licencia_aesa",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C45",
+      "nivel": "Complejo",
+      "importe": 120000,
+      "decision_m1": "rechazado",
+      "razon": "Proveedor PRV-006 no aprobado. RPA no puede gestionar altas.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "escalacion_hil_aprobacion_consejo",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C46",
+      "nivel": "Complejo",
+      "importe": 5000,
+      "decision_m1": "rechazado",
+      "razon": "Presupuesto insuficiente. Déficit: 3500€. RPA no puede reasignar.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "bloqueo_legal_compliance_alternativa_propuesta",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C47",
+      "nivel": "Complejo",
+      "importe": 35000,
+      "decision_m1": "rechazado",
+      "razon": "Proveedor PRV-007 no aprobado. RPA no puede gestionar altas.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "evaluacion_tecnica_legal_financiera_larga",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C48",
+      "nivel": "Complejo",
+      "importe": 60000,
+      "decision_m1": "rechazado",
+      "razon": "Presupuesto insuficiente. Déficit: 55000€. RPA no puede reasignar.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "renegociacion_o_cambio_proveedor",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C49",
+      "nivel": "Complejo",
+      "importe": 25000,
+      "decision_m1": "rechazado",
+      "razon": "Proveedor PRV-010 no aprobado. RPA no puede gestionar altas.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "bloqueo_total_hasta_homologacion",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C50",
+      "nivel": "Complejo",
+      "importe": 200000,
+      "decision_m1": "rechazado",
+      "razon": "Proveedor PRV-006 no aprobado. RPA no puede gestionar altas.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "RPA_engine"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 0.0,
+      "ground_truth": {
+        "resultado": "licitacion_formal_aprobacion_consejo",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    }
+  ]
+}
