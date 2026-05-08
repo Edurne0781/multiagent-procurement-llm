@@ -1,0 +1,557 @@
+{
+  "metadata": {
+    "empresa": "ACME Industrial S.A.",
+    "proceso": "Incident Management",
+    "total_casos": 20,
+    "niveles": {
+      "Simple": "C01-C08",
+      "Medio": "C09-C14",
+      "Complejo": "C15-C20"
+    },
+    "descripcion": "Sistema de gestión de incidencias IT de la misma empresa del experimento de procurement"
+  },
+  "casos": [
+    {
+      "id": "C01",
+      "nivel": "Simple",
+      "descripcion": "PC de usuario no arranca — pantalla negra al encender",
+      "departamento": "Ventas",
+      "usuario": "juan.garcia@acme.es",
+      "categoria": "hardware",
+      "subcategoria": "pc",
+      "prioridad_reportada": "media",
+      "impacto_usuarios": 1,
+      "sistema_afectado": "PC-VNT-042",
+      "datos_en_riesgo": false,
+      "sistema_critico": false,
+      "incidente_seguridad": false,
+      "ground_truth": {
+        "resultado": "resolver_automatico",
+        "requiere_hil": false,
+        "nivel_escalacion": 1,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical"
+        ],
+        "nivel_riesgo": "bajo",
+        "tiempo_resolucion_esperado": "2h"
+      }
+    },
+    {
+      "id": "C02",
+      "nivel": "Simple",
+      "descripcion": "Usuario no puede acceder a su email — contraseña expirada",
+      "departamento": "RRHH",
+      "usuario": "maria.lopez@acme.es",
+      "categoria": "acceso",
+      "subcategoria": "credenciales",
+      "prioridad_reportada": "baja",
+      "impacto_usuarios": 1,
+      "sistema_afectado": "MAIL-SRV-01",
+      "datos_en_riesgo": false,
+      "sistema_critico": false,
+      "incidente_seguridad": false,
+      "ground_truth": {
+        "resultado": "resolver_automatico",
+        "requiere_hil": false,
+        "nivel_escalacion": 1,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical"
+        ],
+        "nivel_riesgo": "bajo",
+        "tiempo_resolucion_esperado": "30min"
+      }
+    },
+    {
+      "id": "C03",
+      "nivel": "Simple",
+      "descripcion": "Impresora de planta no imprime — atasco de papel",
+      "departamento": "Producción",
+      "usuario": "carlos.ruiz@acme.es",
+      "categoria": "hardware",
+      "subcategoria": "impresora",
+      "prioridad_reportada": "baja",
+      "impacto_usuarios": 5,
+      "sistema_afectado": "PRN-PRD-003",
+      "datos_en_riesgo": false,
+      "sistema_critico": false,
+      "incidente_seguridad": false,
+      "ground_truth": {
+        "resultado": "resolver_automatico",
+        "requiere_hil": false,
+        "nivel_escalacion": 1,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical"
+        ],
+        "nivel_riesgo": "bajo",
+        "tiempo_resolucion_esperado": "1h"
+      }
+    },
+    {
+      "id": "C04",
+      "nivel": "Simple",
+      "descripcion": "Software de ofimática no abre — licencia expirada",
+      "departamento": "Administración",
+      "usuario": "ana.martinez@acme.es",
+      "categoria": "software",
+      "subcategoria": "licencias",
+      "prioridad_reportada": "media",
+      "impacto_usuarios": 1,
+      "sistema_afectado": "MS-OFFICE-ADM",
+      "datos_en_riesgo": false,
+      "sistema_critico": false,
+      "incidente_seguridad": false,
+      "ground_truth": {
+        "resultado": "resolver_automatico",
+        "requiere_hil": false,
+        "nivel_escalacion": 1,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical"
+        ],
+        "nivel_riesgo": "bajo",
+        "tiempo_resolucion_esperado": "1h"
+      }
+    },
+    {
+      "id": "C05",
+      "nivel": "Simple",
+      "descripcion": "VPN no conecta — usuario en teletrabajo",
+      "departamento": "IT",
+      "usuario": "pedro.sanchez@acme.es",
+      "categoria": "red",
+      "subcategoria": "vpn",
+      "prioridad_reportada": "media",
+      "impacto_usuarios": 1,
+      "sistema_afectado": "VPN-GW-01",
+      "datos_en_riesgo": false,
+      "sistema_critico": false,
+      "incidente_seguridad": false,
+      "ground_truth": {
+        "resultado": "resolver_automatico",
+        "requiere_hil": false,
+        "nivel_escalacion": 1,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical"
+        ],
+        "nivel_riesgo": "bajo",
+        "tiempo_resolucion_esperado": "1h"
+      }
+    },
+    {
+      "id": "C06",
+      "nivel": "Simple",
+      "descripcion": "Monitor con líneas horizontales — fallo de pantalla",
+      "departamento": "Finanzas",
+      "usuario": "laura.gomez@acme.es",
+      "categoria": "hardware",
+      "subcategoria": "monitor",
+      "prioridad_reportada": "baja",
+      "impacto_usuarios": 1,
+      "sistema_afectado": "MON-FIN-007",
+      "datos_en_riesgo": false,
+      "sistema_critico": false,
+      "incidente_seguridad": false,
+      "ground_truth": {
+        "resultado": "resolver_automatico",
+        "requiere_hil": false,
+        "nivel_escalacion": 1,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical"
+        ],
+        "nivel_riesgo": "bajo",
+        "tiempo_resolucion_esperado": "4h"
+      }
+    },
+    {
+      "id": "C07",
+      "nivel": "Simple",
+      "descripcion": "Aplicación de gestión de procurement muy lenta",
+      "departamento": "Compras",
+      "usuario": "roberto.fernandez@acme.es",
+      "categoria": "software",
+      "subcategoria": "rendimiento",
+      "prioridad_reportada": "media",
+      "impacto_usuarios": 3,
+      "sistema_afectado": "PROCUREMENT-APP",
+      "datos_en_riesgo": false,
+      "sistema_critico": false,
+      "incidente_seguridad": false,
+      "ground_truth": {
+        "resultado": "resolver_automatico",
+        "requiere_hil": false,
+        "nivel_escalacion": 1,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical",
+          "Operations"
+        ],
+        "nivel_riesgo": "bajo",
+        "tiempo_resolucion_esperado": "2h"
+      }
+    },
+    {
+      "id": "C08",
+      "nivel": "Simple",
+      "descripcion": "Teclado inalámbrico sin respuesta — batería agotada",
+      "departamento": "Legal",
+      "usuario": "sofia.torres@acme.es",
+      "categoria": "hardware",
+      "subcategoria": "periferico",
+      "prioridad_reportada": "baja",
+      "impacto_usuarios": 1,
+      "sistema_afectado": "KB-LEG-012",
+      "datos_en_riesgo": false,
+      "sistema_critico": false,
+      "incidente_seguridad": false,
+      "ground_truth": {
+        "resultado": "resolver_automatico",
+        "requiere_hil": false,
+        "nivel_escalacion": 1,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical"
+        ],
+        "nivel_riesgo": "bajo",
+        "tiempo_resolucion_esperado": "30min"
+      }
+    },
+    {
+      "id": "C09",
+      "nivel": "Medio",
+      "descripcion": "Servidor de aplicaciones con CPU al 95% — degradación de servicio",
+      "departamento": "IT",
+      "usuario": "miguel.angel@acme.es",
+      "categoria": "infraestructura",
+      "subcategoria": "servidor",
+      "prioridad_reportada": "alta",
+      "impacto_usuarios": 50,
+      "sistema_afectado": "APP-SRV-02",
+      "datos_en_riesgo": false,
+      "sistema_critico": true,
+      "incidente_seguridad": false,
+      "ground_truth": {
+        "resultado": "escalar_nivel2",
+        "requiere_hil": false,
+        "nivel_escalacion": 2,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical",
+          "Operations"
+        ],
+        "nivel_riesgo": "medio",
+        "tiempo_resolucion_esperado": "4h"
+      }
+    },
+    {
+      "id": "C10",
+      "nivel": "Medio",
+      "descripcion": "Fallo de red en planta 3 — 20 usuarios sin conectividad",
+      "departamento": "Producción",
+      "usuario": "elena.castillo@acme.es",
+      "categoria": "red",
+      "subcategoria": "switch",
+      "prioridad_reportada": "alta",
+      "impacto_usuarios": 20,
+      "sistema_afectado": "SWITCH-P3-01",
+      "datos_en_riesgo": false,
+      "sistema_critico": true,
+      "incidente_seguridad": false,
+      "ground_truth": {
+        "resultado": "escalar_nivel2",
+        "requiere_hil": false,
+        "nivel_escalacion": 2,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical",
+          "Operations"
+        ],
+        "nivel_riesgo": "medio",
+        "tiempo_resolucion_esperado": "3h"
+      }
+    },
+    {
+      "id": "C11",
+      "nivel": "Medio",
+      "descripcion": "Base de datos ERP con errores de escritura — posible corrupción menor",
+      "departamento": "IT",
+      "usuario": "david.moreno@acme.es",
+      "categoria": "datos",
+      "subcategoria": "base_datos",
+      "prioridad_reportada": "alta",
+      "impacto_usuarios": 30,
+      "sistema_afectado": "ERP-DB-MAIN",
+      "datos_en_riesgo": true,
+      "sistema_critico": true,
+      "incidente_seguridad": false,
+      "ground_truth": {
+        "resultado": "escalar_nivel2",
+        "requiere_hil": false,
+        "nivel_escalacion": 2,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical",
+          "Operations"
+        ],
+        "nivel_riesgo": "medio",
+        "tiempo_resolucion_esperado": "6h"
+      }
+    },
+    {
+      "id": "C12",
+      "nivel": "Medio",
+      "descripcion": "Sistema de backup no ejecutó en 5 días — riesgo de pérdida de datos",
+      "departamento": "IT",
+      "usuario": "isabel.vega@acme.es",
+      "categoria": "datos",
+      "subcategoria": "backup",
+      "prioridad_reportada": "alta",
+      "impacto_usuarios": 100,
+      "sistema_afectado": "BACKUP-SRV-01",
+      "datos_en_riesgo": true,
+      "sistema_critico": true,
+      "incidente_seguridad": false,
+      "ground_truth": {
+        "resultado": "escalar_nivel2",
+        "requiere_hil": false,
+        "nivel_escalacion": 2,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical",
+          "Operations"
+        ],
+        "nivel_riesgo": "medio",
+        "tiempo_resolucion_esperado": "4h"
+      }
+    },
+    {
+      "id": "C13",
+      "nivel": "Medio",
+      "descripcion": "Certificado SSL expirado en portal de proveedores — advertencias a usuarios",
+      "departamento": "IT",
+      "usuario": "javier.romero@acme.es",
+      "categoria": "seguridad",
+      "subcategoria": "certificados",
+      "prioridad_reportada": "media",
+      "impacto_usuarios": 200,
+      "sistema_afectado": "PORTAL-PROV-01",
+      "datos_en_riesgo": false,
+      "sistema_critico": false,
+      "incidente_seguridad": true,
+      "ground_truth": {
+        "resultado": "escalar_nivel2",
+        "requiere_hil": false,
+        "nivel_escalacion": 2,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical",
+          "Security"
+        ],
+        "nivel_riesgo": "medio",
+        "tiempo_resolucion_esperado": "2h"
+      }
+    },
+    {
+      "id": "C14",
+      "nivel": "Medio",
+      "descripcion": "Aplicación de RRHH caída — nóminas no procesadas, fin de mes en 2 días",
+      "departamento": "RRHH",
+      "usuario": "carmen.delgado@acme.es",
+      "categoria": "software",
+      "subcategoria": "aplicacion_critica",
+      "prioridad_reportada": "critica",
+      "impacto_usuarios": 150,
+      "sistema_afectado": "HRMS-APP-01",
+      "datos_en_riesgo": false,
+      "sistema_critico": true,
+      "incidente_seguridad": false,
+      "ground_truth": {
+        "resultado": "escalar_nivel2",
+        "requiere_hil": false,
+        "nivel_escalacion": 2,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical",
+          "Operations"
+        ],
+        "nivel_riesgo": "alto",
+        "tiempo_resolucion_esperado": "2h"
+      }
+    },
+    {
+      "id": "C15",
+      "nivel": "Complejo",
+      "descripcion": "Detección de accesos no autorizados a servidor de RRHH — posible brecha de datos personales",
+      "departamento": "IT",
+      "usuario": "antonio.reyes@acme.es",
+      "categoria": "seguridad",
+      "subcategoria": "brecha_datos",
+      "prioridad_reportada": "critica",
+      "impacto_usuarios": 500,
+      "sistema_afectado": "HRMS-SRV-01",
+      "datos_en_riesgo": true,
+      "sistema_critico": true,
+      "incidente_seguridad": true,
+      "ground_truth": {
+        "resultado": "escalar_critico",
+        "requiere_hil": true,
+        "nivel_escalacion": 3,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical",
+          "Security",
+          "Operations"
+        ],
+        "nivel_riesgo": "critico",
+        "tiempo_resolucion_esperado": "inmediato",
+        "razon_hil": "Posible brecha GDPR — requiere DPO y notificación AEPD en 72h"
+      }
+    },
+    {
+      "id": "C16",
+      "nivel": "Complejo",
+      "descripcion": "Caída total del ERP — todos los departamentos sin acceso, producción parada",
+      "departamento": "IT",
+      "usuario": "francisco.molina@acme.es",
+      "categoria": "infraestructura",
+      "subcategoria": "caida_total",
+      "prioridad_reportada": "critica",
+      "impacto_usuarios": 500,
+      "sistema_afectado": "ERP-MAIN",
+      "datos_en_riesgo": false,
+      "sistema_critico": true,
+      "incidente_seguridad": false,
+      "ground_truth": {
+        "resultado": "escalar_critico",
+        "requiere_hil": true,
+        "nivel_escalacion": 3,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical",
+          "Operations"
+        ],
+        "nivel_riesgo": "critico",
+        "tiempo_resolucion_esperado": "inmediato",
+        "razon_hil": "Sistema crítico de negocio caído — requiere aprobación CTO para activar DR"
+      }
+    },
+    {
+      "id": "C17",
+      "nivel": "Complejo",
+      "descripcion": "Ransomware detectado en 3 equipos de contabilidad — archivos cifrados",
+      "departamento": "Finanzas",
+      "usuario": "pilar.nunez@acme.es",
+      "categoria": "seguridad",
+      "subcategoria": "malware",
+      "prioridad_reportada": "critica",
+      "impacto_usuarios": 500,
+      "sistema_afectado": "CONT-PC-CLUSTER",
+      "datos_en_riesgo": true,
+      "sistema_critico": true,
+      "incidente_seguridad": true,
+      "ground_truth": {
+        "resultado": "escalar_critico",
+        "requiere_hil": true,
+        "nivel_escalacion": 3,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical",
+          "Security",
+          "Operations"
+        ],
+        "nivel_riesgo": "critico",
+        "tiempo_resolucion_esperado": "inmediato",
+        "razon_hil": "Ransomware activo — requiere aislamiento de red y decisión de pago/no pago por dirección"
+      }
+    },
+    {
+      "id": "C18",
+      "nivel": "Complejo",
+      "descripcion": "Pérdida irreversible de base de datos de clientes — backup corrupto",
+      "departamento": "IT",
+      "usuario": "raul.jimenez@acme.es",
+      "categoria": "datos",
+      "subcategoria": "perdida_datos",
+      "prioridad_reportada": "critica",
+      "impacto_usuarios": 500,
+      "sistema_afectado": "CRM-DB-MAIN",
+      "datos_en_riesgo": true,
+      "sistema_critico": true,
+      "incidente_seguridad": false,
+      "ground_truth": {
+        "resultado": "escalar_critico",
+        "requiere_hil": true,
+        "nivel_escalacion": 3,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical",
+          "Operations"
+        ],
+        "nivel_riesgo": "critico",
+        "tiempo_resolucion_esperado": "inmediato",
+        "razon_hil": "Pérdida de datos de clientes — posible obligación de notificación GDPR"
+      }
+    },
+    {
+      "id": "C19",
+      "nivel": "Complejo",
+      "descripcion": "Empleado reporta acceso a datos de nóminas de otros empleados — fallo de permisos",
+      "departamento": "RRHH",
+      "usuario": "beatriz.herrero@acme.es",
+      "categoria": "seguridad",
+      "subcategoria": "control_acceso",
+      "prioridad_reportada": "alta",
+      "impacto_usuarios": 150,
+      "sistema_afectado": "HRMS-APP-01",
+      "datos_en_riesgo": true,
+      "sistema_critico": false,
+      "incidente_seguridad": true,
+      "ground_truth": {
+        "resultado": "escalar_critico",
+        "requiere_hil": true,
+        "nivel_escalacion": 3,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical",
+          "Security"
+        ],
+        "nivel_riesgo": "critico",
+        "tiempo_resolucion_esperado": "2h",
+        "razon_hil": "Acceso indebido a datos personales de empleados — requiere evaluación DPO"
+      }
+    },
+    {
+      "id": "C20",
+      "nivel": "Complejo",
+      "descripcion": "Sistema de control industrial SCADA con anomalías — posible intrusión en red OT",
+      "departamento": "Producción",
+      "usuario": "alberto.campos@acme.es",
+      "categoria": "seguridad",
+      "subcategoria": "ot_security",
+      "prioridad_reportada": "critica",
+      "impacto_usuarios": 200,
+      "sistema_afectado": "SCADA-PLT-01",
+      "datos_en_riesgo": false,
+      "sistema_critico": true,
+      "incidente_seguridad": true,
+      "ground_truth": {
+        "resultado": "escalar_critico",
+        "requiere_hil": true,
+        "nivel_escalacion": 3,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical",
+          "Security",
+          "Operations"
+        ],
+        "nivel_riesgo": "critico",
+        "tiempo_resolucion_esperado": "inmediato",
+        "razon_hil": "Intrusión en red OT — riesgo para seguridad física de planta industrial"
+      }
+    }
+  ]
+}

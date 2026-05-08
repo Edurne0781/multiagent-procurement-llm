@@ -1,0 +1,393 @@
+{
+  "modelo": "M2_single_incident",
+  "metricas": {
+    "ARR": 40.0,
+    "HDA": 100.0,
+    "DER": 0.0,
+    "PT": 0.54
+  },
+  "resultados_por_caso": [
+    {
+      "caso_id": "C01",
+      "nivel": "Simple",
+      "decision": "resolver_automatico",
+      "escalo_hil": false,
+      "tiempo": 0.54,
+      "ground_truth": {
+        "resultado": "resolver_automatico",
+        "requiere_hil": false,
+        "nivel_escalacion": 1,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical"
+        ],
+        "nivel_riesgo": "bajo",
+        "tiempo_resolucion_esperado": "2h"
+      }
+    },
+    {
+      "caso_id": "C02",
+      "nivel": "Simple",
+      "decision": "resolver_automatico",
+      "escalo_hil": false,
+      "tiempo": 0.5,
+      "ground_truth": {
+        "resultado": "resolver_automatico",
+        "requiere_hil": false,
+        "nivel_escalacion": 1,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical"
+        ],
+        "nivel_riesgo": "bajo",
+        "tiempo_resolucion_esperado": "30min"
+      }
+    },
+    {
+      "caso_id": "C03",
+      "nivel": "Simple",
+      "decision": "resolver_automatico",
+      "escalo_hil": false,
+      "tiempo": 0.51,
+      "ground_truth": {
+        "resultado": "resolver_automatico",
+        "requiere_hil": false,
+        "nivel_escalacion": 1,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical"
+        ],
+        "nivel_riesgo": "bajo",
+        "tiempo_resolucion_esperado": "1h"
+      }
+    },
+    {
+      "caso_id": "C04",
+      "nivel": "Simple",
+      "decision": "resolver_automatico",
+      "escalo_hil": false,
+      "tiempo": 0.4,
+      "ground_truth": {
+        "resultado": "resolver_automatico",
+        "requiere_hil": false,
+        "nivel_escalacion": 1,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical"
+        ],
+        "nivel_riesgo": "bajo",
+        "tiempo_resolucion_esperado": "1h"
+      }
+    },
+    {
+      "caso_id": "C05",
+      "nivel": "Simple",
+      "decision": "resolver_automatico",
+      "escalo_hil": false,
+      "tiempo": 0.45,
+      "ground_truth": {
+        "resultado": "resolver_automatico",
+        "requiere_hil": false,
+        "nivel_escalacion": 1,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical"
+        ],
+        "nivel_riesgo": "bajo",
+        "tiempo_resolucion_esperado": "1h"
+      }
+    },
+    {
+      "caso_id": "C06",
+      "nivel": "Simple",
+      "decision": "resolver_automatico",
+      "escalo_hil": false,
+      "tiempo": 0.53,
+      "ground_truth": {
+        "resultado": "resolver_automatico",
+        "requiere_hil": false,
+        "nivel_escalacion": 1,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical"
+        ],
+        "nivel_riesgo": "bajo",
+        "tiempo_resolucion_esperado": "4h"
+      }
+    },
+    {
+      "caso_id": "C07",
+      "nivel": "Simple",
+      "decision": "resolver_automatico",
+      "escalo_hil": false,
+      "tiempo": 0.67,
+      "ground_truth": {
+        "resultado": "resolver_automatico",
+        "requiere_hil": false,
+        "nivel_escalacion": 1,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical",
+          "Operations"
+        ],
+        "nivel_riesgo": "bajo",
+        "tiempo_resolucion_esperado": "2h"
+      }
+    },
+    {
+      "caso_id": "C08",
+      "nivel": "Simple",
+      "decision": "resolver_automatico",
+      "escalo_hil": false,
+      "tiempo": 0.42,
+      "ground_truth": {
+        "resultado": "resolver_automatico",
+        "requiere_hil": false,
+        "nivel_escalacion": 1,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical"
+        ],
+        "nivel_riesgo": "bajo",
+        "tiempo_resolucion_esperado": "30min"
+      }
+    },
+    {
+      "caso_id": "C09",
+      "nivel": "Medio",
+      "decision": "escalar_nivel2",
+      "escalo_hil": true,
+      "tiempo": 0.51,
+      "ground_truth": {
+        "resultado": "escalar_nivel2",
+        "requiere_hil": false,
+        "nivel_escalacion": 2,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical",
+          "Operations"
+        ],
+        "nivel_riesgo": "medio",
+        "tiempo_resolucion_esperado": "4h"
+      }
+    },
+    {
+      "caso_id": "C10",
+      "nivel": "Medio",
+      "decision": "escalar_nivel2",
+      "escalo_hil": true,
+      "tiempo": 0.56,
+      "ground_truth": {
+        "resultado": "escalar_nivel2",
+        "requiere_hil": false,
+        "nivel_escalacion": 2,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical",
+          "Operations"
+        ],
+        "nivel_riesgo": "medio",
+        "tiempo_resolucion_esperado": "3h"
+      }
+    },
+    {
+      "caso_id": "C11",
+      "nivel": "Medio",
+      "decision": "escalar_nivel2",
+      "escalo_hil": true,
+      "tiempo": 0.48,
+      "ground_truth": {
+        "resultado": "escalar_nivel2",
+        "requiere_hil": false,
+        "nivel_escalacion": 2,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical",
+          "Operations"
+        ],
+        "nivel_riesgo": "medio",
+        "tiempo_resolucion_esperado": "6h"
+      }
+    },
+    {
+      "caso_id": "C12",
+      "nivel": "Medio",
+      "decision": "escalar_nivel2",
+      "escalo_hil": true,
+      "tiempo": 0.67,
+      "ground_truth": {
+        "resultado": "escalar_nivel2",
+        "requiere_hil": false,
+        "nivel_escalacion": 2,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical",
+          "Operations"
+        ],
+        "nivel_riesgo": "medio",
+        "tiempo_resolucion_esperado": "4h"
+      }
+    },
+    {
+      "caso_id": "C13",
+      "nivel": "Medio",
+      "decision": "escalar_nivel2",
+      "escalo_hil": true,
+      "tiempo": 0.81,
+      "ground_truth": {
+        "resultado": "escalar_nivel2",
+        "requiere_hil": false,
+        "nivel_escalacion": 2,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical",
+          "Security"
+        ],
+        "nivel_riesgo": "medio",
+        "tiempo_resolucion_esperado": "2h"
+      }
+    },
+    {
+      "caso_id": "C14",
+      "nivel": "Medio",
+      "decision": "escalar_critico",
+      "escalo_hil": true,
+      "tiempo": 0.71,
+      "ground_truth": {
+        "resultado": "escalar_nivel2",
+        "requiere_hil": false,
+        "nivel_escalacion": 2,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical",
+          "Operations"
+        ],
+        "nivel_riesgo": "alto",
+        "tiempo_resolucion_esperado": "2h"
+      }
+    },
+    {
+      "caso_id": "C15",
+      "nivel": "Complejo",
+      "decision": "escalar_critico",
+      "escalo_hil": true,
+      "tiempo": 0.64,
+      "ground_truth": {
+        "resultado": "escalar_critico",
+        "requiere_hil": true,
+        "nivel_escalacion": 3,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical",
+          "Security",
+          "Operations"
+        ],
+        "nivel_riesgo": "critico",
+        "tiempo_resolucion_esperado": "inmediato",
+        "razon_hil": "Posible brecha GDPR — requiere DPO y notificación AEPD en 72h"
+      }
+    },
+    {
+      "caso_id": "C16",
+      "nivel": "Complejo",
+      "decision": "escalar_critico",
+      "escalo_hil": true,
+      "tiempo": 0.48,
+      "ground_truth": {
+        "resultado": "escalar_critico",
+        "requiere_hil": true,
+        "nivel_escalacion": 3,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical",
+          "Operations"
+        ],
+        "nivel_riesgo": "critico",
+        "tiempo_resolucion_esperado": "inmediato",
+        "razon_hil": "Sistema crítico de negocio caído — requiere aprobación CTO para activar DR"
+      }
+    },
+    {
+      "caso_id": "C17",
+      "nivel": "Complejo",
+      "decision": "escalar_critico",
+      "escalo_hil": true,
+      "tiempo": 0.66,
+      "ground_truth": {
+        "resultado": "escalar_critico",
+        "requiere_hil": true,
+        "nivel_escalacion": 3,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical",
+          "Security",
+          "Operations"
+        ],
+        "nivel_riesgo": "critico",
+        "tiempo_resolucion_esperado": "inmediato",
+        "razon_hil": "Ransomware activo — requiere aislamiento de red y decisión de pago/no pago por dirección"
+      }
+    },
+    {
+      "caso_id": "C18",
+      "nivel": "Complejo",
+      "decision": "escalar_nivel2",
+      "escalo_hil": true,
+      "tiempo": 0.42,
+      "ground_truth": {
+        "resultado": "escalar_critico",
+        "requiere_hil": true,
+        "nivel_escalacion": 3,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical",
+          "Operations"
+        ],
+        "nivel_riesgo": "critico",
+        "tiempo_resolucion_esperado": "inmediato",
+        "razon_hil": "Pérdida de datos de clientes — posible obligación de notificación GDPR"
+      }
+    },
+    {
+      "caso_id": "C19",
+      "nivel": "Complejo",
+      "decision": "escalar_critico",
+      "escalo_hil": true,
+      "tiempo": 0.41,
+      "ground_truth": {
+        "resultado": "escalar_critico",
+        "requiere_hil": true,
+        "nivel_escalacion": 3,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical",
+          "Security"
+        ],
+        "nivel_riesgo": "critico",
+        "tiempo_resolucion_esperado": "2h",
+        "razon_hil": "Acceso indebido a datos personales de empleados — requiere evaluación DPO"
+      }
+    },
+    {
+      "caso_id": "C20",
+      "nivel": "Complejo",
+      "decision": "escalar_critico",
+      "escalo_hil": true,
+      "tiempo": 0.5,
+      "ground_truth": {
+        "resultado": "escalar_critico",
+        "requiere_hil": true,
+        "nivel_escalacion": 3,
+        "agentes_necesarios": [
+          "Reporter",
+          "Technical",
+          "Security",
+          "Operations"
+        ],
+        "nivel_riesgo": "critico",
+        "tiempo_resolucion_esperado": "inmediato",
+        "razon_hil": "Intrusión en red OT — riesgo para seguridad física de planta industrial"
+      }
+    }
+  ]
+}
