@@ -91,9 +91,15 @@ Results reveal four main findings:
         (HDA), evidencing the trade-off between automation and risk detection;
   \item reproducibility is confirmed at 100\% with \texttt{temperature=0.0}
         on five representative cases; and
-  \item replication in a second business process (incident management, 20~cases)
-        confirms generalisation of the findings: HDA\,=\,100\% with M2 and M4
-        when risk signals are explicit and quantifiable.
+  \item replication in four additional business processes (incident management,
+        customer onboarding, compliance check, and financial analysis, 20~cases
+        each) reveals a signal explicitness gradient: HDA ranges from 0\%
+        (strategic financial signals require 70b model) to 30.8\% (implicit
+        regulatory signals) to 83.3--100\% (mixed signals) to 100\% (explicit
+        binary flags); and
+  \item M4 reaches HDA\,=\,100\% in four of five processes, confirming that
+        the multi-agent architecture with a powerful decision model is robust
+        across different enterprise process types.
 \end{enumerate}
 The central finding is that multi-agent architecture requires models with
 sufficient capacity to benefit from specialisation: with small models, context
@@ -1158,11 +1164,10 @@ structural -- i.e., inherent to context distribution -- regardless of model.
 Second, extend the M5b uncertainty classifier by incorporating specific
 regulatory factors as explicit escalation signals, addressing the gap identified
 in the 10 undetected HiL cases.
-Third, replicate the experiment in three additional business processes (onboarding,
-compliance check, and financial analysis) -- the incident management replication
-has been executed and is reported in Section~\ref{sec:incident} -- to determine
-whether findings on compute equivalence and model diversity generalise beyond
-procurement.
+Third, extend the evaluation to additional enterprise processes beyond the
+five studied here -- such as HR management, customer service, or supply chain
+optimisation -- to further validate the signal explicitness gradient and
+identify new categories of semantic complexity.
 Fourth, connect the system with live ERP and CRM APIs to evaluate behaviour
 with ambiguous, incomplete, or inconsistent data.
 Fifth, investigate architectures with explicit cross-cutting synthesis -- an
@@ -1283,6 +1288,275 @@ consistent with the compute equivalence finding from Experiment~01.
            flags (\texttt{datos\_en\_riesgo}, \texttt{sistema\_critico}).}
   \label{fig:inc_hda_domain}
 \end{figure}
+
+
+%% ─────────────────────────────────────────────────────────────────────────────
+%% 12. EXPERIMENT 03 — CUSTOMER ONBOARDING
+%% ─────────────────────────────────────────────────────────────────────────────
+\section{Experiment~03: Customer Onboarding Replication}
+\label{sec:onboarding}
+
+\subsection{Dataset and Configuration}
+
+To further validate generalisation, the framework was replicated on a third
+enterprise process: customer onboarding at ACME Industrial S.A.
+Twenty cases with annotated ground truth were designed across three levels:
+Simple (C01--C08, standard clients without alerts), Medium (C09--C14,
+documentary and operational exceptions), and Complex (C15--C20, regulatory
+risk, AML, sanctions).
+Both B2B (15 cases) and B2C (5 cases) clients are represented.
+Of the 20~cases, 6~require HiL escalation -- all at the Complex level:
+high-risk country AML due diligence, sanctioned beneficial owner (UBO),
+Politically Exposed Person (PEP), AML investigation block, dual-use licence,
+and conflict of interest with opaque corporate structure.
+
+The system implements four specialised agents -- Commercial, Legal, Finance,
+and Compliance (decision-maker, llama-3.3-70b) -- with four mock APIs
+assessing client verification, KYC/AML compliance, credit risk, and legal
+contract requirements.
+Three variants were evaluated: M1 (RPA baseline), M2 (Single Agent 8b),
+and M4 (Multi-Agent mixed).
+
+\subsection{Results}
+
+\begin{table}[htbp]
+\centering
+\caption{Experiment~03 results -- Customer Onboarding (20 cases).
+         M4 reaches HDA\,=\,100\% and M2 reaches 83.3\%, both significantly
+         above the 30.8\% maximum from procurement, confirming the
+         domain signal-explicitness hypothesis.}
+\label{tab:onboarding}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Model} & \textbf{ARR} & \textbf{HDA} & \textbf{DER} & \textbf{PT (s)} \\
+\midrule
+M1 --- RPA baseline      & 100\% & 0\%    & 70\% & $\approx$0 \\
+M2 --- Single Agent 8b   &  75\% & 83.3\% & 45\% & 0.60 \\
+M4 --- Multi-Agent mixed &  70\% & 100\%  & 40\% & 4.68 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{figura_onb1_metrics}
+  \caption{Experiment~03 --- Customer Onboarding: ARR, HDA and DER for M1,
+           M2 and M4 (20 cases). M4 achieves HDA\,=\,100\% and M2 achieves
+           83.3\%, both above the target and well above procurement results.
+           DER is higher than in incident management due to the more nuanced
+           decision space in onboarding (conditional approvals, guarantees,
+           documentation requests).}
+  \label{fig:onb_metrics}
+\end{figure}
+
+\subsection{Findings and Three-Process Comparison}
+
+The most important finding is that M4 reaches HDA\,=\,100\% and M2 reaches
+83.3\% in customer onboarding -- a result intermediate between procurement
+(30.8\%) and incident management (100\%).
+This confirms the \emph{signal explicitness gradient} hypothesis with three
+data points: HDA increases monotonically as domain risk signals become more
+explicit and quantifiable.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.9\textwidth]{figura_onb2_hda_gradient}
+  \caption{HDA across three processes -- the signal explicitness gradient.
+           Procurement uses implicit regulatory signals (GDPR, AESA, CE
+           certification) that require domain-specific knowledge.
+           Onboarding uses mixed signals (PEP, AML, UBO) that are partially
+           explicit.
+           Incident management uses fully explicit binary flags
+           (\texttt{datos\_en\_riesgo}, \texttt{sistema\_critico}).
+           HDA increases monotonically: 30.8\%\,$\to$\,83.3--100\%\,$\to$\,100\%.}
+  \label{fig:onb_gradient}
+\end{figure}
+
+The onboarding case also reveals an important asymmetry between M2 and M4 on
+HDA: M2 detects 5 of 6 HiL cases (83.3\%) while M4 detects all 6 (100\%).
+The single case missed by M2 (C17: PEP detection) involves a risk factor that
+requires cross-cutting synthesis -- the PEP flag combined with extraordinarily
+high volume and lack of corporate justification -- exactly the pattern that the
+multi-agent architecture with a powerful decision model handles better.
+
+ARR is lower in onboarding (70--75\%) compared to procurement (76--100\%)
+because the onboarding decision space is more granular: many cases require
+conditional approvals, documentation requests, or credit guarantees rather
+than binary approve/reject decisions.
+The DER of 40--45\% reflects this complexity -- it is not random error but
+systematic under-specification of decision nuances, a known limitation of
+the current architecture.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{figura_onb3_crossprocess}
+  \caption{Cross-process comparison of ARR and HDA across all three
+           experiments. ARR remains above the 70\% target in procurement
+           and onboarding; incident management is more conservative by design.
+           HDA shows a clear upward gradient from procurement to incident
+           management, with onboarding occupying the intermediate position
+           predicted by the mixed signal hypothesis.}
+  \label{fig:onb_crossprocess}
+\end{figure}
+
+The three-experiment comparison consolidates the central finding of this paper:
+neither the single-agent nor the multi-agent architecture is universally
+superior -- both depend on the clarity of domain risk signals for HDA, and on
+model capacity for ARR.
+With explicit signals and a sufficiently powerful decision model, HDA\,=\,100\%
+is achievable across different business process types.
+
+
+%% ─────────────────────────────────────────────────────────────────────────────
+%% 13. EXPERIMENT 04 — COMPLIANCE CHECK
+%% ─────────────────────────────────────────────────────────────────────────────
+\section{Experiment~04: Compliance Check Replication}
+\label{sec:compliance}
+
+\subsection{Dataset and Configuration}
+
+The fourth process evaluated is the periodic compliance audit of active
+suppliers at ACME Industrial S.A.
+Twenty cases with annotated ground truth were designed across three levels:
+Simple (C01--C08, suppliers with clean history), Medium (C09--C14, documentary
+exceptions or supplier changes), and Complex (C15--C20, serious non-compliance).
+Of the 20~cases, 6~require HiL escalation: REACH regulatory sanction, GDPR
+data breach, serious workplace accident, OFAC international sanctions alert,
+shareholder conflict of interest, and invoicing fraud.
+
+The system implements four specialised agents -- Auditor, Legal, Finance, and
+Compliance (decision-maker, llama-3.3-70b) -- with four mock APIs assessing
+certifications, normative compliance, financial history, and contractual status.
+
+\subsection{Results}
+
+\begin{table}[htbp]
+\centering
+\caption{Experiment~04 results -- Compliance Check (20 cases).
+         M4 reaches HDA\,=\,100\% and M2 reaches 83.3\%, consistent with
+         the mixed-signal hypothesis.}
+\label{tab:compliance}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Model} & \textbf{ARR} & \textbf{HDA} & \textbf{DER} & \textbf{PT (s)} \\
+\midrule
+M1 --- RPA baseline      & 100\% & 0\%    & 70\% & $\approx$0 \\
+M2 --- Single Agent 8b   &  70\% & 83.3\% & 40\% & 0.60 \\
+M4 --- Multi-Agent mixed &  65\% & 100\%  & 35\% & 3.56 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{figura_comp1_metrics}
+  \caption{Experiment~04 --- Compliance Check: ARR, HDA and DER for M1, M2
+           and M4 (20 cases). M4 reaches HDA\,=\,100\% and M2 reaches 83.3\%,
+           consistent with the mixed-signal pattern from onboarding.}
+  \label{fig:comp_metrics}
+\end{figure}
+
+\subsection{Findings}
+
+M4 reaches HDA\,=\,100\% and M2 reaches 83.3\% -- consistent with the
+mixed-signal hypothesis. The one case missed by M2 (C17: serious workplace
+accident) requires cross-cutting synthesis -- the accident flag combined with
+ongoing labour inspection -- exactly the pattern handled better by the
+multi-agent architecture with a powerful decision model.
+Compliance risk signals are mixed: explicit (OFAC sanctions, GDPR breach,
+invoicing fraud) and implicit (shareholder conflict of interest, workplace
+accident), producing intermediate HDA results between procurement and incident
+management.
+
+
+%% ─────────────────────────────────────────────────────────────────────────────
+%% 14. EXPERIMENT 05 — FINANCIAL ANALYSIS
+%% ─────────────────────────────────────────────────────────────────────────────
+\section{Experiment~05: Financial Analysis}
+\label{sec:financial}
+
+\subsection{Dataset and Configuration}
+
+The fifth and final process evaluated is the analysis and approval of
+investment and extraordinary expenditure requests at ACME Industrial S.A.
+Twenty cases with annotated ground truth were designed across three levels:
+Simple (C01--C08, operational expenditure within approved budget), Medium
+(C09--C14, budget exceptions or additional requirements), and Complex
+(C15--C20, high-risk strategic investments).
+Of the 20~cases, 6~require HiL escalation: company acquisition, critical
+digital transformation, international expansion, divestment with labour
+impact, significant debt increase, and urgent post-cybersecurity-incident
+investment.
+
+The system implements four specialised agents -- Analyst, Controller, Risk,
+and CFO (decision-maker, llama-3.3-70b) -- with four mock APIs assessing
+the financial request, ROI, operational risk, and controller verification.
+
+\subsection{Results}
+
+\begin{table}[htbp]
+\centering
+\caption{Experiment~05 results -- Financial Analysis (20 cases).
+         M2 reaches HDA\,=\,0\% -- identical to the RPA baseline -- while
+         M4 reaches HDA\,=\,100\%. This is the only process where the single
+         agent completely fails HiL detection.}
+\label{tab:financial}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Model} & \textbf{ARR} & \textbf{HDA} & \textbf{DER} & \textbf{PT (s)} \\
+\midrule
+M1 --- RPA baseline      & 100\% & 0\%   & 60\% & $\approx$0 \\
+M2 --- Single Agent 8b   & 100\% & 0\%   & 60\% & 0.69 \\
+M4 --- Multi-Agent mixed &  70\% & 100\% & 30\% & 4.81 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{figura_fin1_metrics}
+  \caption{Experiment~05 --- Financial Analysis: ARR, HDA and DER for M1,
+           M2 and M4 (20 cases). M2 and M1 both reach HDA\,=\,0\% -- the
+           only experiment where the single agent does not surpass the RPA
+           baseline in HiL detection.}
+  \label{fig:fin_metrics}
+\end{figure}
+
+\subsection{Findings and Complete Cross-Process Analysis}
+
+The most important finding of Experiment~05 is that M2 reaches HDA\,=\,0\%
+-- identical to the RPA baseline.
+The single agent treats all strategic financial signals
+(\texttt{operacion\_estrategica}, \texttt{endeudamiento\_significativo},
+\texttt{expansion\_internacional}) as factors for autonomous decision-making
+rather than escalating to the human.
+Only M4 with the CFO 70b model reaches HDA\,=\,100\%, correctly identifying
+all 6 critical cases.
+This is the only process where the gap between M2 and M4 on HDA is absolute
+(0\% vs.\ 100\%), confirming that strategic financial decisions require the
+powerful model in the decision role.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{figura_fin2_hda_complete}
+  \caption{Complete HDA analysis across all five processes.
+           Financial analysis introduces a new category: quantitatively
+           explicit but semantically complex signals that only the 70b model
+           interprets correctly as HiL cases.
+           The gradient is non-linear: syntactic explicitness does not
+           guarantee detection without sufficient semantic capacity.}
+  \label{fig:fin_hda_complete}
+\end{figure}
+
+With five experiments completed, the cross-process analysis reveals that the
+signal explicitness gradient is not linear but depends on the semantic
+complexity of the domain.
+Strategic financial signals are quantitatively explicit (amount, budget excess
+ratio) but semantically complex -- their interpretation as HiL cases requires
+understanding of strategic business context that only the 70b model possesses.
+This adds a new dimension to the central finding: the syntactic explicitness
+of a signal does not guarantee its detection if the model lacks the semantic
+capacity to interpret it correctly.
 
 \bibliographystyle{elsarticle-harv}
 \bibliography{projener_references}

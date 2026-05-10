@@ -1,0 +1,348 @@
+{
+  "modelo": "M2_single_financial",
+  "metricas": {
+    "ARR": 100.0,
+    "HDA": 0.0,
+    "DER": 60.0,
+    "PT": 0.69
+  },
+  "resultados_por_caso": [
+    {
+      "caso_id": "C01",
+      "nivel": "Simple",
+      "decision": "aprobacion_automatica",
+      "escalo_hil": false,
+      "tiempo": 0.86,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C02",
+      "nivel": "Simple",
+      "decision": "aprobacion_automatica",
+      "escalo_hil": false,
+      "tiempo": 0.66,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C03",
+      "nivel": "Simple",
+      "decision": "aprobacion_automatica",
+      "escalo_hil": false,
+      "tiempo": 0.48,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C04",
+      "nivel": "Simple",
+      "decision": "aprobacion_automatica",
+      "escalo_hil": false,
+      "tiempo": 0.53,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C05",
+      "nivel": "Simple",
+      "decision": "aprobacion_automatica",
+      "escalo_hil": false,
+      "tiempo": 0.7,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C06",
+      "nivel": "Simple",
+      "decision": "aprobacion_automatica",
+      "escalo_hil": false,
+      "tiempo": 0.54,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C07",
+      "nivel": "Simple",
+      "decision": "aprobacion_automatica",
+      "escalo_hil": false,
+      "tiempo": 1.48,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Analista"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C08",
+      "nivel": "Simple",
+      "decision": "aprobacion_automatica",
+      "escalo_hil": false,
+      "tiempo": 0.53,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C09",
+      "nivel": "Medio",
+      "decision": "aprobacion_condicional",
+      "escalo_hil": false,
+      "tiempo": 0.44,
+      "ground_truth": {
+        "resultado": "aprobacion_con_reasignacion_presupuestaria",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller",
+          "Risk"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C10",
+      "nivel": "Medio",
+      "decision": "solicitud_documentacion",
+      "escalo_hil": false,
+      "tiempo": 0.48,
+      "ground_truth": {
+        "resultado": "aprobacion_condicional_documentacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller",
+          "Risk"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C11",
+      "nivel": "Medio",
+      "decision": "aprobacion_condicional",
+      "escalo_hil": false,
+      "tiempo": 0.46,
+      "ground_truth": {
+        "resultado": "aprobacion_condicional_direccion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller",
+          "Risk"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C12",
+      "nivel": "Medio",
+      "decision": "aprobacion_condicional",
+      "escalo_hil": false,
+      "tiempo": 0.66,
+      "ground_truth": {
+        "resultado": "aprobacion_condicional_homologar_proveedor",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller",
+          "Risk"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C13",
+      "nivel": "Medio",
+      "decision": "aprobacion_automatica",
+      "escalo_hil": false,
+      "tiempo": 0.74,
+      "ground_truth": {
+        "resultado": "aprobacion_con_reserva_contingencia",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller",
+          "Risk"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C14",
+      "nivel": "Medio",
+      "decision": "aprobacion_condicional",
+      "escalo_hil": false,
+      "tiempo": 0.72,
+      "ground_truth": {
+        "resultado": "aprobacion_condicional_clausulas_salida",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller",
+          "Risk"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C15",
+      "nivel": "Complejo",
+      "decision": "aprobacion_condicional",
+      "escalo_hil": false,
+      "tiempo": 0.88,
+      "ground_truth": {
+        "resultado": "escalacion_hil_aprobacion_consejo",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller",
+          "Risk",
+          "CFO"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C16",
+      "nivel": "Complejo",
+      "decision": "rechazo",
+      "escalo_hil": false,
+      "tiempo": 0.89,
+      "ground_truth": {
+        "resultado": "escalacion_hil_riesgo_tecnologico_critico",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller",
+          "Risk",
+          "CFO"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C17",
+      "nivel": "Complejo",
+      "decision": "aprobacion_condicional",
+      "escalo_hil": false,
+      "tiempo": 0.74,
+      "ground_truth": {
+        "resultado": "escalacion_hil_expansion_internacional",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller",
+          "Risk",
+          "CFO"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C18",
+      "nivel": "Complejo",
+      "decision": "aprobacion_condicional",
+      "escalo_hil": false,
+      "tiempo": 0.54,
+      "ground_truth": {
+        "resultado": "escalacion_hil_desinversion_impacto_laboral",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller",
+          "Risk",
+          "CFO"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C19",
+      "nivel": "Complejo",
+      "decision": "solicitud_documentacion",
+      "escalo_hil": false,
+      "tiempo": 0.7,
+      "ground_truth": {
+        "resultado": "escalacion_hil_endeudamiento_significativo",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller",
+          "Risk",
+          "CFO"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C20",
+      "nivel": "Complejo",
+      "decision": "aprobacion_automatica",
+      "escalo_hil": false,
+      "tiempo": 0.7,
+      "ground_truth": {
+        "resultado": "escalacion_hil_inversion_urgente_ciberseguridad",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller",
+          "Risk",
+          "CFO"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    }
+  ]
+}
