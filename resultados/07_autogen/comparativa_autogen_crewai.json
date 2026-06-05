@@ -1,0 +1,29 @@
+{
+  "experimento": "AutoGen_vs_CrewAI",
+  "arquitectura": "5 agentes especializados, llama-3.1-8b, 50 casos procurement",
+  "CrewAI_1.14.2": {
+    "modelo": "M3 — Multi-Agent CrewAI (llama-3.1-8b-instant)",
+    "total_casos": 50,
+    "ARR": 68.0,
+    "HDA": 30.8,
+    "DER": 28.0,
+    "PT": 1.74,
+    "TCC": 0
+  },
+  "AutoGen_0.7.5": {
+    "modelo": "AutoGen_0.7.5_Multi-Small",
+    "framework": "AutoGen 0.7.5 (Microsoft)",
+    "total_casos": 50,
+    "ARR": 100.0,
+    "HDA": 0.0,
+    "DER": 76.0,
+    "PT": 6.55,
+    "TCC": 750
+  },
+  "diferencias": {
+    "ARR_pp": 32.0,
+    "HDA_pp": -30.8,
+    "DER_pp": 48.0,
+    "PT_s": 4.81
+  }
+}

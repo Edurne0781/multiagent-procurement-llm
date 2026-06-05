@@ -1,0 +1,1197 @@
+{
+  "modelo": "M2x_r3",
+  "metricas": {
+    "modelo": "M2x — Réplica 3",
+    "ARR": 80.0,
+    "HDA": 53.8,
+    "DER": 16.0,
+    "PT": 0.67
+  },
+  "resultados_por_caso": [
+    {
+      "caso_id": "C01",
+      "nivel": "Simple",
+      "importe": 150,
+      "decision_m2x": "aprobado",
+      "razon": "El proveedor está aprobado, hay presupuesto disponible y no hay normativa especial aplicable",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.5,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C02",
+      "nivel": "Simple",
+      "importe": 80,
+      "decision_m2x": "aprobado",
+      "razon": "La solicitud cumple con todos los criterios de análisis de proveedor, financiero, legal y compliance.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.52,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C03",
+      "nivel": "Simple",
+      "importe": 200,
+      "decision_m2x": "aprobado",
+      "razon": "Los análisis de proveedor, financiero, legal y compliance no muestran inconvenientes significativos para aprobar la renovación de la suscripción antivirus anual.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.5,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C04",
+      "nivel": "Simple",
+      "importe": 160,
+      "decision_m2x": "aprobado",
+      "razon": "La solicitud cumple con todos los criterios y no hay impedimentos legales, financieros o de compliance",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.45,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C05",
+      "nivel": "Simple",
+      "importe": 300,
+      "decision_m2x": "aprobado",
+      "razon": "Todo ok con proveedor, presupuesto y cláusulas. Cumple con normativa y nivel riesgo es bajo. No tiene urgencia. Puede firmar y operar el proveedor.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.52,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C06",
+      "nivel": "Simple",
+      "importe": 350,
+      "decision_m2x": "aprobado",
+      "razon": "Solicitude cumpliendo con los requisitos de proveedor, financiero, legal y compliance. Presupuesto disponible y autonomía para aprobación.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 1.05,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C07",
+      "nivel": "Simple",
+      "importe": 120,
+      "decision_m2x": "aprobado",
+      "razon": "Se aprobó la solicitud de adquisición de 10 licencias Microsoft 365 mensuales por un importe total de 120€, ya que se cuenta con presupuesto suficiente y la empresa CloudSoft Europe tiene aprobación para operar. Además, no existe alerta ni riesgo contractual significativo en el proceso de contratación y la empresa cumple con las normativas aplicables.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.78,
+      "ground_truth": {
+        "resultado": "aprobacion_con_nota",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C08",
+      "nivel": "Simple",
+      "importe": 95,
+      "decision_m2x": "aprobado",
+      "razon": "La solicitud cumple con los criterios de análisis financiero, legal y compliance, y se trata de un proveedor aprobado y que puede operar.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.63,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C09",
+      "nivel": "Simple",
+      "importe": 900,
+      "decision_m2x": "aprobado",
+      "razon": "Proceso de solicitud normal, proveedor aprobado, presupuesto disponible y niveles de autorización adecuados. Cumple con la normativa y no representa un riesgo contractual.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.48,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C10",
+      "nivel": "Simple",
+      "importe": 75,
+      "decision_m2x": "aprobado",
+      "razon": "La solicitud se ajusta a los presupuestos disponibles y el proveedor cuenta con un estado aprobado, lo que reduce los riesgos legales y comerciales.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.51,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C11",
+      "nivel": "Simple",
+      "importe": 250,
+      "decision_m2x": "aprobado",
+      "razon": "La solicitud cumple con todos los parámetros solicitados, ya sea a nivel de proveedor, finanzas, legal y compliance.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.5,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C12",
+      "nivel": "Simple",
+      "importe": 60,
+      "decision_m2x": "aprobado",
+      "razon": "La solicitud cumple con los criterios financieros, legales y de compliance, y se considera de interés para la empresa",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.52,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C13",
+      "nivel": "Simple",
+      "importe": 40,
+      "decision_m2x": "aprobado",
+      "razon": "La solicitud de compra de cables HDMI de 40€, por 10 unidades, se encuentra dentro del presupuesto disponible y su aprobación es automática. El proveedor está aprobado y opera sin obstáculos. En el análisis legal y compliance, no se detectaron problemas o riesgos significativos.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.68,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C14",
+      "nivel": "Simple",
+      "importe": 140,
+      "decision_m2x": "aprobado",
+      "razon": "",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 1.05,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C15",
+      "nivel": "Simple",
+      "importe": 180,
+      "decision_m2x": "aprobado",
+      "razon": "Revisa todos los pasos y comprobamos que cumple con todos los requisitos y no hay ninguna alerta ni riesgo asociado a la orden de compra",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.57,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C16",
+      "nivel": "Simple",
+      "importe": 450,
+      "decision_m2x": "aprobado",
+      "razon": "Se cuenta con presupuesto disponible y no existen alertas de riesgo en los análisis de proveedor, financiero, legal y compliance.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.62,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C17",
+      "nivel": "Simple",
+      "importe": 240,
+      "decision_m2x": "aprobado",
+      "razon": "La renovación del servicio antispam email anual de la empresa CloudSoft Europe se ajusta al presupuesto disponible y no plantea riesgos contractuales o de cumplimiento. Además, el proveedor está aprobado y puede operar.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.7,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C18",
+      "nivel": "Simple",
+      "importe": 120,
+      "decision_m2x": "aprobado",
+      "razon": "La solicitud se ajusta a los presupuestos disponibles y el proveedor tiene un estado aprobado, no hay ninguna alerta, ni riesgo contractual alto, ni nivel de riesgo elevado en cumplimiento, por lo que se puede proceder a la aprobación directa.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.64,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C19",
+      "nivel": "Simple",
+      "importe": 85,
+      "decision_m2x": "aprobado",
+      "razon": "Requisito de urgencia falso y presupuesto disponible, operaciones del proveedor aprobadas y cumplimiento de normativa",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.46,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C20",
+      "nivel": "Simple",
+      "importe": 50,
+      "decision_m2x": "aprobado",
+      "razon": "La solicitud de compra es urgente, pero no hay problemas con los proveedores, la financiación, la legalidad o el cumplimiento. Además, la compra se ajusta dentro de los límites presupuestarios disponibles.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.47,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C21",
+      "nivel": "Medio",
+      "importe": 800,
+      "decision_m2x": "rechazado",
+      "razon": "El proveedor no está aprobado y no puede operar. Además, no puede firmar el contrato y el riesgo contractual es crítico.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.53,
+      "ground_truth": {
+        "resultado": "registro_proveedor_y_validacion_legal",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C22",
+      "nivel": "Medio",
+      "importe": 3500,
+      "decision_m2x": "aprobado",
+      "razon": "La solicitud cumple con los criterios financieros y la compra se ajusta al presupuesto disponible, no se presentan riesgos legales ni de compliance y el proveedor posee buen estado de aprobación.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.62,
+      "ground_truth": {
+        "resultado": "escalacion_finance_reasignacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C23",
+      "nivel": "Medio",
+      "importe": 1200,
+      "decision_m2x": "rechazado",
+      "razon": "El proveedor no puede operar ni tiene estado aprobado, lo que puede afectar la calidad del servicio y la entrega del evento.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.49,
+      "ground_truth": {
+        "resultado": "validacion_legal_y_aprobacion_condicionada",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C24",
+      "nivel": "Medio",
+      "importe": 5000,
+      "decision_m2x": "rechazado",
+      "razon": "La cláusula de exclusividad y la renovación automática presentan riesgos contractuales elevados, pero el análisis de compliance indica un nivel de riesgo bajo. Sin embargo, el análisis legal determinó que no se puede firmar el contrato actualmente, lo que hace que la decisión final sea rechazar la solicitud de compra.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.45,
+      "ground_truth": {
+        "resultado": "revision_legal_obligatoria_antes_de_firmar",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C25",
+      "nivel": "Medio",
+      "importe": 4800,
+      "decision_m2x": "aprobado",
+      "razon": "La renovación del servidor cloud con CloudSoft Europe no supera el déficit presupuestario, el presupuesto disponible es 5000€ y la solicitud asciende a 4800€. Además, el proveedor ya tiene estado aprobado, no hay cláusulas ni riesgos contractuales, y cumple con las normativas aplicables. La acción requerida es aprobación directa.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.67,
+      "ground_truth": {
+        "resultado": "reasignacion_presupuestaria_o_fraccionamiento",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C26",
+      "nivel": "Medio",
+      "importe": 2000,
+      "decision_m2x": "rechazado",
+      "razon": "",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.46,
+      "ground_truth": {
+        "resultado": "validacion_legal_compliance_y_registro",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C27",
+      "nivel": "Medio",
+      "importe": 1500,
+      "decision_m2x": "rechazado",
+      "razon": "La falta de capacidad operativa del proveedor y la urgencia de la solicitud no permiten una respuesta segura y eficiente.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.52,
+      "ground_truth": {
+        "resultado": "fast_track_con_validacion_posterior",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C28",
+      "nivel": "Medio",
+      "importe": 6000,
+      "decision_m2x": "aprobado",
+      "razon": "Se ha analizado la solicitud de manera integral, considerando los pasos de análisis de proveedor, financiero, legal y compliance. El proveedor está aprobado y puede operar, hay presupuesto disponible, pero hay cláusulas contractuales de penalización de salida y renovación automática con riesgo contractual alto. Sin embargo, no se requiere ninguna acción adicional por parte de la unidad de compliance. Se debe solicitar la revisión del contrato a la unidad de legal para garantizar que se han evaluado todos los riesgos.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.74,
+      "ground_truth": {
+        "resultado": "revision_legal_clausulas_penalizacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C29",
+      "nivel": "Medio",
+      "importe": 2800,
+      "decision_m2x": "escalado_hil",
+      "razon": "No se cuenta con los recursos financieros disponibles para cubrir la totalidad del presupuesto solicitado",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.46,
+      "ground_truth": {
+        "resultado": "escalacion_reasignacion_presupuestaria",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C30",
+      "nivel": "Medio",
+      "importe": 950,
+      "decision_m2x": "escalada_hil",
+      "razon": "El proveedor aún no está aprobado y no puede operar, aunque el presupuesto está disponible y el análisis legal y compliance no encuentran problemas; sin embargo, se considera que la escala para obtener más información sobre el estado del proveedor y verificar su capacidad para operar.",
+      "escalo_hil": true,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.63,
+      "ground_truth": {
+        "resultado": "validacion_nda_y_aprobacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C31",
+      "nivel": "Medio",
+      "importe": 8000,
+      "decision_m2x": "aprobado",
+      "razon": "El proveedor ErgoMobel GmbH tiene un estado aprobado y puede operar, la solicitud no supera el presupuesto disponible, pero se requiere aprobación directa por parte del agente financiero para superar esta restricción, el riesgo contractual es alto debido a las cláusulas limitación de responsabilidad baja, pero no es un impedimento absoluto para la aprobación, y el nivel de riesgo de compliance es bajo.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 1.04,
+      "ground_truth": {
+        "resultado": "revision_legal_garantias_y_aprobacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C32",
+      "nivel": "Medio",
+      "importe": 2200,
+      "decision_m2x": "aprobado",
+      "razon": "La solicitud de compra cumple con los requisitos financieros, legales y de compliance, y el proveedor cuenta con buenas credenciales, lo que justifica la aprobación de la sustitución urgente del ordenador para directivo, sin embargo, se debería de verificar si el presupuesto disponible de 5000€ es suficiente para cubrir la totalidad del importe del 2200€, antes de tomar la decisión final",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.69,
+      "ground_truth": {
+        "resultado": "aprobacion_fast_track_con_justificacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C33",
+      "nivel": "Medio",
+      "importe": 5500,
+      "decision_m2x": "rechazado",
+      "razon": "No se tiene presupuesto aprobado para la renovación de muebles",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.43,
+      "ground_truth": {
+        "resultado": "fraccionamiento_o_rechazo_parcial",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C34",
+      "nivel": "Medio",
+      "importe": 1800,
+      "decision_m2x": "escalado_hil",
+      "razon": "Proveedores no aprobados y no pueden operar en el ámbito de la seguridad física de la oficina, lo que representa un riesgo adicional para la integridad de nuestros activos",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.56,
+      "ground_truth": {
+        "resultado": "compliance_y_legal_validacion_completa",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C35",
+      "nivel": "Medio",
+      "importe": 12000,
+      "decision_m2x": "escalado_hil",
+      "razon": "El software ERP módulo adicional con alto importe requiere aprobación de niveles superiores debido a la presencia de cláusulas de riesgo contractual y la necesidad de aprobación directa por parte de la función de compliance.",
+      "escalo_hil": true,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.59,
+      "ground_truth": {
+        "resultado": "legal_finance_aprobacion_direccion",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C36",
+      "nivel": "Medio",
+      "importe": 3200,
+      "decision_m2x": "escalado_hil",
+      "razon": "Urgencia reportada por facilities, aunque se requiere aprobación del proveedor y se cumple con la normativa, se sugiere escalada al responsable de compra para revisar la situación.",
+      "escalo_hil": true,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.61,
+      "ground_truth": {
+        "resultado": "fast_track_registro_posterior",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C37",
+      "nivel": "Medio",
+      "importe": 7500,
+      "decision_m2x": "escálalo a hil",
+      "razon": "Presupuesto disponible insuficiente y requerimiento urgente",
+      "escalo_hil": true,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 1.0,
+      "ground_truth": {
+        "resultado": "reasignacion_entre_departamentos",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C38",
+      "nivel": "Medio",
+      "importe": 3000,
+      "decision_m2x": "rechazado",
+      "razon": "No se recomienda contratar al proveedor al no haber estado aprobado y no poder operar, adicionalmente existen riesgos contractuales críticos y no se puede firmar el contrato",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 1.45,
+      "ground_truth": {
+        "resultado": "validacion_ip_nda_y_aprobacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C39",
+      "nivel": "Complejo",
+      "importe": 15000,
+      "decision_m2x": "rechazado",
+      "razon": "La solicitud no cuenta con presupuesto disponible ni certificación CE requerida, por lo que no se puede realizar la importación",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.7,
+      "ground_truth": {
+        "resultado": "rechazo_hasta_certificacion_ce",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C40",
+      "nivel": "Complejo",
+      "importe": 8000,
+      "decision_m2x": "escalado_hil",
+      "razon": "",
+      "escalo_hil": true,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.49,
+      "ground_truth": {
+        "resultado": "bloqueo_gdpr_escalacion_hil_obligatoria",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C41",
+      "nivel": "Complejo",
+      "importe": 45000,
+      "decision_m2x": "escalado_hil",
+      "razon": "Se requiere verificación adicional por riesgo contractual alto, cláusulas de exclusividad y penalización por salida.",
+      "escalo_hil": true,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 1.31,
+      "ground_truth": {
+        "resultado": "aprobacion_escalonada_multidepartamento",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C42",
+      "nivel": "Complejo",
+      "importe": 2500,
+      "decision_m2x": "escalado_hil",
+      "razon": "Solicitud de productos químicos para limpieza industrial sin ficha técnica SDS, con alerta de no cumple con normativa REACH + PRL.",
+      "escalo_hil": true,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.54,
+      "ground_truth": {
+        "resultado": "bloqueo_hasta_fichas_seguridad",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C43",
+      "nivel": "Complejo",
+      "importe": 20000,
+      "decision_m2x": "rechazado",
+      "razon": "Conflicto de intereses y falta de presupuesto aprobado",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.43,
+      "ground_truth": {
+        "resultado": "escalacion_hil_obligatoria_conflicto_interes",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C44",
+      "nivel": "Complejo",
+      "importe": 18000,
+      "decision_m2x": "rechazado",
+      "razon": "La solicitud de compra se encuentra restringida por la normativa AESA / EASA, que no se cumple en la solicitud actual y se requiere subsanar y reenviar.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 1.57,
+      "ground_truth": {
+        "resultado": "bloqueo_hasta_licencia_aesa",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C45",
+      "nivel": "Complejo",
+      "importe": 120000,
+      "decision_m2x": "escalado_hil",
+      "razon": "La combinación de factores negativos en los pasos 1, 2 y 3 supera al beneficio de cumplir con la normativa en el paso 4.",
+      "escalo_hil": true,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.41,
+      "ground_truth": {
+        "resultado": "escalacion_hil_aprobacion_consejo",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C46",
+      "nivel": "Complejo",
+      "importe": 5000,
+      "decision_m2x": "rechazado",
+      "razon": "No cumple con la normativa privacidad laboral y GDPR, lo que hace que el proyecto sea incompatible con la empresa.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.59,
+      "ground_truth": {
+        "resultado": "bloqueo_legal_compliance_alternativa_propuesta",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C47",
+      "nivel": "Complejo",
+      "importe": 35000,
+      "decision_m2x": "aprobado",
+      "razon": "El monto solicitado no supera el presupuesto disponible, lo que permite considerar la solicitud de compra desde una perspectiva financiera. Sin embargo, es importante tener en cuenta que el Proveedor no puede operar, lo que representa un riesgo de no entrega del servicio solicitado.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.61,
+      "ground_truth": {
+        "resultado": "evaluacion_tecnica_legal_financiera_larga",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C48",
+      "nivel": "Complejo",
+      "importe": 60000,
+      "decision_m2x": "escalado_hidro",
+      "razon": "El proveedor ha incumplido el SLA en un 40% y no se ha alcanzado el presupuesto aprobado. La cláusula de renovación automática no se puede aprovechar debido al incumplimiento del SLA.",
+      "escalo_hil": true,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.5,
+      "ground_truth": {
+        "resultado": "renegociacion_o_cambio_proveedor",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C49",
+      "nivel": "Complejo",
+      "importe": 25000,
+      "decision_m2x": "rechazado",
+      "razon": "La solicitud de compra de equipos médicos para salud laboral no cumple con la normativa del Reglamento Products Sanitarios y no se dispone de presupuesto aprobado.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 1.77,
+      "ground_truth": {
+        "resultado": "bloqueo_total_hasta_homologacion",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C50",
+      "nivel": "Complejo",
+      "importe": 200000,
+      "decision_m2x": "escalado_hil",
+      "razon": "Problemas con el proveedor y cláusulas contractuales que generan alto riesgo contractual, además de que la aprobación financiera es inexistente",
+      "escalo_hil": true,
+      "agentes_usados": [
+        "single_agent_expanded"
+      ],
+      "tokens_estimados": 750,
+      "tiempo_seg": 0.55,
+      "ground_truth": {
+        "resultado": "licitacion_formal_aprobacion_consejo",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    }
+  ]
+}

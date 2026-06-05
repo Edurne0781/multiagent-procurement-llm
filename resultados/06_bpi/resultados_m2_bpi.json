@@ -1,0 +1,865 @@
+{
+  "modelo": "M2_BPI",
+  "metricas": {
+    "modelo": "M2_SingleAgent_BPI2019",
+    "dataset": "BPI_Challenge_2019",
+    "total_casos": 50,
+    "ARR": 84.0,
+    "HDA": 45.5,
+    "DER": 16.0,
+    "PT": 0.47,
+    "TCC": 0
+  },
+  "resultados_por_caso": [
+    {
+      "caso_id": "BPI_01",
+      "caso_real_bpi": "4507032049_00010",
+      "nivel": "Simple",
+      "importe": 3683.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "La solicitud de compra cumple con todos los criterios y tiene un riesgo bajo",
+      "escalo_hil": false,
+      "tiempo_seg": 0.66,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_02",
+      "caso_real_bpi": "4508052581_00270",
+      "nivel": "Simple",
+      "importe": 51.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "CUMPLE TODO LO REQUERIDO",
+      "escalo_hil": false,
+      "tiempo_seg": 0.31,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_03",
+      "caso_real_bpi": "4508061531_00020",
+      "nivel": "Simple",
+      "importe": 2417.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "La solicitud de compra tiene un presupuesto aceptable y el proveedor ha sido aprobado.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.24,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_04",
+      "caso_real_bpi": "4508048963_00700",
+      "nivel": "Simple",
+      "importe": 107.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "Complye con todos los criterios: presupesto OK, proveedor aprobado, riesgo bajo, cumplimiento de los estándares de seguridad del BPI",
+      "escalo_hil": false,
+      "tiempo_seg": 0.5,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_05",
+      "caso_real_bpi": "4507024471_00030",
+      "nivel": "Simple",
+      "importe": 36.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "La solicitud de compra cumple con todos los criterios y está dentro de los límites presupuestarios.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.4,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_06",
+      "caso_real_bpi": "4508075755_00020",
+      "nivel": "Simple",
+      "importe": 57.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "Compliant con estándares de compra y presupuesto disponible.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.4,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_07",
+      "caso_real_bpi": "4507005407_00230",
+      "nivel": "Simple",
+      "importe": 147.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "rechazado",
+      "razon": "El proveedor ha sido suspendido",
+      "escalo_hil": true,
+      "tiempo_seg": 0.42,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_08",
+      "caso_real_bpi": "4507001577_00010",
+      "nivel": "Simple",
+      "importe": 59.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "Solicitud de compra estándar por un monto menor a 60.00 EUR y el proveedor ya ha sido aprobado",
+      "escalo_hil": false,
+      "tiempo_seg": 0.48,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_09",
+      "caso_real_bpi": "4507021568_00030",
+      "nivel": "Simple",
+      "importe": 1993.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "rechazado",
+      "razon": "La solicitud de compra no supera la verificación de Compliance",
+      "escalo_hil": false,
+      "tiempo_seg": 0.41,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_10",
+      "caso_real_bpi": "4507004611_00300",
+      "nivel": "Simple",
+      "importe": 74.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "Solicitud de compra estándar de 74.00 EUR con presupuesto aprobado y riesgo bajo, por lo que se aprueba automaticamente",
+      "escalo_hil": false,
+      "tiempo_seg": 0.5,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_11",
+      "caso_real_bpi": "4508063173_00090",
+      "nivel": "Simple",
+      "importe": 411.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "La solicitud de compra cumple con todos los criterios de cumplimiento y no requiere escalamiento a un nivel de Hil",
+      "escalo_hil": false,
+      "tiempo_seg": 0.49,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_12",
+      "caso_real_bpi": "4508051172_00010",
+      "nivel": "Simple",
+      "importe": 769.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "La solicitud se encuentra dentro del presupuesto y no requiere High Level",
+      "escalo_hil": false,
+      "tiempo_seg": 0.42,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_13",
+      "caso_real_bpi": "4508066258_00110",
+      "nivel": "Simple",
+      "importe": 126.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "La solicitud de compra está dentro del presupuesto, cumple con la regla de compliance y el proveedor ha sido previamente aprobado.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.48,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_14",
+      "caso_real_bpi": "4508070175_00150",
+      "nivel": "Simple",
+      "importe": 13.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "Todas las condiciones son favorables para aprobar la solicitud de compra.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.39,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_15",
+      "caso_real_bpi": "4507021852_00010",
+      "nivel": "Simple",
+      "importe": 989.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "Solicitud de compra de valor moderado aprobada automáticamente por cumplir con el presupuesto y tener un riesgo bajo",
+      "escalo_hil": false,
+      "tiempo_seg": 0.45,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_16",
+      "caso_real_bpi": "4508074272_00040",
+      "nivel": "Simple",
+      "importe": 1009.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "escalado_hil",
+      "razon": "Proveedor suspendido pero se cumplen los criterios de compliance y nivel de riesgo es bajo",
+      "escalo_hil": true,
+      "tiempo_seg": 0.45,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_17",
+      "caso_real_bpi": "4508074580_00070",
+      "nivel": "Simple",
+      "importe": 120.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "Seguimiento automático con presupuesto aprobado y proveedor aprobado, además de cumplimiento de políticas y riesgo bajo",
+      "escalo_hil": false,
+      "tiempo_seg": 0.36,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_18",
+      "caso_real_bpi": "4507020509_00050",
+      "nivel": "Simple",
+      "importe": 43.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "Cumple con los criterios de presupuesto, nivel de operación y riesgo, y no requiere HiL",
+      "escalo_hil": false,
+      "tiempo_seg": 0.39,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_19",
+      "caso_real_bpi": "4507034314_00060",
+      "nivel": "Simple",
+      "importe": 701.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "La solicitud cumple con todos los requisitos",
+      "escalo_hil": false,
+      "tiempo_seg": 0.58,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_20",
+      "caso_real_bpi": "4507026248_00050",
+      "nivel": "Simple",
+      "importe": 246.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "La solicitud cumple con todos los requisitos necesarios y está dentro del presupuesto aprobado.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.38,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_21",
+      "caso_real_bpi": "4508052129_00010",
+      "nivel": "Medio",
+      "importe": 19786.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "La solicitud de compra es un Standard PO por un importe fijo y el proveedor ya ha sido aprobado, además cumple con todos los requisitos de compliance y no requiere HiL. El nivel de autorización es director, lo que permite aprobar la solicitud",
+      "escalo_hil": false,
+      "tiempo_seg": 0.52,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_22",
+      "caso_real_bpi": "4508074299_00040",
+      "nivel": "Medio",
+      "importe": 2915.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "escalado_hil",
+      "razon": "Necesita escalado a High-Level por falta de información sobre el tipo de artículo a comprar",
+      "escalo_hil": true,
+      "tiempo_seg": 0.48,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_23",
+      "caso_real_bpi": "4508067780_00010",
+      "nivel": "Medio",
+      "importe": 15383.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "La solicitud cumple con el presupuesto y tiene un nivel de riesgo bajo, por lo tanto se aprueba.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.42,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_24",
+      "caso_real_bpi": "4508068930_00010",
+      "nivel": "Medio",
+      "importe": 11441.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "Según la política de compras, la cantidad de documentos a aprobar es bajo, por lo que se aprueba la solicitud",
+      "escalo_hil": false,
+      "tiempo_seg": 0.41,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_25",
+      "caso_real_bpi": "4508052312_00030",
+      "nivel": "Medio",
+      "importe": 4366.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "La solicitud de compra cumple con el presupuesto y el procedimiento de 3-way match",
+      "escalo_hil": false,
+      "tiempo_seg": 0.49,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_26",
+      "caso_real_bpi": "4508072610_00010",
+      "nivel": "Medio",
+      "importe": 7499.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "La solicitud de compra cumple con todos los requisitos y no requiere escalado.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.38,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_27",
+      "caso_real_bpi": "4508053915_00001",
+      "nivel": "Medio",
+      "importe": 35288.0,
+      "categoria_bpi": "3-way match, invoice after GR",
+      "decision_m2": "aprobado",
+      "razon": "Proceso estático, presupuesto disponible y riesgo moderado, lo que cumple los criterios para la aprobación.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.52,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_28",
+      "caso_real_bpi": "4507040141_00020",
+      "nivel": "Medio",
+      "importe": 3699.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "Completamos los datos necesarios para crear la orden de compra y la empresa del proveedor ya está aprobada",
+      "escalo_hil": false,
+      "tiempo_seg": 0.5,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_29",
+      "caso_real_bpi": "4507036048_00010",
+      "nivel": "Medio",
+      "importe": 21173.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "La solicitud de compra cumple con todos los criterios establecidos (presupuesto aprobado, proveedor aprobado, cumplimiento de reglamentos, riesgo bajo y actividades asociadas a la compra)",
+      "escalo_hil": false,
+      "tiempo_seg": 0.49,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_30",
+      "caso_real_bpi": "4508056383_00050",
+      "nivel": "Medio",
+      "importe": 6194.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "La solicitud de compra es estándar, el presupuesto es OK y cumple con las normas de compliance",
+      "escalo_hil": false,
+      "tiempo_seg": 0.42,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_31",
+      "caso_real_bpi": "4508069414_00050",
+      "nivel": "Medio",
+      "importe": 6035.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "Solicitud de compra estándar aprobada ya que cumple con todos los criterios",
+      "escalo_hil": false,
+      "tiempo_seg": 0.38,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_32",
+      "caso_real_bpi": "4508044433_00080",
+      "nivel": "Medio",
+      "importe": 2643.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "El presupuesto está aprobado, la empresa principal es aprobada y el proveedor cumple con los requisitos de cumplimiento. El riesgo es bajo y no requiere HiL",
+      "escalo_hil": false,
+      "tiempo_seg": 0.37,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_33",
+      "caso_real_bpi": "4507038270_00020",
+      "nivel": "Medio",
+      "importe": 5383.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "Complimiento y niveles de autorización cumplen con los requisitos del BPI. Actividades de proceso involucradas son comunes y rutinarias.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.45,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_34",
+      "caso_real_bpi": "4508055722_00040",
+      "nivel": "Medio",
+      "importe": 278.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "La solicitud cumple con todas las condiciones de compliance y el presupuesto está aprobado automáticamente.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.38,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_35",
+      "caso_real_bpi": "4508072040_00001",
+      "nivel": "Medio",
+      "importe": 10361.0,
+      "categoria_bpi": "3-way match, invoice after GR",
+      "decision_m2": "aprobado",
+      "razon": "La solicitud de compra es estándar, el presupuesto es suficiente y el proveedor está aprobado, además cumple con las políticas de cumplimiento.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.41,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_36",
+      "caso_real_bpi": "4508066533_00010",
+      "nivel": "Medio",
+      "importe": 101.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "La solicitud de compra cumple con todos los requisitos necesarios y es considerada automática.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.4,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_37",
+      "caso_real_bpi": "4508049432_00010",
+      "nivel": "Medio",
+      "importe": 5256.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "El proceso 3-way match, invoice before GR de la categoría 3-way match, invoice before GR cumple con los estándares de cumplimiento y el proveedor ha sido aprobado, lo que sugiere un bajo riesgo y una buena gestión de la solicitud de compra. Adicionalmente, la solicitud de compra tiene presupuesto y el nivel de aprobación requerido es manager.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.52,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_38",
+      "caso_real_bpi": "4508070851_00210",
+      "nivel": "Medio",
+      "importe": 3273.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "La solicitud de compra cumple con los requisitos de presupuesto, riesgo y compliance, y el proveedor ya está aprobado.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.39,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_39",
+      "caso_real_bpi": "4507040511_00010",
+      "nivel": "Complejo",
+      "importe": 0.0,
+      "categoria_bpi": "Consignment",
+      "decision_m2": "rechazado",
+      "razon": "HiL requerido pero no está escalado",
+      "escalo_hil": false,
+      "tiempo_seg": 0.4,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "BPI_40",
+      "caso_real_bpi": "4507009742_00010",
+      "nivel": "Complejo",
+      "importe": 57250.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "escalado_hil",
+      "razon": "Se requiere una actividad del proceso HiL en la solicitud de compra",
+      "escalo_hil": true,
+      "tiempo_seg": 0.4,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "BPI_41",
+      "caso_real_bpi": "4507012010_00010",
+      "nivel": "Complejo",
+      "importe": 23031.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "escalado hil",
+      "razon": "Compliance con HiL no cumple y nivel de director no requiere escalado hiL",
+      "escalo_hil": false,
+      "tiempo_seg": 0.4,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_42",
+      "caso_real_bpi": "4507022933_00050",
+      "nivel": "Complejo",
+      "importe": 0.0,
+      "categoria_bpi": "Consignment",
+      "decision_m2": "escalado_hil",
+      "razon": "Solicitud con alto riesgo y hiL requerido",
+      "escalo_hil": true,
+      "tiempo_seg": 0.39,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "BPI_43",
+      "caso_real_bpi": "4507034888_00010",
+      "nivel": "Complejo",
+      "importe": 0.0,
+      "categoria_bpi": "Consignment",
+      "decision_m2": "escalado_hil",
+      "razon": "Compliance no cumple y HiL requerido",
+      "escalo_hil": true,
+      "tiempo_seg": 0.52,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "BPI_44",
+      "caso_real_bpi": "4507029897_00040",
+      "nivel": "Complejo",
+      "importe": 132.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "escalado_hil",
+      "razon": "El producto tiene un riesgo bajo y cumple con el presupuesto, pero no cumple con el compliance y se requiere HiL, por lo que el procedimiento de 3-way match es necesario",
+      "escalo_hil": true,
+      "tiempo_seg": 0.89,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "BPI_45",
+      "caso_real_bpi": "4507027474_00010",
+      "nivel": "Complejo",
+      "importe": 372741.0,
+      "categoria_bpi": "3-way match, invoice after GR",
+      "decision_m2": "rechazado",
+      "razon": "Solicitud excede los límites presupuestarios y presenta un alto riesgo de cumplimiento",
+      "escalo_hil": false,
+      "tiempo_seg": 0.37,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "BPI_46",
+      "caso_real_bpi": "4507018411_00010",
+      "nivel": "Complejo",
+      "importe": 7693.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "Presupuesto y Compliance cumple",
+      "escalo_hil": false,
+      "tiempo_seg": 0.43,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "BPI_47",
+      "caso_real_bpi": "4507016996_00030",
+      "nivel": "Complejo",
+      "importe": 0.0,
+      "categoria_bpi": "Consignment",
+      "decision_m2": "rechazado",
+      "razon": "La solicitud de compra es de tipo Consignment y el Presupuesto es ok, pero no cumple con los requisitos de Compliance y el Riesgo es alto.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.41,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "BPI_48",
+      "caso_real_bpi": "4508067170_00050",
+      "nivel": "Complejo",
+      "importe": 73.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m2": "aprobado",
+      "razon": "La solicitud de compra está dentro del presupuesto y el proveedor está aprobado.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.37,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "BPI_49",
+      "caso_real_bpi": "4507013026_00010",
+      "nivel": "Complejo",
+      "importe": 0.0,
+      "categoria_bpi": "Consignment",
+      "decision_m2": "rechazado",
+      "razon": "El importe de la solicitud de compra es 0.00 EUR, lo que sugiere posible error o no necesidad de realizar la compra. Además, no cumple con la normativa de Compliance y requiere HiL, lo que incrementa el riesgo.",
+      "escalo_hil": false,
+      "tiempo_seg": 0.52,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "BPI_50",
+      "caso_real_bpi": "4508062972_00001",
+      "nivel": "Complejo",
+      "importe": 510.0,
+      "categoria_bpi": "3-way match, invoice after GR",
+      "decision_m2": "aprobado",
+      "razon": "Cumple con todos los requisitos establecidos y la compra está debidamente presupuestada y se ha seleccionado un proveedor aprobado y que opera con el banco.",
+      "escalo_hil": true,
+      "tiempo_seg": 0.7,
+      "tokens_usados": 200,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    }
+  ]
+}

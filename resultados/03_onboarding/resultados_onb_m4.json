@@ -1,0 +1,352 @@
+{
+  "modelo": "M4_mixto_onboarding",
+  "metricas": {
+    "ARR": 70.0,
+    "HDA": 100.0,
+    "DER": 40.0,
+    "PT": 4.68
+  },
+  "resultados_por_caso": [
+    {
+      "caso_id": "C01",
+      "nivel": "Simple",
+      "decision": "aprobacion_automatica",
+      "escalo_hil": false,
+      "tiempo": 4.14,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Comercial",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C02",
+      "nivel": "Simple",
+      "decision": "aprobacion_automatica",
+      "escalo_hil": false,
+      "tiempo": 3.78,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Comercial",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C03",
+      "nivel": "Simple",
+      "decision": "aprobacion_automatica",
+      "escalo_hil": false,
+      "tiempo": 4.66,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Comercial",
+          "Legal",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C04",
+      "nivel": "Simple",
+      "decision": "aprobacion_automatica",
+      "escalo_hil": false,
+      "tiempo": 4.31,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Comercial"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C05",
+      "nivel": "Simple",
+      "decision": "aprobacion_automatica",
+      "escalo_hil": false,
+      "tiempo": 4.5,
+      "ground_truth": {
+        "resultado": "aprobacion_con_limite_credito",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Comercial",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C06",
+      "nivel": "Simple",
+      "decision": "aprobacion_automatica",
+      "escalo_hil": false,
+      "tiempo": 5.1,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Comercial",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C07",
+      "nivel": "Simple",
+      "decision": "aprobacion_automatica",
+      "escalo_hil": false,
+      "tiempo": 4.3,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Comercial",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C08",
+      "nivel": "Simple",
+      "decision": "aprobacion_automatica",
+      "escalo_hil": false,
+      "tiempo": 4.84,
+      "ground_truth": {
+        "resultado": "aprobacion_con_revision_anual",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Comercial",
+          "Legal",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C09",
+      "nivel": "Medio",
+      "decision": "aprobacion_automatica",
+      "escalo_hil": false,
+      "tiempo": 4.69,
+      "ground_truth": {
+        "resultado": "aprobacion_con_contrato_bilingue",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Comercial",
+          "Legal",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C10",
+      "nivel": "Medio",
+      "decision": "solicitud_documentacion",
+      "escalo_hil": false,
+      "tiempo": 4.5,
+      "ground_truth": {
+        "resultado": "solicitud_documentacion_adicional",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Comercial",
+          "Legal",
+          "Compliance",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C11",
+      "nivel": "Medio",
+      "decision": "solicitud_documentacion",
+      "escalo_hil": false,
+      "tiempo": 4.92,
+      "ground_truth": {
+        "resultado": "aprobacion_con_justificacion_uso",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Comercial",
+          "Compliance",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C12",
+      "nivel": "Medio",
+      "decision": "aprobacion_automatica",
+      "escalo_hil": false,
+      "tiempo": 4.72,
+      "ground_truth": {
+        "resultado": "aprobacion_con_garantia_pago",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Comercial",
+          "Legal",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C13",
+      "nivel": "Medio",
+      "decision": "aprobacion_automatica",
+      "escalo_hil": false,
+      "tiempo": 4.7,
+      "ground_truth": {
+        "resultado": "aprobacion_con_analisis_grupo",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Comercial",
+          "Legal",
+          "Compliance",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C14",
+      "nivel": "Medio",
+      "decision": "solicitud_documentacion",
+      "escalo_hil": false,
+      "tiempo": 5.08,
+      "ground_truth": {
+        "resultado": "aprobacion_condicionada_aval",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Comercial",
+          "Legal",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C15",
+      "nivel": "Complejo",
+      "decision": "aprobacion_con_condiciones",
+      "escalo_hil": true,
+      "tiempo": 4.61,
+      "ground_truth": {
+        "resultado": "escalacion_hil_due_diligence_reforzada",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Comercial",
+          "Legal",
+          "Compliance",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C16",
+      "nivel": "Complejo",
+      "decision": "escalacion_hil",
+      "escalo_hil": true,
+      "tiempo": 4.62,
+      "ground_truth": {
+        "resultado": "escalacion_hil_alerta_ubo_sancionado",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Comercial",
+          "Legal",
+          "Compliance",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C17",
+      "nivel": "Complejo",
+      "decision": "escalacion_hil",
+      "escalo_hil": true,
+      "tiempo": 4.98,
+      "ground_truth": {
+        "resultado": "escalacion_hil_obligatoria_pep",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Comercial",
+          "Legal",
+          "Compliance",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C18",
+      "nivel": "Complejo",
+      "decision": "escalacion_hil",
+      "escalo_hil": true,
+      "tiempo": 4.46,
+      "ground_truth": {
+        "resultado": "bloqueo_temporal_investigacion_aml",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Comercial",
+          "Legal",
+          "Compliance",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C19",
+      "nivel": "Complejo",
+      "decision": "escalacion_hil",
+      "escalo_hil": true,
+      "tiempo": 5.53,
+      "ground_truth": {
+        "resultado": "escalacion_hil_uso_dual_licencia",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Comercial",
+          "Legal",
+          "Compliance",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C20",
+      "nivel": "Complejo",
+      "decision": "escalacion_hil",
+      "escalo_hil": true,
+      "tiempo": 5.11,
+      "ground_truth": {
+        "resultado": "escalacion_hil_conflicto_interes_estructura_opaca",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Comercial",
+          "Legal",
+          "Compliance",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    }
+  ]
+}

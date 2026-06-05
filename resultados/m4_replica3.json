@@ -1,0 +1,995 @@
+{
+  "metricas": {
+    "ARR": 98.0,
+    "HDA": 7.7,
+    "DER": 28.0,
+    "PT": 1.6102
+  },
+  "resultados_por_caso": [
+    {
+      "caso_id": "C01",
+      "nivel": "Simple",
+      "importe": 150,
+      "decision_m4": "aprobado",
+      "razon": "El riesgo asociado a la contratación con el proveedor PRV-001 es bajo y el presupuesto IT es razonable",
+      "escalo_hil": false,
+      "tiempo_seg": 1.15,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C02",
+      "nivel": "Simple",
+      "importe": 80,
+      "decision_m4": "aprobado",
+      "razon": "El proveedor PRV-002 se encuentra aprobado, opera con éxito y tiene una cláusula de riesgo baja, lo que indica que cumple con los requisitos establecidos.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.4,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C03",
+      "nivel": "Simple",
+      "importe": 200,
+      "decision_m4": "aprobado",
+      "razon": "La solicitud C03 cumple con los requisitos de validación de datos del proveedor PRV-003 y el presupuesto IT es razonable, por lo que se aprueba la solicitud",
+      "escalo_hil": false,
+      "tiempo_seg": 1.15,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C04",
+      "nivel": "Simple",
+      "importe": 160,
+      "decision_m4": "aprobado",
+      "razon": "El riesgo asociado a la contratación con el proveedor PRV-001 es bajo y el presupuesto IT es razonable",
+      "escalo_hil": false,
+      "tiempo_seg": 1.3,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C05",
+      "nivel": "Simple",
+      "importe": 300,
+      "decision_m4": "aprobado",
+      "razon": "La solicitud C05 de 300€ para el proveedor PRV-002 se encuentra dentro de los límites de riesgo bajo",
+      "escalo_hil": false,
+      "tiempo_seg": 1.77,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C06",
+      "nivel": "Simple",
+      "importe": 350,
+      "decision_m4": "aprobado",
+      "razon": "La solicitud C06 de 350€ para el proveedor PRV-001 se encuentra dentro del presupuesto IT",
+      "escalo_hil": false,
+      "tiempo_seg": 1.58,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C07",
+      "nivel": "Simple",
+      "importe": 120,
+      "decision_m4": "aprobado",
+      "razon": "El proveedor PRV-003 cumple con los requisitos de renovación automática del contrato, incluyendo un historial de cumplimiento satisfactorio, presupuesto IT de 120€ y notificación de renovación con un plazo mínimo de 30 días.",
+      "escalo_hil": false,
+      "tiempo_seg": 2.75,
+      "ground_truth": {
+        "resultado": "aprobacion_con_nota",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C08",
+      "nivel": "Simple",
+      "importe": 95,
+      "decision_m4": "aprobado",
+      "razon": "El riesgo asociado a la contratación con el proveedor PRV-002 es bajo y el presupuesto se ajusta a las necesidades del proyecto.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.35,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C09",
+      "nivel": "Simple",
+      "importe": 900,
+      "decision_m4": "aprobado",
+      "razon": "El proveedor tiene estado aprobado y opera con verdad, ademas el presupuesto para FACILITIES ha sido aprobado",
+      "escalo_hil": false,
+      "tiempo_seg": 1.86,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C10",
+      "nivel": "Simple",
+      "importe": 75,
+      "decision_m4": "aprobado",
+      "razon": "El riesgo asociado a la contratación con el proveedor PRV-001 es bajo y el presupuesto IT es razonable",
+      "escalo_hil": false,
+      "tiempo_seg": 1.35,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C11",
+      "nivel": "Simple",
+      "importe": 250,
+      "decision_m4": "aprobado",
+      "razon": "El riesgo es bajo y el presupuesto aprobado es de 250€, por lo que se aprueba la solicitud C11",
+      "escalo_hil": false,
+      "tiempo_seg": 1.34,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C12",
+      "nivel": "Simple",
+      "importe": 60,
+      "decision_m4": "aprobado",
+      "razon": "La solicitud se encuentra dentro del presupuesto IT",
+      "escalo_hil": false,
+      "tiempo_seg": 1.23,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C13",
+      "nivel": "Simple",
+      "importe": 40,
+      "decision_m4": "aprobado",
+      "razon": "La solicitud C13 de 40€ para el proveedor PRV-001 se encuentra dentro del presupuesto asignado para IT",
+      "escalo_hil": false,
+      "tiempo_seg": 1.34,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C14",
+      "nivel": "Simple",
+      "importe": 140,
+      "decision_m4": "aprobado",
+      "razon": "El riesgo es bajo y el presupuesto aprobado es de 140€, por lo que se aprueba la solicitud C14",
+      "escalo_hil": false,
+      "tiempo_seg": 2.05,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C15",
+      "nivel": "Simple",
+      "importe": 180,
+      "decision_m4": "aprobado",
+      "razon": "El proveedor PRV-002 ha sido aprobado y está operativo, y se puede proceder a validar la solicitud C15 de 180€",
+      "escalo_hil": false,
+      "tiempo_seg": 1.54,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C16",
+      "nivel": "Simple",
+      "importe": 450,
+      "decision_m4": "aprobado",
+      "razon": "La solicitud C16 de 450€ para el proveedor PRV-001 cumple con los requisitos y cláusulas establecidas",
+      "escalo_hil": false,
+      "tiempo_seg": 2.57,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C17",
+      "nivel": "Simple",
+      "importe": 240,
+      "decision_m4": "aprobado",
+      "razon": "El riesgo asociado a la contratación con el proveedor PRV-003 es bajo y el presupuesto IT es razonable",
+      "escalo_hil": false,
+      "tiempo_seg": 1.34,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C18",
+      "nivel": "Simple",
+      "importe": 120,
+      "decision_m4": "aprobado",
+      "razon": "El proveedor PRV-004 ha sido aprobado y está operativo, y se ha incluido una cláusula en el contrato para cubrir posibles riesgos",
+      "escalo_hil": false,
+      "tiempo_seg": 1.52,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C19",
+      "nivel": "Simple",
+      "importe": 85,
+      "decision_m4": "aprobado",
+      "razon": "El proveedor PRV-002 ha sido aprobado y está operativo, con un presupuesto de marketing de 85€ y un riesgo bajo.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.44,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C20",
+      "nivel": "Simple",
+      "importe": 50,
+      "decision_m4": "aprobado",
+      "razon": "La solicitud C20 de 50€ para el proveedor PRV-001 se encuentra dentro del presupuesto aprobado",
+      "escalo_hil": false,
+      "tiempo_seg": 1.62,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C21",
+      "nivel": "Medio",
+      "importe": 800,
+      "decision_m4": "aprobado",
+      "razon": "La solicitud C21 se encuentra registrada correctamente y el presupuesto para marketing se ha aprobado, además de que la cláusula de cesión de derechos de propiedad intelectual incluye todos los detalles necesarios para proteger los intereses de ambas partes.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.93,
+      "ground_truth": {
+        "resultado": "registro_proveedor_y_validacion_legal",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C22",
+      "nivel": "Medio",
+      "importe": 3500,
+      "decision_m4": "aprobado",
+      "razon": "El proveedor PRV-003 ha sido aprobado y está operativo, y se procederá a realizar el presupuesto para el proyecto IT con un presupuesto de 3500€.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.41,
+      "ground_truth": {
+        "resultado": "escalacion_finance_reasignacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C23",
+      "nivel": "Medio",
+      "importe": 1200,
+      "decision_m4": "rechazado",
+      "razon": "El proveedor no ha sido aprobado, por lo que no se puede proceder con el presupuesto de RRHH de 1200€ sin la aprobación previa del proveedor.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.84,
+      "ground_truth": {
+        "resultado": "validacion_legal_y_aprobacion_condicionada",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C24",
+      "nivel": "Medio",
+      "importe": 5000,
+      "decision_m4": "aprobado",
+      "razon": "La solicitud C24 cumple con los requisitos y el proveedor PRV-005 ha sido validado, por lo que se aprueba la solicitud",
+      "escalo_hil": false,
+      "tiempo_seg": 1.42,
+      "ground_truth": {
+        "resultado": "revision_legal_obligatoria_antes_de_firmar",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C25",
+      "nivel": "Medio",
+      "importe": 4800,
+      "decision_m4": "aprobado",
+      "razon": "El proveedor PRV-003 se encuentra aprobado y operativo, y la solicitud C25 ha sido registrada correctamente por 4800€.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.94,
+      "ground_truth": {
+        "resultado": "reasignacion_presupuestaria_o_fraccionamiento",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C26",
+      "nivel": "Medio",
+      "importe": 2000,
+      "decision_m4": "aprobado",
+      "razon": "El proveedor PRV-006 ha aprobado la solicitud C26 con un monto de 2000€ y el riesgo es bajo",
+      "escalo_hil": false,
+      "tiempo_seg": 1.25,
+      "ground_truth": {
+        "resultado": "validacion_legal_compliance_y_registro",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C27",
+      "nivel": "Medio",
+      "importe": 1500,
+      "decision_m4": "rechazado",
+      "razon": "El proveedor PRV-009 no ha sido aprobado y su operación está en false",
+      "escalo_hil": false,
+      "tiempo_seg": 1.75,
+      "ground_truth": {
+        "resultado": "fast_track_con_validacion_posterior",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C28",
+      "nivel": "Medio",
+      "importe": 6000,
+      "decision_m4": "aprobado",
+      "razon": "La solicitud de compra C28 cumple con los requisitos y el presupuesto es razonable",
+      "escalo_hil": false,
+      "tiempo_seg": 1.46,
+      "ground_truth": {
+        "resultado": "revision_legal_clausulas_penalizacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C29",
+      "nivel": "Medio",
+      "importe": 2800,
+      "decision_m4": "aprobado",
+      "razon": "La solicitud C29 ha sido registrada y se ha validado el proveedor PRV-003, con un presupuesto total de 3680€",
+      "escalo_hil": false,
+      "tiempo_seg": 1.84,
+      "ground_truth": {
+        "resultado": "escalacion_reasignacion_presupuestaria",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C30",
+      "nivel": "Medio",
+      "importe": 950,
+      "decision_m4": "rechazado",
+      "razon": "El proveedor no está aprobado y no tiene operaciones activas, lo que es necesario para aprobar el presupuesto LEGAL de 950€",
+      "escalo_hil": false,
+      "tiempo_seg": 1.0,
+      "ground_truth": {
+        "resultado": "validacion_nda_y_aprobacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C31",
+      "nivel": "Medio",
+      "importe": 8000,
+      "decision_m4": "aprobado",
+      "razon": "La solicitud C31 ha sido aprobada por 8000€ y el proveedor PRV-004 ha sido aprobado para la solicitud con un presupuesto de 8000€. La garantía estándar incluye un período de garantía de 12 meses a partir de la fecha de entrega del producto o servicio.",
+      "escalo_hil": false,
+      "tiempo_seg": 3.85,
+      "ground_truth": {
+        "resultado": "revision_legal_garantias_y_aprobacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C32",
+      "nivel": "Medio",
+      "importe": 2200,
+      "decision_m4": "aprobado",
+      "razon": "El proveedor PRV-001 ha sido aprobado y está operativo, con presupuesto IT aprobado",
+      "escalo_hil": false,
+      "tiempo_seg": 1.3,
+      "ground_truth": {
+        "resultado": "aprobacion_fast_track_con_justificacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C33",
+      "nivel": "Medio",
+      "importe": 5500,
+      "decision_m4": "aprobado",
+      "razon": "El proveedor PRV-004 tiene estado aprobado, opera con éxito y el presupuesto para FACILITIES ha sido aprobado con un monto de 5500€. Además, el riesgo es bajo según la información proporcionada.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.39,
+      "ground_truth": {
+        "resultado": "fraccionamiento_o_rechazo_parcial",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C34",
+      "nivel": "Medio",
+      "importe": 1800,
+      "decision_m4": "rechazado",
+      "razon": "El proveedor PRV-006 tiene estado no aprobado y opera de manera falsa, por lo que no se puede aprobar el presupuesto de FACILITIES hasta que se resuelva este problema",
+      "escalo_hil": false,
+      "tiempo_seg": 1.71,
+      "ground_truth": {
+        "resultado": "compliance_y_legal_validacion_completa",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C35",
+      "nivel": "Medio",
+      "importe": 12000,
+      "decision_m4": "aprobado",
+      "razon": "La solicitud C35 cumple con los requisitos basicos y el monto es razonable",
+      "escalo_hil": false,
+      "tiempo_seg": 1.25,
+      "ground_truth": {
+        "resultado": "legal_finance_aprobacion_direccion",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C36",
+      "nivel": "Medio",
+      "importe": 3200,
+      "decision_m4": "rechazado",
+      "razon": "El proveedor no ha sido aprobado y no hay operaciones registradas, por lo que se requiere la aprobación del proveedor antes de proceder con el presupuesto",
+      "escalo_hil": false,
+      "tiempo_seg": 1.54,
+      "ground_truth": {
+        "resultado": "fast_track_registro_posterior",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C37",
+      "nivel": "Medio",
+      "importe": 7500,
+      "decision_m4": "aprobado",
+      "razon": "La solicitud C37 cumple con los requisitos y el riesgo es bajo",
+      "escalo_hil": false,
+      "tiempo_seg": 2.47,
+      "ground_truth": {
+        "resultado": "reasignacion_entre_departamentos",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C38",
+      "nivel": "Medio",
+      "importe": 3000,
+      "decision_m4": "aprobado",
+      "razon": "La solicitud C38 cumple con todos los requisitos establecidos, incluyendo la validación de datos del proveedor PRV-007 y el presupuesto de marketing dentro del rango establecido. Además, las cláusulas de cesión de propiedad intelectual (IP) se ajustan a las leyes aplicables y protegen los intereses de la empresa.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.8,
+      "ground_truth": {
+        "resultado": "validacion_ip_nda_y_aprobacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C39",
+      "nivel": "Complejo",
+      "importe": 15000,
+      "decision_m4": "rechazado",
+      "razon": "El presupuesto aprobado es False",
+      "escalo_hil": false,
+      "tiempo_seg": 1.41,
+      "ground_truth": {
+        "resultado": "rechazo_hasta_certificacion_ce",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C40",
+      "nivel": "Complejo",
+      "importe": 8000,
+      "decision_m4": "aprobado",
+      "razon": "La solicitud C40 ha sido aprobada por un importe de 8000€, y se ha establecido un presupuesto IT aprobado por el mismo importe.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.27,
+      "ground_truth": {
+        "resultado": "bloqueo_gdpr_escalacion_hil_obligatoria",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C41",
+      "nivel": "Complejo",
+      "importe": 45000,
+      "decision_m4": "aprobado",
+      "razon": "La solicitud C41 cumple con los requisitos y el proveedor PRV-003 ha sido validado, el presupuesto es razonable y las condiciones del contrato son claras",
+      "escalo_hil": false,
+      "tiempo_seg": 1.62,
+      "ground_truth": {
+        "resultado": "aprobacion_escalonada_multidepartamento",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C42",
+      "nivel": "Complejo",
+      "importe": 2500,
+      "decision_m4": "rechazado",
+      "razon": "El proveedor PRV-006 tiene estado no aprobado y opera de manera falsa, lo que genera riesgos financieros y de reputación para la empresa.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.23,
+      "ground_truth": {
+        "resultado": "bloqueo_hasta_fichas_seguridad",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C43",
+      "nivel": "Complejo",
+      "importe": 20000,
+      "decision_m4": "aprobado",
+      "razon": "El presupuesto ha sido aprobado y la solicitud se registro con exito",
+      "escalo_hil": false,
+      "tiempo_seg": 1.59,
+      "ground_truth": {
+        "resultado": "escalacion_hil_obligatoria_conflicto_interes",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C44",
+      "nivel": "Complejo",
+      "importe": 18000,
+      "decision_m4": "rechazado",
+      "razon": "El proveedor no está aprobado y no se pueden realizar operaciones",
+      "escalo_hil": false,
+      "tiempo_seg": 1.31,
+      "ground_truth": {
+        "resultado": "bloqueo_hasta_licencia_aesa",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C45",
+      "nivel": "Complejo",
+      "importe": 120000,
+      "decision_m4": "rechazado",
+      "razon": "El proveedor PRV-006 tiene estado no aprobado y opera de manera falsa, lo que puede afectar la integridad financiera de la empresa.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.75,
+      "ground_truth": {
+        "resultado": "escalacion_hil_aprobacion_consejo",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C46",
+      "nivel": "Complejo",
+      "importe": 5000,
+      "decision_m4": "aprobado",
+      "razon": "La solicitud de aprobación del proveedor PRV-005 y el presupuesto para RRHH de 5000€ han sido registrados con éxito y están pendientes de revisión, por lo que se aprueba la continuación del proceso",
+      "escalo_hil": false,
+      "tiempo_seg": 1.21,
+      "ground_truth": {
+        "resultado": "bloqueo_legal_compliance_alternativa_propuesta",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C47",
+      "nivel": "Complejo",
+      "importe": 35000,
+      "decision_m4": "aprobado",
+      "razon": "La solicitud C47 ha sido registrada y validada correctamente, incluyendo los datos del proveedor PRV-007 y el presupuesto de 35000€, además de que las cláusulas 'cesion_ip' y 'arbitraje_extranjero' han sido validadas con éxito.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.6,
+      "ground_truth": {
+        "resultado": "evaluacion_tecnica_legal_financiera_larga",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C48",
+      "nivel": "Complejo",
+      "importe": 60000,
+      "decision_m4": "aprobado",
+      "razon": "El proveedor PRV-014 ha sido aprobado, está operativo y el presupuesto IT aprobado es de 60000€, lo que cumple con los requisitos para la renovación automática del contrato.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.62,
+      "ground_truth": {
+        "resultado": "renegociacion_o_cambio_proveedor",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C49",
+      "nivel": "Complejo",
+      "importe": 25000,
+      "decision_m4": "escalado_hil",
+      "razon": "El proveedor PRV-010 tiene un estado de no aprobado y opera de forma falsa, por lo que es necesario validar su informacion antes de proceder con la solicitud C49 aprobada por 25000€",
+      "escalo_hil": true,
+      "tiempo_seg": 1.73,
+      "ground_truth": {
+        "resultado": "bloqueo_total_hasta_homologacion",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C50",
+      "nivel": "Complejo",
+      "importe": 200000,
+      "decision_m4": "aprobado",
+      "razon": "La solicitud C50 cumple con los requisitos y el contrato incluye clausulas que protegen los intereses de la empresa",
+      "escalo_hil": false,
+      "tiempo_seg": 1.37,
+      "ground_truth": {
+        "resultado": "licitacion_formal_aprobacion_consejo",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    }
+  ]
+}

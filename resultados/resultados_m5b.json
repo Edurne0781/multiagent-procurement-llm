@@ -1,0 +1,1359 @@
+{
+  "modelo": "M5b",
+  "metricas": {
+    "modelo": "M5b — Clasificador de Incertidumbre",
+    "total_casos": 50,
+    "ARR": 94.0,
+    "HDA": 23.1,
+    "DER": 22.0,
+    "PT": 2.85,
+    "TCC": 0
+  },
+  "resultados_por_caso": [
+    {
+      "caso_id": "C01",
+      "nivel": "Simple",
+      "importe": 150,
+      "decision_m5b": "aprobado",
+      "razon": "Solicitud de 10 ratones USB a proveedor aprobado dentro del presupuesto y sin problemas legales o de cumplimiento",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 3.17,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C02",
+      "nivel": "Simple",
+      "importe": 80,
+      "decision_m5b": "aprobado",
+      "razon": "El pedido de papel A4 a un proveedor habitual con alta confianza y dentro del presupuesto aprobado",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.83,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C03",
+      "nivel": "Simple",
+      "importe": 200,
+      "decision_m5b": "aprobado",
+      "razon": "La confianza es alta y el presupuesto está aprobado, no hay problemas legales ni de cumplimiento significativos.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 3.08,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C04",
+      "nivel": "Simple",
+      "importe": 160,
+      "decision_m5b": "aprobado",
+      "razon": "El caso ha sido evaluado como de ALTA CONFIANZA y cumple con todos los criterios establecidos.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.88,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C05",
+      "nivel": "Simple",
+      "importe": 300,
+      "decision_m5b": "aprobado",
+      "razon": "El pedido de material de oficina mensual ha sido evaluado como de alta confianza y cumple con todos los requisitos establecidos.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 3.09,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C06",
+      "nivel": "Simple",
+      "importe": 350,
+      "decision_m5b": "aprobado",
+      "razon": "El caso ha sido evaluado como de ALTA CONFIANZA y cumple con todos los criterios establecidos.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 3.1,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C07",
+      "nivel": "Simple",
+      "importe": 120,
+      "decision_m5b": "aprobado",
+      "razon": "El caso ha sido evaluado como de ALTA CONFIANZA y cumple con todos los requisitos necesarios para la adquisición de licencias Microsoft 365 mensuales.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.98,
+      "ground_truth": {
+        "resultado": "aprobacion_con_nota",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C08",
+      "nivel": "Simple",
+      "importe": 95,
+      "decision_m5b": "aprobado",
+      "razon": "El presupuesto está aprobado y el proveedor está aprobado, no hay alertas ni problemas legales o de cumplimiento.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.85,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C09",
+      "nivel": "Simple",
+      "importe": 900,
+      "decision_m5b": "aprobado",
+      "razon": "El proveedor es habitual y ha sido aprobado, el presupuesto está aprobado y no hay problemas legales o de cumplimiento.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.9,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C10",
+      "nivel": "Simple",
+      "importe": 75,
+      "decision_m5b": "aprobado",
+      "razon": "La confianza es alta y el presupuesto está aprobado, no hay problemas legales ni de cumplimiento.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.9,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C11",
+      "nivel": "Simple",
+      "importe": 250,
+      "decision_m5b": "aprobado",
+      "razon": "El caso ha sido evaluado como de ALTA CONFIANZA y cumple con todos los criterios establecidos.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.96,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C12",
+      "nivel": "Simple",
+      "importe": 60,
+      "decision_m5b": "aprobado",
+      "razon": "El caso ha sido evaluado como de ALTA CONFIANZA y cumple con todos los criterios establecidos.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.89,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C13",
+      "nivel": "Simple",
+      "importe": 40,
+      "decision_m5b": "aprobado",
+      "razon": "El caso cuenta con alta confianza, presupuesto aprobado y cumplimiento de normas",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.99,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C14",
+      "nivel": "Simple",
+      "importe": 140,
+      "decision_m5b": "aprobado",
+      "razon": "El pedido de 2 discos duros externos 1TB ha sido evaluado con alta confianza y cumple con todos los requisitos establecidos.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.87,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C15",
+      "nivel": "Simple",
+      "importe": 180,
+      "decision_m5b": "aprobado",
+      "razon": "El caso ha sido evaluado como de ALTA CONFIANZA y cumple con todos los criterios establecidos.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.74,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C16",
+      "nivel": "Simple",
+      "importe": 450,
+      "decision_m5b": "aprobado",
+      "razon": "El caso ha sido evaluado como de ALTA CONFIANZA y cumple con todos los criterios establecidos.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.82,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C17",
+      "nivel": "Simple",
+      "importe": 240,
+      "decision_m5b": "aprobado",
+      "razon": "El caso ha sido evaluado como de ALTA CONFIANZA y cumple con todos los criterios establecidos.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.84,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C18",
+      "nivel": "Simple",
+      "importe": 120,
+      "decision_m5b": "aprobado",
+      "razon": "El caso ha sido evaluado como de ALTA CONFIANZA y cumple con todos los criterios establecidos.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.81,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C19",
+      "nivel": "Simple",
+      "importe": 85,
+      "decision_m5b": "aprobado",
+      "razon": "El presupuesto está aprobado y el proveedor está aprobado, no hay alertas ni problemas legales o de cumplimiento.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.88,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C20",
+      "nivel": "Simple",
+      "importe": 50,
+      "decision_m5b": "aprobado",
+      "razon": "La confianza es alta y el presupuesto está aprobado, no hay problemas legales ni de cumplimiento.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.89,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C21",
+      "nivel": "Medio",
+      "importe": 800,
+      "decision_m5b": "rechazado",
+      "razon": "El proveedor no está registrado y el riesgo es crítico, por lo que no se puede aprobar la solicitud de compra.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.9,
+      "ground_truth": {
+        "resultado": "registro_proveedor_y_validacion_legal",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C22",
+      "nivel": "Medio",
+      "importe": 3500,
+      "decision_m5b": "aprobado",
+      "razon": "La confianza es alta y todos los criterios están aprobados, incluyendo el presupuesto y la legalidad.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.87,
+      "ground_truth": {
+        "resultado": "escalacion_finance_reasignacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C23",
+      "nivel": "Medio",
+      "importe": 1200,
+      "decision_m5b": "aprobado",
+      "razon": "El proveedor es nuevo, pero el presupuesto está aprobado y no hay problemas legales ni de cumplimiento.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.74,
+      "ground_truth": {
+        "resultado": "validacion_legal_y_aprobacion_condicionada",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C24",
+      "nivel": "Medio",
+      "importe": 5000,
+      "decision_m5b": "aprobado",
+      "razon": "El contrato de mantenimiento IT anual cuenta con alta confianza, aprobación presupuestaria y cumplimiento de normas, lo que justifica su aprobación.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.76,
+      "ground_truth": {
+        "resultado": "revision_legal_obligatoria_antes_de_firmar",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C25",
+      "nivel": "Medio",
+      "importe": 4800,
+      "decision_m5b": "aprobado",
+      "razon": "El caso cuenta con alta confianza y no presenta problemas legales ni de cumplimiento, además el presupuesto está aprobado y el proveedor está aprobado para operar.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.79,
+      "ground_truth": {
+        "resultado": "reasignacion_presupuestaria_o_fraccionamiento",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C26",
+      "nivel": "Medio",
+      "importe": 2000,
+      "decision_m5b": "rechazado",
+      "razon": "La empresa no está registrada, lo que genera un riesgo para la empresa",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.58,
+      "ground_truth": {
+        "resultado": "validacion_legal_compliance_y_registro",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C27",
+      "nivel": "Medio",
+      "importe": 1500,
+      "decision_m5b": "aprobado",
+      "razon": "La confianza es alta y el presupuesto está aprobado, no hay problemas legales ni de cumplimiento y el riesgo es bajo.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.58,
+      "ground_truth": {
+        "resultado": "fast_track_con_validacion_posterior",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C28",
+      "nivel": "Medio",
+      "importe": 6000,
+      "decision_m5b": "aprobado",
+      "razon": "El proveedor está aprobado, el presupuesto está aprobado y no hay alertas ni problemas legales significativos.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.66,
+      "ground_truth": {
+        "resultado": "revision_legal_clausulas_penalizacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C29",
+      "nivel": "Medio",
+      "importe": 2800,
+      "decision_m5b": "aprobado",
+      "razon": "El caso ha sido evaluado como de ALTA CONFIANZA y cumple con todos los criterios establecidos.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.76,
+      "ground_truth": {
+        "resultado": "escalacion_reasignacion_presupuestaria",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C30",
+      "nivel": "Medio",
+      "importe": 950,
+      "decision_m5b": "aprobado",
+      "razon": "El servicio de traducción de documentos legales con agencia nueva ha sido evaluado como de alta confianza y cumple con los requisitos de Compliance y Legal.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.79,
+      "ground_truth": {
+        "resultado": "validacion_nda_y_aprobacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C31",
+      "nivel": "Medio",
+      "importe": 8000,
+      "decision_m5b": "aprobado",
+      "razon": "El proveedor está aprobado, el presupuesto está aprobado, no hay alertas y cumple con los requisitos de Compliance.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.75,
+      "ground_truth": {
+        "resultado": "revision_legal_garantias_y_aprobacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C32",
+      "nivel": "Medio",
+      "importe": 2200,
+      "decision_m5b": "aprobado",
+      "razon": "La confianza es alta y el presupuesto está aprobado, no hay riesgos ni problemas legales o de cumplimiento.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.91,
+      "ground_truth": {
+        "resultado": "aprobacion_fast_track_con_justificacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C33",
+      "nivel": "Medio",
+      "importe": 5500,
+      "decision_m5b": "aprobado",
+      "razon": "El caso ha sido evaluado como de ALTA CONFIANZA y cumple con todos los criterios establecidos",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.96,
+      "ground_truth": {
+        "resultado": "fraccionamiento_o_rechazo_parcial",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C34",
+      "nivel": "Medio",
+      "importe": 1800,
+      "decision_m5b": "aprobado",
+      "razon": "El caso ha sido evaluado como de ALTA CONFIANZA y cumple con todos los requisitos necesarios para su aprobación.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 3.07,
+      "ground_truth": {
+        "resultado": "compliance_y_legal_validacion_completa",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C35",
+      "nivel": "Medio",
+      "importe": 12000,
+      "decision_m5b": "rechazado",
+      "razon": "El presupuesto no está aprobado a nivel director y existen problemas legales con un riesgo alto",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.97,
+      "ground_truth": {
+        "resultado": "legal_finance_aprobacion_direccion",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C36",
+      "nivel": "Medio",
+      "importe": 3200,
+      "decision_m5b": "aprobado",
+      "razon": "El presupuesto está aprobado y el riesgo es bajo, por lo que se puede proceder con la reparación urgente de la climatización de la oficina.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.77,
+      "ground_truth": {
+        "resultado": "fast_track_registro_posterior",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C37",
+      "nivel": "Medio",
+      "importe": 7500,
+      "decision_m5b": "aprobado",
+      "razon": "El presupuesto está aprobado para el nivel finance_agent y no hay problemas legales o de cumplimiento",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.89,
+      "ground_truth": {
+        "resultado": "reasignacion_entre_departamentos",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C38",
+      "nivel": "Medio",
+      "importe": 3000,
+      "decision_m5b": "rechazado",
+      "razon": "El riesgo legal es crítico y no se ha firmado el contrato, lo que hace que la confianza no sea suficiente para aprobar la solicitud de compra.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.98,
+      "ground_truth": {
+        "resultado": "validacion_ip_nda_y_aprobacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C39",
+      "nivel": "Complejo",
+      "importe": 15000,
+      "decision_m5b": "rechazado",
+      "razon": "La importación de equipos electrónicos sin certificación CE no cumple con los requisitos de Compliance y presenta un riesgo medio.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.89,
+      "ground_truth": {
+        "resultado": "rechazo_hasta_certificacion_ce",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C40",
+      "nivel": "Complejo",
+      "importe": 8000,
+      "decision_m5b": "rechazado",
+      "razon": "El contrato implica un país sin adecuación, lo que genera un riesgo medio en Compliance y no cumple con los requisitos de Compliance.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.86,
+      "ground_truth": {
+        "resultado": "bloqueo_gdpr_escalacion_hil_obligatoria",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C41",
+      "nivel": "Complejo",
+      "importe": 45000,
+      "decision_m5b": "aprobado",
+      "razon": "El presupuesto está aprobado, el proveedor está aprobado y no hay alertas, problemas legales o de compliance que justifiquen la rechazación.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.9,
+      "ground_truth": {
+        "resultado": "aprobacion_escalonada_multidepartamento",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C42",
+      "nivel": "Complejo",
+      "importe": 2500,
+      "decision_m5b": "rechazado",
+      "razon": "No se cuenta con ficha técnica del producto y no cumple con los requisitos de Compliance",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.77,
+      "ground_truth": {
+        "resultado": "bloqueo_hasta_fichas_seguridad",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C43",
+      "nivel": "Complejo",
+      "importe": 20000,
+      "decision_m5b": "escalado_hil",
+      "razon": "Clasificador detectó baja confianza: ['Proveedor tiene alerta de conflicto de interes', 'Nivel aprobacion requiere director']",
+      "escalo_hil": true,
+      "confianza": "baja",
+      "factores_riesgo": [
+        "Proveedor tiene alerta de conflicto de interes",
+        "Nivel aprobacion requiere director"
+      ],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.4,
+      "ground_truth": {
+        "resultado": "escalacion_hil_obligatoria_conflicto_interes",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C44",
+      "nivel": "Complejo",
+      "importe": 18000,
+      "decision_m5b": "rechazado",
+      "razon": "No cumple con los requisitos de Compliance y no tiene aprobación presupuestaria",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.94,
+      "ground_truth": {
+        "resultado": "bloqueo_hasta_licencia_aesa",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C45",
+      "nivel": "Complejo",
+      "importe": 120000,
+      "decision_m5b": "escalado_hil",
+      "razon": "Clasificador detectó baja confianza: ['Proveedor tiene estado no aprobado', 'Legal: riesgo=alto', 'Legal: problemas=3', 'Presupuesto: nivel=consejo']",
+      "escalo_hil": true,
+      "confianza": "baja",
+      "factores_riesgo": [
+        "Proveedor tiene estado no aprobado",
+        "Legal: riesgo=alto",
+        "Legal: problemas=3",
+        "Presupuesto: nivel=consejo"
+      ],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.53,
+      "ground_truth": {
+        "resultado": "escalacion_hil_aprobacion_consejo",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C46",
+      "nivel": "Complejo",
+      "importe": 5000,
+      "decision_m5b": "rechazado",
+      "razon": "El software de vigilancia de empleados no cumple con la normativa, lo que representa un riesgo medio para la empresa.",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.83,
+      "ground_truth": {
+        "resultado": "bloqueo_legal_compliance_alternativa_propuesta",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C47",
+      "nivel": "Complejo",
+      "importe": 35000,
+      "decision_m5b": "rechazado",
+      "razon": "El presupuesto no está aprobado y el riesgo legal es crítico",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 3.15,
+      "ground_truth": {
+        "resultado": "evaluacion_tecnica_legal_financiera_larga",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C48",
+      "nivel": "Complejo",
+      "importe": 60000,
+      "decision_m5b": "rechazado",
+      "razon": "El proveedor incumplió el 40% del SLA y no es adecuado para renovar el contrato",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.85,
+      "ground_truth": {
+        "resultado": "renegociacion_o_cambio_proveedor",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C49",
+      "nivel": "Complejo",
+      "importe": 25000,
+      "decision_m5b": "rechazado",
+      "razon": "No cumple con los requisitos de Compliance y no tiene homologación AEMPS",
+      "escalo_hil": false,
+      "confianza": "alta",
+      "factores_riesgo": [],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre",
+        "Gestor_Senior"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.96,
+      "ground_truth": {
+        "resultado": "bloqueo_total_hasta_homologacion",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C50",
+      "nivel": "Complejo",
+      "importe": 200000,
+      "decision_m5b": "escalado_hil",
+      "razon": "Clasificador detectó baja confianza: ['Proveedor tiene estado no aprobado', 'Legal: riesgo=alto', 'Legal: problemas=3', 'Presupuesto: aprobado=False nivel=consejo']",
+      "escalo_hil": true,
+      "confianza": "baja",
+      "factores_riesgo": [
+        "Proveedor tiene estado no aprobado",
+        "Legal: riesgo=alto",
+        "Legal: problemas=3",
+        "Presupuesto: aprobado=False nivel=consejo"
+      ],
+      "agentes_usados": [
+        "Evaluador_Incertidumbre"
+      ],
+      "tokens_usados": 0,
+      "tiempo_seg": 2.42,
+      "ground_truth": {
+        "resultado": "licitacion_formal_aprobacion_consejo",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    }
+  ]
+}

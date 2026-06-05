@@ -1,0 +1,865 @@
+{
+  "modelo": "M3_BPI",
+  "metricas": {
+    "modelo": "M3_MultiAgent_BPI2019",
+    "dataset": "BPI_Challenge_2019",
+    "total_casos": 50,
+    "ARR": 92.0,
+    "HDA": 9.1,
+    "DER": 34.0,
+    "PT": 4.1,
+    "TCC": 0
+  },
+  "resultados_por_caso": [
+    {
+      "caso_id": "BPI_01",
+      "caso_real_bpi": "4507032049_00010",
+      "nivel": "Simple",
+      "importe": 3683.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "rechazado",
+      "razon": "Es necesario revisar el contrato BPI y esperar instrucciones posteriores para confirmar si se deben proceder con la 3-way match y la emisión de la factura antes de la GR",
+      "escalo_hil": false,
+      "tiempo_seg": 1.72,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_02",
+      "caso_real_bpi": "4508052581_00270",
+      "nivel": "Simple",
+      "importe": 51.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "aprobado",
+      "razon": "Solicitud BPI_02 registrada exitosamente con valor de 51.0EUR. Proveedor BPI aprobado. Presupuesto aprobado y listo para su ejecución.",
+      "escalo_hil": false,
+      "tiempo_seg": 2.16,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_03",
+      "caso_real_bpi": "4508061531_00020",
+      "nivel": "Simple",
+      "importe": 2417.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "aprobado",
+      "razon": "El proveedor BPI está aprobado y operativo, lo que indica un bajo riesgo y correcta asignación en GR.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.85,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_04",
+      "caso_real_bpi": "4508048963_00700",
+      "nivel": "Simple",
+      "importe": 107.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "aprobado",
+      "razon": "La validación del proveedor es correcta, el presupuesto ha sido actualizado correctamente y se ha revisado el contrato BPI antes de proceder.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.97,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_05",
+      "caso_real_bpi": "4507024471_00030",
+      "nivel": "Simple",
+      "importe": 36.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "aprobado",
+      "razon": "La operación cumple con todos los criterios establecidos y el proveedor ya está aprobado, así como el operador comercial.",
+      "escalo_hil": false,
+      "tiempo_seg": 2.88,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_06",
+      "caso_real_bpi": "4508075755_00020",
+      "nivel": "Simple",
+      "importe": 57.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "aprobado",
+      "razon": "La solicitud BPI_06 ha sido registrada correctamente por un valor de 57.0EUR y se mantiene dentro del presupuesto, y no se ha encontrado ninguna condición que impida el proceso. ",
+      "escalo_hil": false,
+      "tiempo_seg": 2.06,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_07",
+      "caso_real_bpi": "4507005407_00230",
+      "nivel": "Simple",
+      "importe": 147.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "rechazado",
+      "razon": "El proveedor BPI se encuentra en estado suspendido y no opera, lo que requiere una mayor investigación para evaluar su idoneidad para futuras transacciones. Para proceder con la solicitud BPI_08, es necesario obtener más información sobre el estado de operaciones del proveedor BPI y verificar que esté al día con las condiciones de su contrato.",
+      "escalo_hil": false,
+      "tiempo_seg": 2.37,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_08",
+      "caso_real_bpi": "4507001577_00010",
+      "nivel": "Simple",
+      "importe": 59.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "aprobado",
+      "razon": "La solicitud de servicios BPI_08 ha sido validada correctamente con datos del proveedor BPI.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.86,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_09",
+      "caso_real_bpi": "4507021568_00030",
+      "nivel": "Simple",
+      "importe": 1993.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "aprobado",
+      "razon": "El proveedor BPI se encuentra en estado aprobado, con operación válida y nivel de aprobación automático, por lo que el contrato BPI se puede proceder a revisar.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.65,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_10",
+      "caso_real_bpi": "4507004611_00300",
+      "nivel": "Simple",
+      "importe": 74.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "aprobado",
+      "razon": "Cumple con las normativas BPI y se ha verificado que existe presupuesto aprobado.",
+      "escalo_hil": false,
+      "tiempo_seg": 2.13,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_11",
+      "caso_real_bpi": "4508063173_00090",
+      "nivel": "Simple",
+      "importe": 411.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "error",
+      "razon": "litellm.RateLimitError: RateLimitError: GroqException - {\"er",
+      "escalo_hil": false,
+      "tiempo_seg": 2.01,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_12",
+      "caso_real_bpi": "4508051172_00010",
+      "nivel": "Simple",
+      "importe": 769.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "aprobado",
+      "razon": "La solicitud BPI_12 ha sido registrada con éxito y el importe de 769.0EUR se ha confirmado. El contrato 3-way match, invoice before GR BPI tiene riesgo bajo.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.86,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_13",
+      "caso_real_bpi": "4508066258_00110",
+      "nivel": "Simple",
+      "importe": 126.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "rechazado",
+      "razon": "Duplicidad de registros no permite un proceso automático de BPI. Requiere acción manual para solucionar.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.76,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_14",
+      "caso_real_bpi": "4508070175_00150",
+      "nivel": "Simple",
+      "importe": 13.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "error",
+      "razon": "litellm.RateLimitError: RateLimitError: GroqException - {\"er",
+      "escalo_hil": false,
+      "tiempo_seg": 1.57,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_15",
+      "caso_real_bpi": "4507021852_00010",
+      "nivel": "Simple",
+      "importe": 989.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "escalado_hil",
+      "razon": "Se requiere verificar el contrato antes de tomar una decisión final.",
+      "escalo_hil": false,
+      "tiempo_seg": 2.08,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_16",
+      "caso_real_bpi": "4508074272_00040",
+      "nivel": "Simple",
+      "importe": 1009.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "rechazado",
+      "razon": "Evaluamos riesgos de credibilidad del proveedor que está suspendido y no opera actualmente, por lo que debemos rechazar la solicitud BPI_16.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.76,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_17",
+      "caso_real_bpi": "4508074580_00070",
+      "nivel": "Simple",
+      "importe": 120.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "aprobado",
+      "razon": "Proveedor BPI con el número de identificación 0391 se ha verificado como aprobado con nivel de operación automático.",
+      "escalo_hil": false,
+      "tiempo_seg": 2.19,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_18",
+      "caso_real_bpi": "4507020509_00050",
+      "nivel": "Simple",
+      "importe": 43.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "aprobado",
+      "razon": "El proveedor BPI tiene un estado aprobado y es operativo, lo que cumple con los requisitos de validación y está en condiciones de proceder con la operación de presupuesto.",
+      "escalo_hil": false,
+      "tiempo_seg": 105.35,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_19",
+      "caso_real_bpi": "4507034314_00060",
+      "nivel": "Simple",
+      "importe": 701.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "aprobado",
+      "razon": "El proveedor BPI con el identificador vendorID_0263 aprobado ha estado operativo y cumplió con todos los criterios establecidos para la solicitud BPI_19. Además, se han completado los siguientes pasos establecidos en el contrato para el pago:\n1. Realizar el 3-way match entre el proveedor, el contrato y la factura.\n2. Realizar un seguimiento con el departamento de contratos para asegurarse que el contrato esté aprobado.\n3. Realizar un seguimiento con el departamento de finanzas para asegurarse que el pago sea realizado de acuerdo a los términos y condiciones del contrato.\n\nSe han revisado los detalles de la solicitud BPI_19 y se ha verificado que cumple con todos los requisitos establecidos en el contrato.",
+      "escalo_hil": false,
+      "tiempo_seg": 2.32,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_20",
+      "caso_real_bpi": "4507026248_00050",
+      "nivel": "Simple",
+      "importe": 246.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "aprobado",
+      "razon": "El importe solicitado de 246,0EUR está dentro del límite establecido en el contrato y la solicitud BPI_20 se ajusta a los requisitos de cumplimiento BPI.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.78,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_21",
+      "caso_real_bpi": "4508052129_00010",
+      "nivel": "Medio",
+      "importe": 19786.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "aprobado",
+      "razon": "El presupuesto de operaciones 19786.0EUR de BPI ya ha sido aprobado y es operativo. El proveedor también cuenta con estado aprobado y operativo, lo que satisface los criterios establecidos para la validación del proveedor BPI.",
+      "escalo_hil": false,
+      "tiempo_seg": 2.23,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_22",
+      "caso_real_bpi": "4508074299_00040",
+      "nivel": "Medio",
+      "importe": 2915.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "aprobado",
+      "razon": "Se ha verificado que el proveedor BPI ha sido validado con éxito, cumpliendo con los criterios de calidad y seguridad, y que el presupuesto ha sido verificado conforme a los estándares establecidos. Además, se ha revisado el contrato BPI y se asegura que se cumplan los términos y condiciones.",
+      "escalo_hil": false,
+      "tiempo_seg": 2.81,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_23",
+      "caso_real_bpi": "4508067780_00010",
+      "nivel": "Medio",
+      "importe": 15383.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "aprobado",
+      "razon": "La solicitud BPI_23 ha sido registrada con un monto de 15383.0 EUR y el proveedor ha sido verificado con estado aprobado y opera True.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.98,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_24",
+      "caso_real_bpi": "4508068930_00010",
+      "nivel": "Medio",
+      "importe": 11441.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "aprobado",
+      "razon": "La solicitud BPI_24 ha sido registrada con éxito, el presupuesto ha sido verificado y el proveedor está aprobado y operativo, por lo tanto, se puede proceder con el proceso de compra sin restricciones de cumplimiento BPI.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.94,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_25",
+      "caso_real_bpi": "4508052312_00030",
+      "nivel": "Medio",
+      "importe": 4366.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "aprobado",
+      "razon": "Los requisitos de cumplimiento para la solicitud BPI_25 de valor 4366.0EUR han sido satisfechos. Verificar presupuesto BPI ha confirmado que el presupuesto está dentro de los límites aprobados y el proveedor BPI ha sido validado con éxito.",
+      "escalo_hil": false,
+      "tiempo_seg": 2.03,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_26",
+      "caso_real_bpi": "4508072610_00010",
+      "nivel": "Medio",
+      "importe": 7499.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "aprobar",
+      "razon": "El proveedor BPI con vendorID 0800 ha sido aprobado, se ha verificado presupuesto BPI y se ha revisado contrato BPI para confirmar el presupuesto",
+      "escalo_hil": false,
+      "tiempo_seg": 1.83,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_27",
+      "caso_real_bpi": "4508053915_00001",
+      "nivel": "Medio",
+      "importe": 35288.0,
+      "categoria_bpi": "3-way match, invoice after GR",
+      "decision_m3": "aprobado",
+      "razon": "Validar datos de proveedor: OK. Operaciones presupuestadas del BPI han superado con éxito la validación de presupuesto, no se encuentran desbordos presupuestarios actuales. El contrato BPI ha sido convalidado.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.82,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_28",
+      "caso_real_bpi": "4507040141_00020",
+      "nivel": "Medio",
+      "importe": 3699.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "aprobado",
+      "razon": "El estado del proveedor BPI es aprobado y opera correctamente, el presupuesto BPI_28 ya está aprobado, por lo que puede proceder a realizar el pago de 3699.0EUR",
+      "escalo_hil": false,
+      "tiempo_seg": 2.98,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_29",
+      "caso_real_bpi": "4507036048_00010",
+      "nivel": "Medio",
+      "importe": 21173.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "rechazado",
+      "razon": "Revisar contrato BPI antes de proceder con el pago",
+      "escalo_hil": false,
+      "tiempo_seg": 2.33,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_30",
+      "caso_real_bpi": "4508056383_00050",
+      "nivel": "Medio",
+      "importe": 6194.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "aprobado",
+      "razon": "Se ha aprobado la solicitud de BPI de 6194.0EUR. Se ha revisado el contrato 3-way match con el proveedor BPI (vendorID_0104) para la cantidad de 6194.0EUR.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.67,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_31",
+      "caso_real_bpi": "4508069414_00050",
+      "nivel": "Medio",
+      "importe": 6035.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "error",
+      "razon": "litellm.RateLimitError: RateLimitError: GroqException - {\"er",
+      "escalo_hil": false,
+      "tiempo_seg": 1.87,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_32",
+      "caso_real_bpi": "4508044433_00080",
+      "nivel": "Medio",
+      "importe": 2643.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "aprobado",
+      "razon": "Sí, puedes proceder con el registro de la solicitud BPI-32 número 2643 ya que el proveedor BPI cuenta con estado aprobado y opera con éxito en nuestra base de datos.",
+      "escalo_hil": false,
+      "tiempo_seg": 2.46,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_33",
+      "caso_real_bpi": "4507038270_00020",
+      "nivel": "Medio",
+      "importe": 5383.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "aprobado",
+      "razon": "La solicitud BPI_33 tiene un presupuesto de 5383.0EUR aprobado y se encuentra confirmada, el proveedor BPI tiene estado aprobado y opera con verdad. Además, el presupuesto operaciones BPI está aprobado por la administración y se encontraron los datos necesarios para validación en backstory. Por lo tanto, se puede concluir que la solicitud BPI_33 cumple con todos los requisitos y se debe aprobar. Además, se ha revisado el contrato BPI y se ha encontrado OK.",
+      "escalo_hil": false,
+      "tiempo_seg": 2.06,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_34",
+      "caso_real_bpi": "4508055722_00040",
+      "nivel": "Medio",
+      "importe": 278.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "aprobado",
+      "razon": "Presupuesto de 278.0EUR válido, proveedor aprobado y contrato BPI en revisión de 3-way match ",
+      "escalo_hil": false,
+      "tiempo_seg": 2.15,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_35",
+      "caso_real_bpi": "4508072040_00001",
+      "nivel": "Medio",
+      "importe": 10361.0,
+      "categoria_bpi": "3-way match, invoice after GR",
+      "decision_m3": "aprobado",
+      "razon": "El proveedor BPI está aprobado (estado=aprobado opera=True) y la solicitud ha sido confirmada.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.96,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_36",
+      "caso_real_bpi": "4508066533_00010",
+      "nivel": "Medio",
+      "importe": 101.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "rechazado",
+      "razon": " El proveedor BPI no cumple con las políticas de financiamiento y el contrato no está actualizado",
+      "escalo_hil": false,
+      "tiempo_seg": 1.62,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_37",
+      "caso_real_bpi": "4508049432_00010",
+      "nivel": "Medio",
+      "importe": 5256.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "aprobado",
+      "razon": "Cumple con los criterios de BPI",
+      "escalo_hil": false,
+      "tiempo_seg": 2.12,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_38",
+      "caso_real_bpi": "4508070851_00210",
+      "nivel": "Medio",
+      "importe": 3273.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "rechazado",
+      "razon": "no parse",
+      "escalo_hil": false,
+      "tiempo_seg": 2.35,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_39",
+      "caso_real_bpi": "4507040511_00010",
+      "nivel": "Complejo",
+      "importe": 0.0,
+      "categoria_bpi": "Consignment",
+      "decision_m3": "aprobado",
+      "razon": "La verificación del presupuesto BPI aprobado a un importe de 0.0EUR con operación automática ha sido exitosa. El proveedor BPI tiene un estado de 'aprobado' y la operación es verdadera. Por lo tanto, se aprueba la solicitud BPI_39.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.83,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "BPI_40",
+      "caso_real_bpi": "4507009742_00010",
+      "nivel": "Complejo",
+      "importe": 57250.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "aprobado",
+      "razon": "La solicitud se encuentra dentro del presupuesto autorizado y los datos del proveedor han sido validados.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.96,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "BPI_41",
+      "caso_real_bpi": "4507012010_00010",
+      "nivel": "Complejo",
+      "importe": 23031.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "aprobado",
+      "razon": "La solicitud BPI_41 ha sido aprobada por un presupuesto de 23031.0EUR y se cumple el requisito del 3-way match y la factura tiene el estado \"Before GR\", por lo tanto se puede proceder con el pago.",
+      "escalo_hil": false,
+      "tiempo_seg": 2.23,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_42",
+      "caso_real_bpi": "4507022933_00050",
+      "nivel": "Complejo",
+      "importe": 0.0,
+      "categoria_bpi": "Consignment",
+      "decision_m3": "rechazado",
+      "razon": "El contrato BPI_42 no se ajusta a las políticas y procedimientos internos. Se requiere revisión y actualización del contrato antes de proseguir con la operación.",
+      "escalo_hil": false,
+      "tiempo_seg": 2.03,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "BPI_43",
+      "caso_real_bpi": "4507034888_00010",
+      "nivel": "Complejo",
+      "importe": 0.0,
+      "categoria_bpi": "Consignment",
+      "decision_m3": "aprobado",
+      "razon": "La solicitud BPI_43 ha sido confirmada con un importe de 0.0EUR.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.83,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "BPI_44",
+      "caso_real_bpi": "4507029897_00040",
+      "nivel": "Complejo",
+      "importe": 132.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "aprobado",
+      "razon": "El presupuesto BPI está aprobado y la operación es verdadera con el proveedor BPI en estado aprobado y proceso de validación en progreso.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.73,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "BPI_45",
+      "caso_real_bpi": "4507027474_00010",
+      "nivel": "Complejo",
+      "importe": 372741.0,
+      "categoria_bpi": "3-way match, invoice after GR",
+      "decision_m3": "aprobado",
+      "razon": "La solicitud BPI_45 se realizó con éxito, el estado del proveedor BPI es aprobado y el operador está activo.",
+      "escalo_hil": false,
+      "tiempo_seg": 2.03,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "BPI_46",
+      "caso_real_bpi": "4507018411_00010",
+      "nivel": "Complejo",
+      "importe": 7693.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "escalado_hil",
+      "razon": "Se requiere información adicional sobre la solicitud BPI 46 7693.0 para verificar el cumplimiento BPI.",
+      "escalo_hil": true,
+      "tiempo_seg": 2.2,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "BPI_47",
+      "caso_real_bpi": "4507016996_00030",
+      "nivel": "Complejo",
+      "importe": 0.0,
+      "categoria_bpi": "Consignment",
+      "decision_m3": "aprobado",
+      "razon": "La cantidad de solicitud BPI_47 es 0.0EUR",
+      "escalo_hil": false,
+      "tiempo_seg": 1.72,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "BPI_48",
+      "caso_real_bpi": "4508067170_00050",
+      "nivel": "Complejo",
+      "importe": 73.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m3": "aprobado",
+      "razon": "La solicitud BPI_48 se ha registrado correcta y el valor total es de 73.0EUR, lo que cumple con los criterios establecidos por la Normativa BPI.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.98,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "BPI_49",
+      "caso_real_bpi": "4507013026_00010",
+      "nivel": "Complejo",
+      "importe": 0.0,
+      "categoria_bpi": "Consignment",
+      "decision_m3": "aprobado",
+      "razon": "La solicitud BPI_49 ha sido confirmada con éxito y el presupuesto BPI confirmado con nivel de aprobación automático, lo que cumple con los requisitos establecidos.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.88,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "BPI_50",
+      "caso_real_bpi": "4508062972_00001",
+      "nivel": "Complejo",
+      "importe": 510.0,
+      "categoria_bpi": "3-way match, invoice after GR",
+      "decision_m3": "aprobado",
+      "razon": "Solicitud BPI_50 con importe de 510.0EUR ha sido registrada y confirmada en BPI. Proveedor BPI: estado=aprobado opera=True, por lo que BPI ya está validado.",
+      "escalo_hil": false,
+      "tiempo_seg": 1.92,
+      "tokens_usados": 750,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    }
+  ]
+}

@@ -1,0 +1,543 @@
+{
+  "proceso": "compliance_check_proveedores",
+  "empresa": "ACME Industrial S.A.",
+  "descripcion": "Auditoría periódica de cumplimiento normativo de proveedores activos",
+  "agentes": [
+    "Auditor",
+    "Legal",
+    "Compliance",
+    "Finanzas"
+  ],
+  "niveles": {
+    "Simple": "C01-C08 — proveedores con historial limpio, renovación rutinaria",
+    "Medio": "C09-C14 — excepciones documentales o cambios en el proveedor",
+    "Complejo": "C15-C20 — incumplimientos graves, sanciones, riesgo crítico"
+  },
+  "casos": [
+    {
+      "id": "C01",
+      "nivel": "Simple",
+      "proveedor_id": "PRV-001",
+      "nombre": "TechSupply S.L.",
+      "sector": "tecnologia",
+      "años_como_proveedor": 5,
+      "volumen_anual_eur": 45000,
+      "certificaciones_vigentes": true,
+      "gdpr_cumple": true,
+      "prl_cumple": true,
+      "iso_9001": true,
+      "incidencias_ultimo_año": 0,
+      "pagos_al_dia": true,
+      "descripcion": "Proveedor tecnológico habitual. Todas las certificaciones vigentes, sin incidencias, pagos al día. Renovación anual rutinaria.",
+      "ground_truth": {
+        "resultado": "renovacion_aprobada",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Auditor",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "id": "C02",
+      "nivel": "Simple",
+      "proveedor_id": "PRV-002",
+      "nombre": "Distribuidora Pérez S.A.",
+      "sector": "distribucion",
+      "años_como_proveedor": 8,
+      "volumen_anual_eur": 80000,
+      "certificaciones_vigentes": true,
+      "gdpr_cumple": true,
+      "prl_cumple": true,
+      "iso_9001": true,
+      "incidencias_ultimo_año": 0,
+      "pagos_al_dia": true,
+      "descripcion": "Distribuidor con 8 años de relación. Historial impecable, sin alertas, certificaciones en regla.",
+      "ground_truth": {
+        "resultado": "renovacion_aprobada",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Auditor",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "id": "C03",
+      "nivel": "Simple",
+      "proveedor_id": "PRV-003",
+      "nombre": "Servicios Generales Norte S.L.",
+      "sector": "servicios",
+      "años_como_proveedor": 3,
+      "volumen_anual_eur": 12000,
+      "certificaciones_vigentes": true,
+      "gdpr_cumple": true,
+      "prl_cumple": true,
+      "iso_9001": false,
+      "incidencias_ultimo_año": 0,
+      "pagos_al_dia": true,
+      "descripcion": "Proveedor de servicios de limpieza. Sin ISO 9001 pero no es requisito para su categoría. Sin incidencias.",
+      "ground_truth": {
+        "resultado": "renovacion_aprobada_sin_iso",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Auditor",
+          "Compliance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "id": "C04",
+      "nivel": "Simple",
+      "proveedor_id": "PRV-004",
+      "nombre": "Materiales Industriales García S.L.",
+      "sector": "materiales",
+      "años_como_proveedor": 12,
+      "volumen_anual_eur": 150000,
+      "certificaciones_vigentes": true,
+      "gdpr_cumple": true,
+      "prl_cumple": true,
+      "iso_9001": true,
+      "incidencias_ultimo_año": 1,
+      "pagos_al_dia": true,
+      "descripcion": "Proveedor estratégico con 12 años. Una incidencia menor resuelta (retraso en entrega). Sin alertas relevantes.",
+      "ground_truth": {
+        "resultado": "renovacion_aprobada_con_nota",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Auditor",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "id": "C05",
+      "nivel": "Simple",
+      "proveedor_id": "PRV-005",
+      "nombre": "Consultoría Técnica Ibérica S.A.",
+      "sector": "consultoria",
+      "años_como_proveedor": 4,
+      "volumen_anual_eur": 35000,
+      "certificaciones_vigentes": true,
+      "gdpr_cumple": true,
+      "prl_cumple": true,
+      "iso_9001": true,
+      "incidencias_ultimo_año": 0,
+      "pagos_al_dia": true,
+      "descripcion": "Consultora técnica. Todas las certificaciones renovadas el mes pasado. Sin incidencias.",
+      "ground_truth": {
+        "resultado": "renovacion_aprobada",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Auditor",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "id": "C06",
+      "nivel": "Simple",
+      "proveedor_id": "PRV-006",
+      "nombre": "Transporte Rápido S.L.",
+      "sector": "transporte",
+      "años_como_proveedor": 6,
+      "volumen_anual_eur": 28000,
+      "certificaciones_vigentes": true,
+      "gdpr_cumple": true,
+      "prl_cumple": true,
+      "iso_9001": false,
+      "incidencias_ultimo_año": 0,
+      "pagos_al_dia": true,
+      "descripcion": "Empresa de transporte. Sin ISO 9001 pero sí tiene certificación de transporte ADR vigente. Sin incidencias.",
+      "ground_truth": {
+        "resultado": "renovacion_aprobada",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Auditor",
+          "Compliance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "id": "C07",
+      "nivel": "Simple",
+      "proveedor_id": "PRV-007",
+      "nombre": "Suministros Oficina Express S.L.",
+      "sector": "oficina",
+      "años_como_proveedor": 2,
+      "volumen_anual_eur": 5000,
+      "certificaciones_vigentes": true,
+      "gdpr_cumple": true,
+      "prl_cumple": true,
+      "iso_9001": false,
+      "incidencias_ultimo_año": 0,
+      "pagos_al_dia": true,
+      "descripcion": "Proveedor de material de oficina. Volumen bajo, sin requisitos especiales, todo en regla.",
+      "ground_truth": {
+        "resultado": "renovacion_aprobada",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Auditor"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "id": "C08",
+      "nivel": "Simple",
+      "proveedor_id": "PRV-008",
+      "nombre": "Mantenimiento Industrial Díaz S.A.",
+      "sector": "mantenimiento",
+      "años_como_proveedor": 7,
+      "volumen_anual_eur": 60000,
+      "certificaciones_vigentes": true,
+      "gdpr_cumple": true,
+      "prl_cumple": true,
+      "iso_9001": true,
+      "incidencias_ultimo_año": 0,
+      "pagos_al_dia": true,
+      "descripcion": "Empresa de mantenimiento industrial. Todo en regla, relación estable y sin alertas.",
+      "ground_truth": {
+        "resultado": "renovacion_aprobada",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Auditor",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "id": "C09",
+      "nivel": "Medio",
+      "proveedor_id": "PRV-009",
+      "nombre": "Software Solutions EU GmbH",
+      "sector": "tecnologia",
+      "años_como_proveedor": 3,
+      "volumen_anual_eur": 90000,
+      "certificaciones_vigentes": false,
+      "gdpr_cumple": true,
+      "prl_cumple": true,
+      "iso_9001": true,
+      "incidencias_ultimo_año": 0,
+      "pagos_al_dia": true,
+      "certificacion_caducada": "ISO 27001",
+      "descripcion": "Proveedor de software alemán. ISO 27001 caducada hace 2 meses. El proveedor indica que está en proceso de renovación. Alto volumen de datos procesados.",
+      "ground_truth": {
+        "resultado": "renovacion_condicional_pendiente_iso27001",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Auditor",
+          "Legal",
+          "Compliance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "id": "C10",
+      "nivel": "Medio",
+      "proveedor_id": "PRV-010",
+      "nombre": "Construcciones y Obras Martín S.L.",
+      "sector": "construccion",
+      "años_como_proveedor": 5,
+      "volumen_anual_eur": 200000,
+      "certificaciones_vigentes": true,
+      "gdpr_cumple": true,
+      "prl_cumple": false,
+      "iso_9001": true,
+      "incidencias_ultimo_año": 2,
+      "pagos_al_dia": true,
+      "descripcion": "Empresa constructora. Plan de PRL desactualizado (2022). Dos incidencias leves de seguridad en obra el último año. Requiere actualización del plan.",
+      "ground_truth": {
+        "resultado": "renovacion_condicional_actualizar_prl",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Auditor",
+          "Legal",
+          "Compliance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "id": "C11",
+      "nivel": "Medio",
+      "proveedor_id": "PRV-011",
+      "nombre": "DataProcess Analytics S.L.",
+      "sector": "datos",
+      "años_como_proveedor": 2,
+      "volumen_anual_eur": 55000,
+      "certificaciones_vigentes": true,
+      "gdpr_cumple": false,
+      "prl_cumple": true,
+      "iso_9001": true,
+      "incidencias_ultimo_año": 0,
+      "pagos_al_dia": true,
+      "descripcion": "Empresa de análisis de datos. Auditoría interna detectó que transfiere datos a servidores fuera de la UE sin cláusulas contractuales adecuadas. Incumplimiento GDPR potencial.",
+      "ground_truth": {
+        "resultado": "renovacion_bloqueada_revision_gdpr",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Auditor",
+          "Legal",
+          "Compliance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "id": "C12",
+      "nivel": "Medio",
+      "proveedor_id": "PRV-012",
+      "nombre": "Equipos Técnicos Avanzados S.A.",
+      "sector": "equipamiento",
+      "años_como_proveedor": 10,
+      "volumen_anual_eur": 120000,
+      "certificaciones_vigentes": true,
+      "gdpr_cumple": true,
+      "prl_cumple": true,
+      "iso_9001": true,
+      "incidencias_ultimo_año": 0,
+      "pagos_al_dia": false,
+      "deuda_pendiente_eur": 15000,
+      "descripcion": "Proveedor estratégico con 10 años. Tiene 15.000€ de facturas pendientes de cobro por parte de ACME (ACME les debe dinero). Situación anómala que requiere revisión financiera.",
+      "ground_truth": {
+        "resultado": "renovacion_condicional_regularizar_deuda",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Auditor",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "id": "C13",
+      "nivel": "Medio",
+      "proveedor_id": "PRV-013",
+      "nombre": "Nuevas Energías Renovables S.L.",
+      "sector": "energia",
+      "años_como_proveedor": 1,
+      "volumen_anual_eur": 75000,
+      "certificaciones_vigentes": true,
+      "gdpr_cumple": true,
+      "prl_cumple": true,
+      "iso_9001": false,
+      "incidencias_ultimo_año": 0,
+      "pagos_al_dia": true,
+      "cambio_societario": true,
+      "descripcion": "Proveedor de energía con solo 1 año. Ha habido un cambio de administrador único hace 3 meses. Requiere verificación del nuevo responsable y actualización contractual.",
+      "ground_truth": {
+        "resultado": "renovacion_condicional_verificar_administrador",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Auditor",
+          "Legal",
+          "Compliance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "id": "C14",
+      "nivel": "Medio",
+      "proveedor_id": "PRV-014",
+      "nombre": "Logística Integrada del Sur S.A.",
+      "sector": "logistica",
+      "años_como_proveedor": 6,
+      "volumen_anual_eur": 180000,
+      "certificaciones_vigentes": true,
+      "gdpr_cumple": true,
+      "prl_cumple": true,
+      "iso_9001": true,
+      "incidencias_ultimo_año": 4,
+      "pagos_al_dia": true,
+      "descripcion": "Empresa logística. Cuatro incidencias el último año: 3 retrasos significativos y 1 pérdida de mercancía. Historial previo impecable. Requiere plan de mejora.",
+      "ground_truth": {
+        "resultado": "renovacion_condicional_plan_mejora",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Auditor",
+          "Legal",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "id": "C15",
+      "nivel": "Complejo",
+      "proveedor_id": "PRV-015",
+      "nombre": "Chemical Supplies International Ltd.",
+      "sector": "quimica",
+      "años_como_proveedor": 4,
+      "volumen_anual_eur": 300000,
+      "certificaciones_vigentes": false,
+      "gdpr_cumple": true,
+      "prl_cumple": false,
+      "iso_9001": false,
+      "incidencias_ultimo_año": 3,
+      "pagos_al_dia": true,
+      "sancion_regulatoria": true,
+      "descripcion": "Proveedor de productos químicos. Ha recibido una sanción de la Agencia Europea de Sustancias Químicas (ECHA) por incumplimiento del Reglamento REACH. Certificaciones caducadas y plan PRL desactualizado.",
+      "ground_truth": {
+        "resultado": "escalacion_hil_sancion_regulatoria_reach",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Auditor",
+          "Legal",
+          "Compliance",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "id": "C16",
+      "nivel": "Complejo",
+      "proveedor_id": "PRV-016",
+      "nombre": "Global Tech Partners S.A.",
+      "sector": "tecnologia",
+      "años_como_proveedor": 5,
+      "volumen_anual_eur": 450000,
+      "certificaciones_vigentes": true,
+      "gdpr_cumple": false,
+      "prl_cumple": true,
+      "iso_9001": true,
+      "incidencias_ultimo_año": 0,
+      "pagos_al_dia": true,
+      "brecha_datos": true,
+      "descripcion": "Proveedor tecnológico estratégico. Ha sufrido una brecha de datos que afectó a información de clientes de ACME. Notificación a la AEPD en curso. Incumplimiento GDPR grave.",
+      "ground_truth": {
+        "resultado": "escalacion_hil_brecha_datos_gdpr",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Auditor",
+          "Legal",
+          "Compliance",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "id": "C17",
+      "nivel": "Complejo",
+      "proveedor_id": "PRV-017",
+      "nombre": "Construcciones Hernández e Hijos S.L.",
+      "sector": "construccion",
+      "años_como_proveedor": 8,
+      "volumen_anual_eur": 250000,
+      "certificaciones_vigentes": true,
+      "gdpr_cumple": true,
+      "prl_cumple": true,
+      "iso_9001": true,
+      "incidencias_ultimo_año": 1,
+      "pagos_al_dia": true,
+      "accidente_laboral_grave": true,
+      "descripcion": "Empresa constructora con largo historial. Un trabajador sufrió un accidente laboral grave en instalaciones de ACME hace 2 meses. Investigación de la Inspección de Trabajo en curso. Responsabilidad compartida.",
+      "ground_truth": {
+        "resultado": "escalacion_hil_accidente_laboral_grave",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Auditor",
+          "Legal",
+          "Compliance",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "id": "C18",
+      "nivel": "Complejo",
+      "proveedor_id": "PRV-018",
+      "nombre": "Eastern Trade Solutions LLC",
+      "sector": "comercio",
+      "años_como_proveedor": 3,
+      "volumen_anual_eur": 380000,
+      "certificaciones_vigentes": true,
+      "gdpr_cumple": true,
+      "prl_cumple": true,
+      "iso_9001": true,
+      "incidencias_ultimo_año": 0,
+      "pagos_al_dia": true,
+      "alerta_sanciones_internacionales": true,
+      "descripcion": "Proveedor de comercio internacional. Aparece en la lista de alertas de sanciones internacionales del Tesoro de EEUU (OFAC) por vínculos con entidades sancionadas. Alto volumen.",
+      "ground_truth": {
+        "resultado": "escalacion_hil_alerta_sanciones_ofac",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Auditor",
+          "Legal",
+          "Compliance",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "id": "C19",
+      "nivel": "Complejo",
+      "proveedor_id": "PRV-019",
+      "nombre": "Sistemas Críticos Industriales S.A.",
+      "sector": "infraestructura",
+      "años_como_proveedor": 6,
+      "volumen_anual_eur": 500000,
+      "certificaciones_vigentes": true,
+      "gdpr_cumple": true,
+      "prl_cumple": true,
+      "iso_9001": true,
+      "incidencias_ultimo_año": 0,
+      "pagos_al_dia": true,
+      "conflicto_interes": true,
+      "descripcion": "Proveedor de infraestructura crítica. El director de operaciones de ACME es accionista minoritario (8%) de este proveedor. Conflicto de interés no declarado detectado en auditoría.",
+      "ground_truth": {
+        "resultado": "escalacion_hil_conflicto_interes_accionista",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Auditor",
+          "Legal",
+          "Compliance",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "id": "C20",
+      "nivel": "Complejo",
+      "proveedor_id": "PRV-020",
+      "nombre": "Fraude Detectado Servicios S.L.",
+      "sector": "servicios",
+      "años_como_proveedor": 2,
+      "volumen_anual_eur": 95000,
+      "certificaciones_vigentes": true,
+      "gdpr_cumple": true,
+      "prl_cumple": true,
+      "iso_9001": false,
+      "incidencias_ultimo_año": 0,
+      "pagos_al_dia": true,
+      "facturacion_fraudulenta": true,
+      "descripcion": "Proveedor de servicios. Auditoría interna detectó facturas duplicadas y servicios facturados no prestados por un total de 23.000€. Posible fraude contractual.",
+      "ground_truth": {
+        "resultado": "escalacion_hil_fraude_facturacion",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Auditor",
+          "Legal",
+          "Compliance",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    }
+  ]
+}

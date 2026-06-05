@@ -1,0 +1,39 @@
+{
+  "modelo": "M2_single_agent",
+  "replicas": [
+    {
+      "rep": 1,
+      "modelo": "M2 â€” Single Agent LLM (llama-3.1-8b-instant)",
+      "total_casos": 50,
+      "ARR": 76.0,
+      "HDA": 30.8,
+      "DER": 22.0,
+      "PT": 0.26,
+      "TCC": 0
+    },
+    {
+      "rep": 2,
+      "ARR": 100.0,
+      "HDA": 0.0,
+      "DER": 30.0,
+      "PT": 0.4202
+    },
+    {
+      "rep": 3,
+      "ARR": 100.0,
+      "HDA": 0.0,
+      "DER": 30.0,
+      "PT": 0.2598
+    }
+  ],
+  "estadisticas": {
+    "ARR_media": 92.0,
+    "ARR_std": 11.3,
+    "HDA_media": 10.3,
+    "HDA_std": 14.5,
+    "DER_media": 27.3,
+    "DER_std": 3.8,
+    "PT_media": 0.31,
+    "PT_std": 0.08
+  }
+}

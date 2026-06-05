@@ -1,0 +1,466 @@
+{
+  "proceso": "onboarding_clientes",
+  "empresa": "ACME Industrial S.A.",
+  "descripcion": "Onboarding de nuevos clientes B2B y B2C para ACME Industrial S.A.",
+  "agentes": [
+    "Comercial",
+    "Legal",
+    "Compliance",
+    "Finanzas"
+  ],
+  "niveles": {
+    "Simple": "C01-C08 — clientes estándar sin alertas",
+    "Medio": "C09-C14 — excepciones operativas y documentales",
+    "Complejo": "C15-C20 — riesgo regulatorio, AML, sanciones"
+  },
+  "casos": [
+    {
+      "id": "C01",
+      "nivel": "Simple",
+      "tipo_cliente": "B2B",
+      "nombre": "Talleres Martínez S.L.",
+      "sector": "metalurgia",
+      "volumen_anual_eur": 15000,
+      "pais": "España",
+      "antiguedad_empresa_años": 12,
+      "documentacion_completa": true,
+      "descripcion": "PYME española del sector metalúrgico solicita alta como cliente para compra recurrente de materiales industriales. Documentación completa, empresa con 12 años de actividad.",
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Comercial",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "id": "C02",
+      "nivel": "Simple",
+      "tipo_cliente": "B2C",
+      "nombre": "Carlos Fernández García",
+      "sector": "particular",
+      "volumen_anual_eur": 2000,
+      "pais": "España",
+      "antiguedad_empresa_años": 0,
+      "documentacion_completa": true,
+      "descripcion": "Particular español solicita alta para compras ocasionales de herramientas y EPIs. DNI válido, domicilio verificado.",
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Comercial",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "id": "C03",
+      "nivel": "Simple",
+      "tipo_cliente": "B2B",
+      "nombre": "Construcciones Levante S.A.",
+      "sector": "construccion",
+      "volumen_anual_eur": 45000,
+      "pais": "España",
+      "antiguedad_empresa_años": 8,
+      "documentacion_completa": true,
+      "descripcion": "Empresa constructora española solicita alta para suministro de materiales de construcción. CIF válido, sin alertas, solvente.",
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Comercial",
+          "Legal",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "id": "C04",
+      "nivel": "Simple",
+      "tipo_cliente": "B2C",
+      "nombre": "Ana López Ruiz",
+      "sector": "particular",
+      "volumen_anual_eur": 500,
+      "pais": "España",
+      "antiguedad_empresa_años": 0,
+      "documentacion_completa": true,
+      "descripcion": "Particular solicita alta para compra puntual de material de oficina. Volumen bajo, sin riesgo.",
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Comercial"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "id": "C05",
+      "nivel": "Simple",
+      "tipo_cliente": "B2B",
+      "nombre": "Distribuidora Norte S.L.",
+      "sector": "distribucion",
+      "volumen_anual_eur": 80000,
+      "pais": "España",
+      "antiguedad_empresa_años": 15,
+      "documentacion_completa": true,
+      "descripcion": "Distribuidora con larga trayectoria solicita alta para pedidos recurrentes de gran volumen. Referencias comerciales positivas.",
+      "ground_truth": {
+        "resultado": "aprobacion_con_limite_credito",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Comercial",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "id": "C06",
+      "nivel": "Simple",
+      "tipo_cliente": "B2B",
+      "nombre": "Taller Mecánico Rodríguez",
+      "sector": "automocion",
+      "volumen_anual_eur": 8000,
+      "pais": "España",
+      "antiguedad_empresa_años": 5,
+      "documentacion_completa": true,
+      "descripcion": "Taller mecánico familiar solicita alta para compra de recambios y herramientas. Empresa pequeña, sin incidencias.",
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Comercial",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "id": "C07",
+      "nivel": "Simple",
+      "tipo_cliente": "B2C",
+      "nombre": "Miguel Ángel Torres Pérez",
+      "sector": "particular",
+      "volumen_anual_eur": 3500,
+      "pais": "España",
+      "antiguedad_empresa_años": 0,
+      "documentacion_completa": true,
+      "descripcion": "Autónomo solicita alta como cliente particular para compra de herramientas profesionales. Actividad verificada en censo.",
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Comercial",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "id": "C08",
+      "nivel": "Simple",
+      "tipo_cliente": "B2B",
+      "nombre": "Servicios Integrales Ibérica S.L.",
+      "sector": "servicios",
+      "volumen_anual_eur": 25000,
+      "pais": "España",
+      "antiguedad_empresa_años": 3,
+      "documentacion_completa": true,
+      "descripcion": "Empresa de servicios de mantenimiento solicita alta. Empresa joven pero con contratos públicos verificables.",
+      "ground_truth": {
+        "resultado": "aprobacion_con_revision_anual",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Comercial",
+          "Legal",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "id": "C09",
+      "nivel": "Medio",
+      "tipo_cliente": "B2B",
+      "nombre": "Tech Solutions Portugal Lda.",
+      "sector": "tecnologia",
+      "volumen_anual_eur": 35000,
+      "pais": "Portugal",
+      "antiguedad_empresa_años": 4,
+      "documentacion_completa": true,
+      "descripcion": "Empresa portuguesa solicita alta. Requiere validación de documentación UE y contrato en dos idiomas.",
+      "ground_truth": {
+        "resultado": "aprobacion_con_contrato_bilingue",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Comercial",
+          "Legal",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "id": "C10",
+      "nivel": "Medio",
+      "tipo_cliente": "B2B",
+      "nombre": "Importadora Global S.A.",
+      "sector": "importacion",
+      "volumen_anual_eur": 120000,
+      "pais": "España",
+      "antiguedad_empresa_años": 2,
+      "documentacion_completa": false,
+      "descripcion": "Empresa importadora con alto volumen previsto pero solo 2 años de antigüedad y documentación incompleta — falta declaración de origen de fondos.",
+      "ground_truth": {
+        "resultado": "solicitud_documentacion_adicional",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Comercial",
+          "Legal",
+          "Compliance",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "id": "C11",
+      "nivel": "Medio",
+      "tipo_cliente": "B2C",
+      "nombre": "Roberto Martín Sanz",
+      "sector": "particular",
+      "volumen_anual_eur": 18000,
+      "pais": "España",
+      "antiguedad_empresa_años": 0,
+      "documentacion_completa": true,
+      "descripcion": "Particular solicita alta con volumen inusualmente alto para un cliente B2C (18.000€/año). Requiere justificación de uso profesional.",
+      "ground_truth": {
+        "resultado": "aprobacion_con_justificacion_uso",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Comercial",
+          "Compliance",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "id": "C12",
+      "nivel": "Medio",
+      "tipo_cliente": "B2B",
+      "nombre": "Manufacturas del Este S.R.L.",
+      "sector": "manufactura",
+      "volumen_anual_eur": 55000,
+      "pais": "Rumanía",
+      "antiguedad_empresa_años": 6,
+      "documentacion_completa": true,
+      "descripcion": "Empresa rumana de manufactura solicita alta. País UE pero requiere validación adicional de documentación y condiciones de pago internacionales.",
+      "ground_truth": {
+        "resultado": "aprobacion_con_garantia_pago",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Comercial",
+          "Legal",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "id": "C13",
+      "nivel": "Medio",
+      "tipo_cliente": "B2B",
+      "nombre": "Grupo Empresarial Canarias S.L.",
+      "sector": "distribucion",
+      "volumen_anual_eur": 95000,
+      "pais": "España",
+      "antiguedad_empresa_años": 9,
+      "documentacion_completa": true,
+      "descripcion": "Grupo empresarial con varias sociedades vinculadas solicita alta. Requiere análisis de estructura societaria y límite de crédito conjunto.",
+      "ground_truth": {
+        "resultado": "aprobacion_con_analisis_grupo",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Comercial",
+          "Legal",
+          "Compliance",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "id": "C14",
+      "nivel": "Medio",
+      "tipo_cliente": "B2B",
+      "nombre": "EcoIndustria Verde S.L.",
+      "sector": "medioambiente",
+      "volumen_anual_eur": 40000,
+      "pais": "España",
+      "antiguedad_empresa_años": 1,
+      "documentacion_completa": false,
+      "descripcion": "Startup del sector medioambiental con solo 1 año de actividad. Sin historial crediticio, documentación parcial. Alto potencial pero riesgo financiero elevado.",
+      "ground_truth": {
+        "resultado": "aprobacion_condicionada_aval",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Comercial",
+          "Legal",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "id": "C15",
+      "nivel": "Complejo",
+      "tipo_cliente": "B2B",
+      "nombre": "Al-Rashid Trading LLC",
+      "sector": "comercio",
+      "volumen_anual_eur": 250000,
+      "pais": "Emiratos Árabes Unidos",
+      "antiguedad_empresa_años": 7,
+      "documentacion_completa": true,
+      "alerta_pais": true,
+      "descripcion": "Empresa de trading de Emiratos Árabes solicita alta con volumen muy alto. País de riesgo medio-alto en listas AML. Requiere due diligence reforzada.",
+      "ground_truth": {
+        "resultado": "escalacion_hil_due_diligence_reforzada",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Comercial",
+          "Legal",
+          "Compliance",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "id": "C16",
+      "nivel": "Complejo",
+      "tipo_cliente": "B2B",
+      "nombre": "Petrov & Associates GmbH",
+      "sector": "consultoria",
+      "volumen_anual_eur": 180000,
+      "pais": "Alemania",
+      "antiguedad_empresa_años": 3,
+      "documentacion_completa": true,
+      "alerta_beneficial_owner": true,
+      "descripcion": "Empresa alemana de consultoría cuyos beneficiarios finales (UBOs) incluyen ciudadanos de países sancionados por la UE. Alerta en screening de beneficiarios.",
+      "ground_truth": {
+        "resultado": "escalacion_hil_alerta_ubo_sancionado",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Comercial",
+          "Legal",
+          "Compliance",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "id": "C17",
+      "nivel": "Complejo",
+      "tipo_cliente": "B2C",
+      "nombre": "Javier Moreno Castellano",
+      "sector": "particular",
+      "volumen_anual_eur": 320000,
+      "pais": "España",
+      "antiguedad_empresa_años": 0,
+      "documentacion_completa": true,
+      "pep": true,
+      "descripcion": "Particular con volumen extraordinariamente alto (320.000€/año) identificado como Persona Expuesta Políticamente (PEP) — cargo público municipal. Requiere aprobación de dirección.",
+      "ground_truth": {
+        "resultado": "escalacion_hil_obligatoria_pep",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Comercial",
+          "Legal",
+          "Compliance",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "id": "C18",
+      "nivel": "Complejo",
+      "tipo_cliente": "B2B",
+      "nombre": "Global Minerals Trading S.A.",
+      "sector": "mineria",
+      "volumen_anual_eur": 500000,
+      "pais": "Suiza",
+      "antiguedad_empresa_años": 2,
+      "documentacion_completa": false,
+      "alerta_aml": true,
+      "descripcion": "Empresa suiza del sector minero con volumen máximo solicitado (500.000€). Solo 2 años de actividad, documentación incompleta y alerta AML por patrones de transacción inusuales.",
+      "ground_truth": {
+        "resultado": "bloqueo_temporal_investigacion_aml",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Comercial",
+          "Legal",
+          "Compliance",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "id": "C19",
+      "nivel": "Complejo",
+      "tipo_cliente": "B2B",
+      "nombre": "Sistemas Duales Tecnológicos S.L.",
+      "sector": "defensa_tecnologia",
+      "volumen_anual_eur": 150000,
+      "pais": "España",
+      "antiguedad_empresa_años": 8,
+      "documentacion_completa": true,
+      "uso_dual": true,
+      "descripcion": "Empresa española que fabrica tecnología de uso dual (civil y militar). La venta de ciertos productos requiere licencia de exportación y aprobación del Ministerio de Defensa.",
+      "ground_truth": {
+        "resultado": "escalacion_hil_uso_dual_licencia",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Comercial",
+          "Legal",
+          "Compliance",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "id": "C20",
+      "nivel": "Complejo",
+      "tipo_cliente": "B2B",
+      "nombre": "Inversiones Atlántico S.L.",
+      "sector": "holding",
+      "volumen_anual_eur": 400000,
+      "pais": "España",
+      "antiguedad_empresa_años": 5,
+      "documentacion_completa": true,
+      "estructura_opaca": true,
+      "conflicto_interes": true,
+      "descripcion": "Holding español con estructura societaria opaca (5 niveles de participación) y uno de sus administradores es cuñado del director comercial de ACME. Conflicto de interés y riesgo de estructura pantalla.",
+      "ground_truth": {
+        "resultado": "escalacion_hil_conflicto_interes_estructura_opaca",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Comercial",
+          "Legal",
+          "Compliance",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    }
+  ]
+}

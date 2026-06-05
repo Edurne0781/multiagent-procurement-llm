@@ -1,0 +1,522 @@
+{
+  "proceso": "financial_analysis",
+  "empresa": "ACME Industrial S.A.",
+  "descripcion": "Análisis y aprobación de solicitudes de inversión y gasto extraordinario entre departamentos",
+  "agentes": [
+    "Analista",
+    "Controller",
+    "Risk",
+    "CFO"
+  ],
+  "niveles": {
+    "Simple": "C01-C08 — solicitudes estándar dentro de presupuesto aprobado",
+    "Medio": "C09-C14 — excepciones presupuestarias o requisitos adicionales",
+    "Complejo": "C15-C20 — inversiones estratégicas de alto riesgo o impacto"
+  },
+  "casos": [
+    {
+      "id": "C01",
+      "nivel": "Simple",
+      "departamento": "IT",
+      "tipo": "hardware",
+      "importe_eur": 8000,
+      "presupuesto_disponible_eur": 50000,
+      "roi_estimado_pct": 15,
+      "plazo_recuperacion_meses": 18,
+      "aprobacion_previa": true,
+      "documentacion_completa": true,
+      "proveedor_homologado": true,
+      "impacto_operativo": "bajo",
+      "descripcion": "Renovación de 10 ordenadores para el departamento IT. Dentro de presupuesto anual aprobado, proveedor homologado, ROI claro.",
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "id": "C02",
+      "nivel": "Simple",
+      "departamento": "RRHH",
+      "tipo": "formacion",
+      "importe_eur": 5000,
+      "presupuesto_disponible_eur": 20000,
+      "roi_estimado_pct": 10,
+      "plazo_recuperacion_meses": 12,
+      "aprobacion_previa": true,
+      "documentacion_completa": true,
+      "proveedor_homologado": true,
+      "impacto_operativo": "bajo",
+      "descripcion": "Plan de formación anual para el equipo comercial. Presupuesto disponible, proveedor formativo homologado.",
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "id": "C03",
+      "nivel": "Simple",
+      "departamento": "Marketing",
+      "tipo": "campana",
+      "importe_eur": 12000,
+      "presupuesto_disponible_eur": 30000,
+      "roi_estimado_pct": 20,
+      "plazo_recuperacion_meses": 6,
+      "aprobacion_previa": true,
+      "documentacion_completa": true,
+      "proveedor_homologado": true,
+      "impacto_operativo": "bajo",
+      "descripcion": "Campaña de marketing digital Q2. ROI estimado del 20% en 6 meses, dentro de presupuesto aprobado.",
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "id": "C04",
+      "nivel": "Simple",
+      "departamento": "Facilities",
+      "tipo": "mantenimiento",
+      "importe_eur": 3500,
+      "presupuesto_disponible_eur": 15000,
+      "roi_estimado_pct": 0,
+      "plazo_recuperacion_meses": 0,
+      "aprobacion_previa": true,
+      "documentacion_completa": true,
+      "proveedor_homologado": true,
+      "impacto_operativo": "bajo",
+      "descripcion": "Mantenimiento preventivo instalaciones. Gasto necesario sin ROI directo pero obligatorio para continuidad operativa.",
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "id": "C05",
+      "nivel": "Simple",
+      "departamento": "Logistica",
+      "tipo": "software",
+      "importe_eur": 9500,
+      "presupuesto_disponible_eur": 25000,
+      "roi_estimado_pct": 25,
+      "plazo_recuperacion_meses": 10,
+      "aprobacion_previa": true,
+      "documentacion_completa": true,
+      "proveedor_homologado": true,
+      "impacto_operativo": "bajo",
+      "descripcion": "Licencias software de gestión logística. ROI del 25% en 10 meses, proveedor habitual.",
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "id": "C06",
+      "nivel": "Simple",
+      "departamento": "Comercial",
+      "tipo": "viajes",
+      "importe_eur": 6000,
+      "presupuesto_disponible_eur": 18000,
+      "roi_estimado_pct": 30,
+      "plazo_recuperacion_meses": 3,
+      "aprobacion_previa": true,
+      "documentacion_completa": true,
+      "proveedor_homologado": true,
+      "impacto_operativo": "bajo",
+      "descripcion": "Gastos de viaje para visitas comerciales a clientes clave en Europa. Dentro de presupuesto comercial aprobado.",
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "id": "C07",
+      "nivel": "Simple",
+      "departamento": "Produccion",
+      "tipo": "consumibles",
+      "importe_eur": 4200,
+      "presupuesto_disponible_eur": 40000,
+      "roi_estimado_pct": 0,
+      "plazo_recuperacion_meses": 0,
+      "aprobacion_previa": true,
+      "documentacion_completa": true,
+      "proveedor_homologado": true,
+      "impacto_operativo": "bajo",
+      "descripcion": "Reposición de consumibles de producción. Compra rutinaria dentro de presupuesto operativo.",
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Analista"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "id": "C08",
+      "nivel": "Simple",
+      "departamento": "IT",
+      "tipo": "seguridad",
+      "importe_eur": 15000,
+      "presupuesto_disponible_eur": 50000,
+      "roi_estimado_pct": 0,
+      "plazo_recuperacion_meses": 0,
+      "aprobacion_previa": true,
+      "documentacion_completa": true,
+      "proveedor_homologado": true,
+      "impacto_operativo": "bajo",
+      "descripcion": "Renovación licencias ciberseguridad corporativa. Gasto obligatorio por política de seguridad. Dentro de presupuesto IT.",
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "id": "C09",
+      "nivel": "Medio",
+      "departamento": "Produccion",
+      "tipo": "maquinaria",
+      "importe_eur": 85000,
+      "presupuesto_disponible_eur": 60000,
+      "roi_estimado_pct": 18,
+      "plazo_recuperacion_meses": 36,
+      "aprobacion_previa": false,
+      "documentacion_completa": true,
+      "proveedor_homologado": true,
+      "impacto_operativo": "medio",
+      "descripcion": "Compra de maquinaria de producción. Supera el presupuesto disponible en 25.000€. Requiere reasignación presupuestaria o aprobación extraordinaria.",
+      "ground_truth": {
+        "resultado": "aprobacion_con_reasignacion_presupuestaria",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller",
+          "Risk"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "id": "C10",
+      "nivel": "Medio",
+      "departamento": "IT",
+      "tipo": "infraestructura",
+      "importe_eur": 45000,
+      "presupuesto_disponible_eur": 50000,
+      "roi_estimado_pct": 12,
+      "plazo_recuperacion_meses": 48,
+      "aprobacion_previa": false,
+      "documentacion_completa": false,
+      "proveedor_homologado": true,
+      "impacto_operativo": "medio",
+      "descripcion": "Migración a cloud. Documentación técnica incompleta — falta análisis de riesgos de migración y plan de contingencia.",
+      "ground_truth": {
+        "resultado": "aprobacion_condicional_documentacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller",
+          "Risk"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "id": "C11",
+      "nivel": "Medio",
+      "departamento": "RRHH",
+      "tipo": "headcount",
+      "importe_eur": 120000,
+      "presupuesto_disponible_eur": 100000,
+      "roi_estimado_pct": 35,
+      "plazo_recuperacion_meses": 24,
+      "aprobacion_previa": false,
+      "documentacion_completa": true,
+      "proveedor_homologado": true,
+      "impacto_operativo": "medio",
+      "descripcion": "Contratación de 3 ingenieros senior. Supera presupuesto de RRHH en 20.000€. ROI alto pero requiere aprobación de dirección por impacto en masa salarial.",
+      "ground_truth": {
+        "resultado": "aprobacion_condicional_direccion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller",
+          "Risk"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "id": "C12",
+      "nivel": "Medio",
+      "departamento": "Marketing",
+      "tipo": "evento",
+      "importe_eur": 35000,
+      "presupuesto_disponible_eur": 30000,
+      "roi_estimado_pct": 40,
+      "plazo_recuperacion_meses": 6,
+      "aprobacion_previa": false,
+      "documentacion_completa": true,
+      "proveedor_homologado": false,
+      "impacto_operativo": "bajo",
+      "descripcion": "Patrocinio de feria industrial internacional. Proveedor nuevo no homologado. Supera presupuesto en 5.000€. ROI estimado alto pero incierto.",
+      "ground_truth": {
+        "resultado": "aprobacion_condicional_homologar_proveedor",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller",
+          "Risk"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "id": "C13",
+      "nivel": "Medio",
+      "departamento": "Logistica",
+      "tipo": "vehiculos",
+      "importe_eur": 95000,
+      "presupuesto_disponible_eur": 95000,
+      "roi_estimado_pct": 15,
+      "plazo_recuperacion_meses": 60,
+      "aprobacion_previa": true,
+      "documentacion_completa": true,
+      "proveedor_homologado": true,
+      "impacto_operativo": "medio",
+      "descripcion": "Renovación flota de vehículos. Presupuesto justo — no hay margen para imprevistos. Plazo de recuperación largo (5 años).",
+      "ground_truth": {
+        "resultado": "aprobacion_con_reserva_contingencia",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller",
+          "Risk"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "id": "C14",
+      "nivel": "Medio",
+      "departamento": "Produccion",
+      "tipo": "subcontratacion",
+      "importe_eur": 200000,
+      "presupuesto_disponible_eur": 220000,
+      "roi_estimado_pct": 22,
+      "plazo_recuperacion_meses": 18,
+      "aprobacion_previa": true,
+      "documentacion_completa": false,
+      "proveedor_homologado": true,
+      "impacto_operativo": "alto",
+      "descripcion": "Subcontratación de línea de producción completa. Alto impacto operativo. Documentación incompleta — falta análisis de dependencia del proveedor y cláusulas de salida.",
+      "ground_truth": {
+        "resultado": "aprobacion_condicional_clausulas_salida",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller",
+          "Risk"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "id": "C15",
+      "nivel": "Complejo",
+      "departamento": "Direccion",
+      "tipo": "adquisicion",
+      "importe_eur": 2500000,
+      "presupuesto_disponible_eur": 1000000,
+      "roi_estimado_pct": 45,
+      "plazo_recuperacion_meses": 36,
+      "aprobacion_previa": false,
+      "documentacion_completa": true,
+      "proveedor_homologado": true,
+      "impacto_operativo": "critico",
+      "operacion_estrategica": true,
+      "descripcion": "Adquisición de empresa competidora. Operación estratégica de 2.5M€ que supera ampliamente el presupuesto disponible. Requiere aprobación del consejo de administración.",
+      "ground_truth": {
+        "resultado": "escalacion_hil_aprobacion_consejo",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller",
+          "Risk",
+          "CFO"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "id": "C16",
+      "nivel": "Complejo",
+      "departamento": "IT",
+      "tipo": "transformacion_digital",
+      "importe_eur": 800000,
+      "presupuesto_disponible_eur": 200000,
+      "roi_estimado_pct": 60,
+      "plazo_recuperacion_meses": 48,
+      "aprobacion_previa": false,
+      "documentacion_completa": true,
+      "proveedor_homologado": false,
+      "impacto_operativo": "critico",
+      "riesgo_tecnologico_alto": true,
+      "descripcion": "Transformación digital completa — nuevo ERP y plataforma de datos. 800K€, supera presupuesto en 600K€. Proveedor no homologado. Riesgo tecnológico crítico por dependencia total del nuevo sistema.",
+      "ground_truth": {
+        "resultado": "escalacion_hil_riesgo_tecnologico_critico",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller",
+          "Risk",
+          "CFO"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "id": "C17",
+      "nivel": "Complejo",
+      "departamento": "Comercial",
+      "tipo": "expansion",
+      "importe_eur": 650000,
+      "presupuesto_disponible_eur": 100000,
+      "roi_estimado_pct": 35,
+      "plazo_recuperacion_meses": 60,
+      "aprobacion_previa": false,
+      "documentacion_completa": true,
+      "proveedor_homologado": true,
+      "impacto_operativo": "alto",
+      "expansion_internacional": true,
+      "descripcion": "Expansión a mercado latinoamericano — apertura de filial en México. 650K€ de inversión inicial, plazo de recuperación 5 años. Riesgo regulatorio y cambiario significativo.",
+      "ground_truth": {
+        "resultado": "escalacion_hil_expansion_internacional",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller",
+          "Risk",
+          "CFO"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "id": "C18",
+      "nivel": "Complejo",
+      "departamento": "Produccion",
+      "tipo": "desinversion",
+      "importe_eur": 0,
+      "presupuesto_disponible_eur": 0,
+      "roi_estimado_pct": -20,
+      "plazo_recuperacion_meses": 0,
+      "aprobacion_previa": false,
+      "documentacion_completa": true,
+      "proveedor_homologado": true,
+      "impacto_operativo": "critico",
+      "desinversion": true,
+      "impacto_laboral": true,
+      "descripcion": "Cierre de planta de producción deficitaria. Impacto en 45 empleados. Requiere análisis legal laboral, negociación sindical y aprobación de dirección.",
+      "ground_truth": {
+        "resultado": "escalacion_hil_desinversion_impacto_laboral",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller",
+          "Risk",
+          "CFO"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "id": "C19",
+      "nivel": "Complejo",
+      "departamento": "Direccion",
+      "tipo": "financiacion",
+      "importe_eur": 3000000,
+      "presupuesto_disponible_eur": 0,
+      "roi_estimado_pct": 28,
+      "plazo_recuperacion_meses": 84,
+      "aprobacion_previa": false,
+      "documentacion_completa": false,
+      "proveedor_homologado": true,
+      "impacto_operativo": "critico",
+      "endeudamiento_significativo": true,
+      "descripcion": "Solicitud de financiación bancaria de 3M€ para nueva planta de producción. Incremento significativo del ratio de endeudamiento. Documentación financiera incompleta.",
+      "ground_truth": {
+        "resultado": "escalacion_hil_endeudamiento_significativo",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller",
+          "Risk",
+          "CFO"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "id": "C20",
+      "nivel": "Complejo",
+      "departamento": "IT",
+      "tipo": "ciberseguridad",
+      "importe_eur": 450000,
+      "presupuesto_disponible_eur": 50000,
+      "roi_estimado_pct": 0,
+      "plazo_recuperacion_meses": 0,
+      "aprobacion_previa": false,
+      "documentacion_completa": true,
+      "proveedor_homologado": true,
+      "impacto_operativo": "critico",
+      "incidente_seguridad_previo": true,
+      "descripcion": "Inversión urgente en ciberseguridad tras incidente de ransomware. 450K€ no presupuestados. Gasto obligatorio para continuidad del negocio y cumplimiento normativo.",
+      "ground_truth": {
+        "resultado": "escalacion_hil_inversion_urgente_ciberseguridad",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Analista",
+          "Controller",
+          "Risk",
+          "CFO"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    }
+  ]
+}

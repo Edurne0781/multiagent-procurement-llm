@@ -1,0 +1,49 @@
+{
+  "dataset": "BPI_Challenge_2019",
+  "doi": "10.4121/uuid:d06aff4b-79f0-45e6-8ec8-e19730c248f1",
+  "licencia": "CC BY 4.0",
+  "total_casos_bpi": 251734,
+  "casos_evaluacion": 50,
+  "resultados": {
+    "M1": {
+      "modelo": "M1_RPA_BPI2019",
+      "dataset": "BPI_Challenge_2019",
+      "total_casos": 50,
+      "ARR": 100.0,
+      "HDA": 0.0,
+      "DER": 22.0,
+      "PT": 0.0,
+      "TCC": 0
+    },
+    "M2": {
+      "modelo": "M2_SingleAgent_BPI2019",
+      "dataset": "BPI_Challenge_2019",
+      "total_casos": 50,
+      "ARR": 84.0,
+      "HDA": 45.5,
+      "DER": 16.0,
+      "PT": 0.47,
+      "TCC": 0
+    },
+    "M3": {
+      "modelo": "M3_MultiAgent_BPI2019",
+      "dataset": "BPI_Challenge_2019",
+      "total_casos": 50,
+      "ARR": 92.0,
+      "HDA": 9.1,
+      "DER": 34.0,
+      "PT": 4.1,
+      "TCC": 0
+    },
+    "M4": {
+      "modelo": "M4_MultiMixto_BPI2019",
+      "dataset": "BPI_Challenge_2019",
+      "total_casos": 50,
+      "ARR": 94.0,
+      "HDA": 18.2,
+      "DER": 18.0,
+      "PT": 2.21,
+      "TCC": 0
+    }
+  }
+}

@@ -1,0 +1,23 @@
+# Dependencias del proyecto
+# Python 3.12 — Windows 10
+# Instalar con: pip install -r requirements.txt
+
+# Framework multi-agente
+crewai==1.14.2
+
+# APIs de LLM
+anthropic==0.102.0
+openai==2.24.0
+
+# Comparación AutoGen (notebook 07)
+autogen-agentchat==0.7.5
+
+# Análisis y visualización
+pandas
+matplotlib
+numpy
+scikit-learn
+scipy
+
+# Jupyter
+jupyter

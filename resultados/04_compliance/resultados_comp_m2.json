@@ -1,0 +1,347 @@
+{
+  "modelo": "M2_single_compliance",
+  "metricas": {
+    "ARR": 70.0,
+    "HDA": 83.3,
+    "DER": 40.0,
+    "PT": 0.6
+  },
+  "resultados_por_caso": [
+    {
+      "caso_id": "C01",
+      "nivel": "Simple",
+      "decision": "renovacion_aprobada",
+      "escalo_hil": false,
+      "tiempo": 0.56,
+      "ground_truth": {
+        "resultado": "renovacion_aprobada",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Auditor",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C02",
+      "nivel": "Simple",
+      "decision": "renovacion_aprobada",
+      "escalo_hil": false,
+      "tiempo": 0.58,
+      "ground_truth": {
+        "resultado": "renovacion_aprobada",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Auditor",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C03",
+      "nivel": "Simple",
+      "decision": "renovacion_aprobada",
+      "escalo_hil": false,
+      "tiempo": 0.53,
+      "ground_truth": {
+        "resultado": "renovacion_aprobada_sin_iso",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Auditor",
+          "Compliance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C04",
+      "nivel": "Simple",
+      "decision": "renovacion_aprobada",
+      "escalo_hil": false,
+      "tiempo": 0.52,
+      "ground_truth": {
+        "resultado": "renovacion_aprobada_con_nota",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Auditor",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C05",
+      "nivel": "Simple",
+      "decision": "renovacion_aprobada",
+      "escalo_hil": false,
+      "tiempo": 0.57,
+      "ground_truth": {
+        "resultado": "renovacion_aprobada",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Auditor",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C06",
+      "nivel": "Simple",
+      "decision": "renovacion_aprobada",
+      "escalo_hil": false,
+      "tiempo": 0.56,
+      "ground_truth": {
+        "resultado": "renovacion_aprobada",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Auditor",
+          "Compliance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C07",
+      "nivel": "Simple",
+      "decision": "renovacion_aprobada",
+      "escalo_hil": false,
+      "tiempo": 0.46,
+      "ground_truth": {
+        "resultado": "renovacion_aprobada",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Auditor"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C08",
+      "nivel": "Simple",
+      "decision": "renovacion_aprobada",
+      "escalo_hil": false,
+      "tiempo": 0.68,
+      "ground_truth": {
+        "resultado": "renovacion_aprobada",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Auditor",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C09",
+      "nivel": "Medio",
+      "decision": "renovacion_condicional",
+      "escalo_hil": false,
+      "tiempo": 0.76,
+      "ground_truth": {
+        "resultado": "renovacion_condicional_pendiente_iso27001",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Auditor",
+          "Legal",
+          "Compliance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C10",
+      "nivel": "Medio",
+      "decision": "renovacion_condicional",
+      "escalo_hil": false,
+      "tiempo": 0.57,
+      "ground_truth": {
+        "resultado": "renovacion_condicional_actualizar_prl",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Auditor",
+          "Legal",
+          "Compliance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C11",
+      "nivel": "Medio",
+      "decision": "renovacion_condicional",
+      "escalo_hil": true,
+      "tiempo": 0.58,
+      "ground_truth": {
+        "resultado": "renovacion_bloqueada_revision_gdpr",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Auditor",
+          "Legal",
+          "Compliance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C12",
+      "nivel": "Medio",
+      "decision": "renovacion_condicional",
+      "escalo_hil": false,
+      "tiempo": 0.57,
+      "ground_truth": {
+        "resultado": "renovacion_condicional_regularizar_deuda",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Auditor",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C13",
+      "nivel": "Medio",
+      "decision": "renovacion_condicional",
+      "escalo_hil": false,
+      "tiempo": 0.64,
+      "ground_truth": {
+        "resultado": "renovacion_condicional_verificar_administrador",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Auditor",
+          "Legal",
+          "Compliance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C14",
+      "nivel": "Medio",
+      "decision": "renovacion_condicional",
+      "escalo_hil": false,
+      "tiempo": 0.68,
+      "ground_truth": {
+        "resultado": "renovacion_condicional_plan_mejora",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Auditor",
+          "Legal",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C15",
+      "nivel": "Complejo",
+      "decision": "renovacion_condicional",
+      "escalo_hil": true,
+      "tiempo": 0.78,
+      "ground_truth": {
+        "resultado": "escalacion_hil_sancion_regulatoria_reach",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Auditor",
+          "Legal",
+          "Compliance",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C16",
+      "nivel": "Complejo",
+      "decision": "renovacion_bloqueada",
+      "escalo_hil": true,
+      "tiempo": 0.55,
+      "ground_truth": {
+        "resultado": "escalacion_hil_brecha_datos_gdpr",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Auditor",
+          "Legal",
+          "Compliance",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C17",
+      "nivel": "Complejo",
+      "decision": "renovacion_condicional",
+      "escalo_hil": false,
+      "tiempo": 0.52,
+      "ground_truth": {
+        "resultado": "escalacion_hil_accidente_laboral_grave",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Auditor",
+          "Legal",
+          "Compliance",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C18",
+      "nivel": "Complejo",
+      "decision": "renovacion_bloqueada",
+      "escalo_hil": true,
+      "tiempo": 0.57,
+      "ground_truth": {
+        "resultado": "escalacion_hil_alerta_sanciones_ofac",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Auditor",
+          "Legal",
+          "Compliance",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C19",
+      "nivel": "Complejo",
+      "decision": "renovacion_bloqueada",
+      "escalo_hil": true,
+      "tiempo": 0.68,
+      "ground_truth": {
+        "resultado": "escalacion_hil_conflicto_interes_accionista",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Auditor",
+          "Legal",
+          "Compliance",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C20",
+      "nivel": "Complejo",
+      "decision": "renovacion_bloqueada",
+      "escalo_hil": true,
+      "tiempo": 0.66,
+      "ground_truth": {
+        "resultado": "escalacion_hil_fraude_facturacion",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Auditor",
+          "Legal",
+          "Compliance",
+          "Finanzas"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    }
+  ]
+}

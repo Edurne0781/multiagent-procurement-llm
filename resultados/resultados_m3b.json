@@ -1,0 +1,1349 @@
+{
+  "modelo": "M3b",
+  "metricas": {
+    "modelo": "M3b — Ablation 3 agentes (sin Legal ni Procurement)",
+    "total_casos": 50,
+    "ARR": 88.0,
+    "HDA": 0.0,
+    "DER": 30.0,
+    "PT": 0.77,
+    "TCC": 0
+  },
+  "resultados_por_caso": [
+    {
+      "caso_id": "C01",
+      "nivel": "Simple",
+      "importe": 150,
+      "decision_m3b": "aprobado",
+      "razon": "El monto de la solicitud C01 de 150€ es dentro de los límites de presupuesto aprobado y no presenta ningún tipo de riesgo que justifique una rechazada o escalada a la etapa de revisión a mayor detalle.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.97,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C02",
+      "nivel": "Simple",
+      "importe": 80,
+      "decision_m3b": "escalado_hil",
+      "razon": "Solicitud C02 por un monto de 80€, lo cual supera el umbral de escalada automática de 50€.",
+      "escalo_hil": true,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.51,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C03",
+      "nivel": "Simple",
+      "importe": 200,
+      "decision_m3b": "aprobado",
+      "razon": "La solicitud C03 se encuentra aprobada con un presupuesto de 200€",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.71,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C04",
+      "nivel": "Simple",
+      "importe": 160,
+      "decision_m3b": "aprobado",
+      "razon": "La solicitud C04 ha sido registrada con éxito y el presupuesto IT confirmado para un monto de 160€, por lo que no existe riesgo asociado a esta solicitud.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.63,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C05",
+      "nivel": "Simple",
+      "importe": 300,
+      "decision_m3b": "aprobado",
+      "razon": "El presupuesto para FACILITIES ha sido aprobado con un monto de 300€. Estado: Aprobado.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.72,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C06",
+      "nivel": "Simple",
+      "importe": 350,
+      "decision_m3b": "aprobado",
+      "razon": "La solicitud C06 por 350€ cuenta con la cantidad suficiente para su aprobación.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.79,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C07",
+      "nivel": "Simple",
+      "importe": 120,
+      "decision_m3b": "aprobado",
+      "razon": "La solicitud C07 ha sido registrada con éxito por un monto de 120€ y se encuentra en estado 'Realizado'.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.61,
+      "ground_truth": {
+        "resultado": "aprobacion_con_nota",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C08",
+      "nivel": "Simple",
+      "importe": 95,
+      "decision_m3b": "escalado_hil",
+      "razon": "Se requiere confirmación del presupuesto de Facilities antes de finalizar la solicitud",
+      "escalo_hil": true,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.81,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C09",
+      "nivel": "Simple",
+      "importe": 900,
+      "decision_m3b": "aprobado",
+      "razon": "Presupuesto asignado para la solicitud C09 de FACILITIES de 900€, cumpliendo con los requisitos.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.65,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C10",
+      "nivel": "Simple",
+      "importe": 75,
+      "decision_m3b": "escalado_hil",
+      "razon": "El presupuesto IT ha sido actualizado con éxito a un total de 0€, se ha reasignado 75€ para cubrir las necesidades",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.64,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C11",
+      "nivel": "Simple",
+      "importe": 250,
+      "decision_m3b": "escalado_hil",
+      "razon": "La solicitud C11 supera el presupuesto limite de 250€ y se debe consultar con un superior para revisar su escalado al presupuesto",
+      "escalo_hil": true,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.73,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C12",
+      "nivel": "Simple",
+      "importe": 60,
+      "decision_m3b": "aprobado",
+      "razon": "El estado de \"Aprobado\" indica que la solicitud C12 cumple con los requisitos y el valor de 60€ no presenta riesgo a un bajo nivel, por lo que se decide aprobar la solicitud.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.62,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C13",
+      "nivel": "Simple",
+      "importe": 40,
+      "decision_m3b": "aprobado",
+      "razon": "Estado: Aprobado",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.59,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C14",
+      "nivel": "Simple",
+      "importe": 140,
+      "decision_m3b": "rechazado",
+      "razon": "El estado del presupuesto IT está aprobado por 140€, lo que supera el monto de la solicitud C14, por lo que no hay suficiente presupuesto para aprobación la solicitud C14",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.72,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C15",
+      "nivel": "Simple",
+      "importe": 180,
+      "decision_m3b": "aprobado",
+      "razon": "La solicitud C15 por valor de 180€ ha sido registrada con éxito, cumple con todas las normativas aplicables.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.58,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C16",
+      "nivel": "Simple",
+      "importe": 450,
+      "decision_m3b": "aprobado",
+      "razon": "El estado actual del presupuesto para los FACILITIES asignado es aprobado con un monto de 450€",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.35,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C17",
+      "nivel": "Simple",
+      "importe": 240,
+      "decision_m3b": "escalado_hil",
+      "razon": "La solicitud C17 requiere presupuesto IT pendiente de aprobación para cubrir el gasto de 240€, por lo que se escala a una decisión de 'Pendiente de presupuesto' y no se puede aprobar o rechazar la solicitud en este momento",
+      "escalo_hil": true,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.04,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C18",
+      "nivel": "Simple",
+      "importe": 120,
+      "decision_m3b": "aprobado",
+      "razon": "Solicitud C18 registrada correctamente",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.68,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C19",
+      "nivel": "Simple",
+      "importe": 85,
+      "decision_m3b": "aprobado",
+      "razon": "El presupuesto de Marketing de 85€ se encuentra dentro del límite previsto ",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.61,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C20",
+      "nivel": "Simple",
+      "importe": 50,
+      "decision_m3b": "aprobado",
+      "razon": "La solicitud C20 se encuentra dentro del presupuesto establecido y no representa un riesgo alto, por lo que se aprueba",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.6,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C21",
+      "nivel": "Medio",
+      "importe": 800,
+      "decision_m3b": "aprobado",
+      "razon": "El presupuesto total de marketing aprobado sin inconvenientes es adecuado para la solicitud C21 de 800€",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.82,
+      "ground_truth": {
+        "resultado": "registro_proveedor_y_validacion_legal",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C22",
+      "nivel": "Medio",
+      "importe": 3500,
+      "decision_m3b": "rechazado",
+      "razon": "El presupuesto IT ha sido aprobado, pero la solicitud C22 incluye un precio total de 3500€ que debe ser verificado. Dada la información disponible, no puedo determinar si el presupuesto ha sido suficiente para la solicitud, por lo que decido rechazar la solicitud con el riesgo de incumplimiento de la normativa.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.65,
+      "ground_truth": {
+        "resultado": "escalacion_finance_reasignacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C23",
+      "nivel": "Medio",
+      "importe": 1200,
+      "decision_m3b": "rechazado",
+      "razon": "El importe de la solicitud C23 (1200€) supera el límite de gasto establecido en nuestra empresa.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.87,
+      "ground_truth": {
+        "resultado": "validacion_legal_y_aprobacion_condicionada",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C24",
+      "nivel": "Medio",
+      "importe": 5000,
+      "decision_m3b": "aprobado",
+      "razon": "Se ajusta al presupuesto IT",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.69,
+      "ground_truth": {
+        "resultado": "revision_legal_obligatoria_antes_de_firmar",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C25",
+      "nivel": "Medio",
+      "importe": 4800,
+      "decision_m3b": "aprobado",
+      "razon": "La solicitud C25 ha sido registrada correctamente y cumple con los requisitos necesarios para su aprobación.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.74,
+      "ground_truth": {
+        "resultado": "reasignacion_presupuestaria_o_fraccionamiento",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C26",
+      "nivel": "Medio",
+      "importe": 2000,
+      "decision_m3b": "aprobado",
+      "razon": "El estado es aprobado y la cantidad de euros es inferior a 2500, por lo que cumple con la normativa.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.91,
+      "ground_truth": {
+        "resultado": "validacion_legal_compliance_y_registro",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C27",
+      "nivel": "Medio",
+      "importe": 1500,
+      "decision_m3b": "aprobado",
+      "razon": "El presupuesto IT está aprobado. La solicitud de compra C27 es de €1,500, lo cual no supera el límite establecido.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.71,
+      "ground_truth": {
+        "resultado": "fast_track_con_validacion_posterior",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C28",
+      "nivel": "Medio",
+      "importe": 6000,
+      "decision_m3b": "rechazado",
+      "razon": "",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.7,
+      "ground_truth": {
+        "resultado": "revision_legal_clausulas_penalizacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C29",
+      "nivel": "Medio",
+      "importe": 2800,
+      "decision_m3b": "rechazado",
+      "razon": "El presupuesto no está aprobado.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.78,
+      "ground_truth": {
+        "resultado": "escalacion_reasignacion_presupuestaria",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C30",
+      "nivel": "Medio",
+      "importe": 950,
+      "decision_m3b": "aprobado",
+      "razon": "El presupuesto aprobado es suficiente para cubrir la solicitud C30.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.63,
+      "ground_truth": {
+        "resultado": "validacion_nda_y_aprobacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C31",
+      "nivel": "Medio",
+      "importe": 8000,
+      "decision_m3b": "aprobado",
+      "razon": "El presupuesto de 8000€ para la solicitud C31 es compatible con la normativa actual y no se detectan riesgos significativos.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.81,
+      "ground_truth": {
+        "resultado": "revision_legal_garantias_y_aprobacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C32",
+      "nivel": "Medio",
+      "importe": 2200,
+      "decision_m3b": "escalado_hil",
+      "razon": "El monto de la solicitud supera el presupuesto IT de 2000€, pero aún está dentro de los límites de 2500€. En consecuencia, su estado será escalado a 'Pendiente de revisión en alto nivel'.",
+      "escalo_hil": true,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.71,
+      "ground_truth": {
+        "resultado": "aprobacion_fast_track_con_justificacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "C33",
+      "nivel": "Medio",
+      "importe": 5500,
+      "decision_m3b": "aprobado",
+      "razon": "Solicitud C33 registrada por valor de 5500€, proceso completo. Estado: Aprobado.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.64,
+      "ground_truth": {
+        "resultado": "fraccionamiento_o_rechazo_parcial",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C34",
+      "nivel": "Medio",
+      "importe": 1800,
+      "decision_m3b": "aprobado",
+      "razon": "Solicitud C34 registrada con éxito por el valor de 1800€. Estado de la solicitud de presupuesto para FACILITIES: Aprobado por 1800€. Cumple con la normativa ya que el requisito básico de valor es cumple y corresponde a un valor bajo.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.78,
+      "ground_truth": {
+        "resultado": "compliance_y_legal_validacion_completa",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C35",
+      "nivel": "Medio",
+      "importe": 12000,
+      "decision_m3b": "rechazado",
+      "razon": "El código C35 no está cumpliendo con las normativas de seguridad establecidas en la empresa debido a su valor de compra elevado.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 1.12,
+      "ground_truth": {
+        "resultado": "legal_finance_aprobacion_direccion",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C36",
+      "nivel": "Medio",
+      "importe": 3200,
+      "decision_m3b": "aprobado",
+      "razon": "Solicitud registrada correctamente y estado de la solicitud de presupuesto es Aprobado.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.46,
+      "ground_truth": {
+        "resultado": "fast_track_registro_posterior",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C37",
+      "nivel": "Medio",
+      "importe": 7500,
+      "decision_m3b": "aprobado",
+      "razon": "El presupuesto de la solicitud C37 de 7500€ ha sido aprobado.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.81,
+      "ground_truth": {
+        "resultado": "reasignacion_entre_departamentos",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Finance"
+        ],
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "C38",
+      "nivel": "Medio",
+      "importe": 3000,
+      "decision_m3b": "escalado_hil",
+      "razon": "Presupuesto de 3000€ excede la normativa establecida para escalada automática",
+      "escalo_hil": true,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.66,
+      "ground_truth": {
+        "resultado": "validacion_ip_nda_y_aprobacion",
+        "requiere_hil": false,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C39",
+      "nivel": "Complejo",
+      "importe": 15000,
+      "decision_m3b": "aprobado",
+      "razon": "El presupuesto para la solicitud C39 está aprobado y el valor no supera los umbral de riesgo configurado (medio) por lo que no es necesario realizar un escalado.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.81,
+      "ground_truth": {
+        "resultado": "rechazo_hasta_certificacion_ce",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C40",
+      "nivel": "Complejo",
+      "importe": 8000,
+      "decision_m3b": "rechazado",
+      "razon": "El monto de la solicitud C40 supera el umbral de medio riesgo establecido en la normativa, y no se cuenta con información de cláusulas contractuales para evaluar su consistencia con las condiciones del proveedor.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.71,
+      "ground_truth": {
+        "resultado": "bloqueo_gdpr_escalacion_hil_obligatoria",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C41",
+      "nivel": "Complejo",
+      "importe": 45000,
+      "decision_m3b": "rechazado",
+      "razon": "La solicitud C41 no cumple con la normativa debido a que el monto solicitado de 45000€ supera el presupuesto aprobado de 45000€ para la dirección. Aunque el monto es igual al presupuesto, hay un requisito explícito que indica realizar una verificación correspondiente. Sin información adicional sobre este requisito, es imposible confirmar que se cumple con él. Por lo tanto, la decisión es rechazar la solicitud hasta que se realice la verificación necesaria.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.88,
+      "ground_truth": {
+        "resultado": "aprobacion_escalonada_multidepartamento",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C42",
+      "nivel": "Complejo",
+      "importe": 2500,
+      "decision_m3b": "aprobado",
+      "razon": "El presupuesto de FACILITIES por valor de 2500€ fue confirmado y aprobado, por lo que no hay motivo para rechazar la solicitud C42.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.78,
+      "ground_truth": {
+        "resultado": "bloqueo_hasta_fichas_seguridad",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C43",
+      "nivel": "Complejo",
+      "importe": 20000,
+      "decision_m3b": "rechazado",
+      "razon": "El presupuesto se encuentra aprobado en FALSO.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.81,
+      "ground_truth": {
+        "resultado": "escalacion_hil_obligatoria_conflicto_interes",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C44",
+      "nivel": "Complejo",
+      "importe": 18000,
+      "decision_m3b": "rechazado",
+      "razon": "El monto de la solicitud supera el rango de riesgo permitido (medio) y la normativa cumple false, por lo que se rechaza la solicitud.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.71,
+      "ground_truth": {
+        "resultado": "bloqueo_hasta_licencia_aesa",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C45",
+      "nivel": "Complejo",
+      "importe": 120000,
+      "decision_m3b": "aprobado",
+      "razon": "El presupuesto se encuentra dentro del límite permitido y el estado de DIRECCION ha sido aprobado exitosamente con un monto de 120000€",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.83,
+      "ground_truth": {
+        "resultado": "escalacion_hil_aprobacion_consejo",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C46",
+      "nivel": "Complejo",
+      "importe": 5000,
+      "decision_m3b": "aclarar",
+      "razon": "El importe total de 5000€ está siendo considerado para el presupuesto de RRHH, sin embargo, necesito mayor información sobre las cláusulas contractuales y el proveedor para tomar una decisión definitiva.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.7,
+      "ground_truth": {
+        "resultado": "bloqueo_legal_compliance_alternativa_propuesta",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C47",
+      "nivel": "Complejo",
+      "importe": 35000,
+      "decision_m3b": "rechazado",
+      "razon": "El valor de la solicitud C47 (35.000€) supera el límite establecido para la categoría de riesgo 'bajo', por lo que la solicitud debe ser rechazada.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.84,
+      "ground_truth": {
+        "resultado": "evaluacion_tecnica_legal_financiera_larga",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C48",
+      "nivel": "Complejo",
+      "importe": 60000,
+      "decision_m3b": "rechazado",
+      "razon": "El presupuesto aún está pendiente de aprobación y el monto total solicitado de 60,000€ es significativo.",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.71,
+      "ground_truth": {
+        "resultado": "renegociacion_o_cambio_proveedor",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Finance"
+        ],
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "C49",
+      "nivel": "Complejo",
+      "importe": 25000,
+      "decision_m3b": "rechazado",
+      "razon": "El presupuesto aprobado no se ajusta a la normativa, siendo el requisito mínimo de 0€ y máximo de un valor establecido por el proveedor desconocido",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.74,
+      "ground_truth": {
+        "resultado": "bloqueo_total_hasta_homologacion",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    },
+    {
+      "caso_id": "C50",
+      "nivel": "Complejo",
+      "importe": 200000,
+      "decision_m3b": "rechazado",
+      "razon": "El presupuesto aún no ha sido aprobado, por lo que se rechaza la solicitud de escala de cumplimiento",
+      "escalo_hil": false,
+      "agentes_usados": [
+        "Requester",
+        "Finance",
+        "Compliance"
+      ],
+      "num_agentes": 3,
+      "tokens_usados": 0,
+      "tiempo_seg": 0.78,
+      "ground_truth": {
+        "resultado": "licitacion_formal_aprobacion_consejo",
+        "requiere_hil": true,
+        "agentes_necesarios": [
+          "Requester",
+          "Procurement",
+          "Legal",
+          "Compliance",
+          "Finance"
+        ],
+        "nivel_riesgo": "critico"
+      }
+    }
+  ]
+}

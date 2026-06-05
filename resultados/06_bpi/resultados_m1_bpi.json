@@ -1,0 +1,865 @@
+{
+  "modelo": "M1_BPI",
+  "metricas": {
+    "modelo": "M1_RPA_BPI2019",
+    "dataset": "BPI_Challenge_2019",
+    "total_casos": 50,
+    "ARR": 100.0,
+    "HDA": 0.0,
+    "DER": 22.0,
+    "PT": 0.0,
+    "TCC": 0
+  },
+  "resultados_por_caso": [
+    {
+      "caso_id": "BPI_01",
+      "caso_real_bpi": "4507032049_00010",
+      "nivel": "Simple",
+      "importe": 3683.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Proveedor OK + presupuesto OK",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_02",
+      "caso_real_bpi": "4508052581_00270",
+      "nivel": "Simple",
+      "importe": 51.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático BPI (≤2109€ P75 real)",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_03",
+      "caso_real_bpi": "4508061531_00020",
+      "nivel": "Simple",
+      "importe": 2417.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Proveedor OK + presupuesto OK",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_04",
+      "caso_real_bpi": "4508048963_00700",
+      "nivel": "Simple",
+      "importe": 107.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático BPI (≤2109€ P75 real)",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_05",
+      "caso_real_bpi": "4507024471_00030",
+      "nivel": "Simple",
+      "importe": 36.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático BPI (≤2109€ P75 real)",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_06",
+      "caso_real_bpi": "4508075755_00020",
+      "nivel": "Simple",
+      "importe": 57.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático BPI (≤2109€ P75 real)",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_07",
+      "caso_real_bpi": "4507005407_00230",
+      "nivel": "Simple",
+      "importe": 147.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático BPI (≤2109€ P75 real)",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_08",
+      "caso_real_bpi": "4507001577_00010",
+      "nivel": "Simple",
+      "importe": 59.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático BPI (≤2109€ P75 real)",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_09",
+      "caso_real_bpi": "4507021568_00030",
+      "nivel": "Simple",
+      "importe": 1993.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático BPI (≤2109€ P75 real)",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_10",
+      "caso_real_bpi": "4507004611_00300",
+      "nivel": "Simple",
+      "importe": 74.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático BPI (≤2109€ P75 real)",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_11",
+      "caso_real_bpi": "4508063173_00090",
+      "nivel": "Simple",
+      "importe": 411.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático BPI (≤2109€ P75 real)",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_12",
+      "caso_real_bpi": "4508051172_00010",
+      "nivel": "Simple",
+      "importe": 769.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático BPI (≤2109€ P75 real)",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_13",
+      "caso_real_bpi": "4508066258_00110",
+      "nivel": "Simple",
+      "importe": 126.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático BPI (≤2109€ P75 real)",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_14",
+      "caso_real_bpi": "4508070175_00150",
+      "nivel": "Simple",
+      "importe": 13.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático BPI (≤2109€ P75 real)",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_15",
+      "caso_real_bpi": "4507021852_00010",
+      "nivel": "Simple",
+      "importe": 989.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático BPI (≤2109€ P75 real)",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_16",
+      "caso_real_bpi": "4508074272_00040",
+      "nivel": "Simple",
+      "importe": 1009.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático BPI (≤2109€ P75 real)",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_17",
+      "caso_real_bpi": "4508074580_00070",
+      "nivel": "Simple",
+      "importe": 120.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático BPI (≤2109€ P75 real)",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_18",
+      "caso_real_bpi": "4507020509_00050",
+      "nivel": "Simple",
+      "importe": 43.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático BPI (≤2109€ P75 real)",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_19",
+      "caso_real_bpi": "4507034314_00060",
+      "nivel": "Simple",
+      "importe": 701.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático BPI (≤2109€ P75 real)",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_20",
+      "caso_real_bpi": "4507026248_00050",
+      "nivel": "Simple",
+      "importe": 246.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático BPI (≤2109€ P75 real)",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_21",
+      "caso_real_bpi": "4508052129_00010",
+      "nivel": "Medio",
+      "importe": 19786.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Proveedor OK + presupuesto OK",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_22",
+      "caso_real_bpi": "4508074299_00040",
+      "nivel": "Medio",
+      "importe": 2915.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Proveedor OK + presupuesto OK",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_23",
+      "caso_real_bpi": "4508067780_00010",
+      "nivel": "Medio",
+      "importe": 15383.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Proveedor OK + presupuesto OK",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_24",
+      "caso_real_bpi": "4508068930_00010",
+      "nivel": "Medio",
+      "importe": 11441.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Proveedor OK + presupuesto OK",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_25",
+      "caso_real_bpi": "4508052312_00030",
+      "nivel": "Medio",
+      "importe": 4366.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Proveedor OK + presupuesto OK",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_26",
+      "caso_real_bpi": "4508072610_00010",
+      "nivel": "Medio",
+      "importe": 7499.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Proveedor OK + presupuesto OK",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_27",
+      "caso_real_bpi": "4508053915_00001",
+      "nivel": "Medio",
+      "importe": 35288.0,
+      "categoria_bpi": "3-way match, invoice after GR",
+      "decision_m1": "aprobado",
+      "razon": "Proveedor OK + presupuesto OK",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_28",
+      "caso_real_bpi": "4507040141_00020",
+      "nivel": "Medio",
+      "importe": 3699.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Proveedor OK + presupuesto OK",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_29",
+      "caso_real_bpi": "4507036048_00010",
+      "nivel": "Medio",
+      "importe": 21173.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Proveedor OK + presupuesto OK",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_30",
+      "caso_real_bpi": "4508056383_00050",
+      "nivel": "Medio",
+      "importe": 6194.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Proveedor OK + presupuesto OK",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_31",
+      "caso_real_bpi": "4508069414_00050",
+      "nivel": "Medio",
+      "importe": 6035.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Proveedor OK + presupuesto OK",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_32",
+      "caso_real_bpi": "4508044433_00080",
+      "nivel": "Medio",
+      "importe": 2643.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Proveedor OK + presupuesto OK",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_33",
+      "caso_real_bpi": "4507038270_00020",
+      "nivel": "Medio",
+      "importe": 5383.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Proveedor OK + presupuesto OK",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_34",
+      "caso_real_bpi": "4508055722_00040",
+      "nivel": "Medio",
+      "importe": 278.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático BPI (≤2109€ P75 real)",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_35",
+      "caso_real_bpi": "4508072040_00001",
+      "nivel": "Medio",
+      "importe": 10361.0,
+      "categoria_bpi": "3-way match, invoice after GR",
+      "decision_m1": "aprobado",
+      "razon": "Proveedor OK + presupuesto OK",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_36",
+      "caso_real_bpi": "4508066533_00010",
+      "nivel": "Medio",
+      "importe": 101.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático BPI (≤2109€ P75 real)",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_automatica",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_37",
+      "caso_real_bpi": "4508049432_00010",
+      "nivel": "Medio",
+      "importe": 5256.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Proveedor OK + presupuesto OK",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_38",
+      "caso_real_bpi": "4508070851_00210",
+      "nivel": "Medio",
+      "importe": 3273.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Proveedor OK + presupuesto OK",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "medio"
+      }
+    },
+    {
+      "caso_id": "BPI_39",
+      "caso_real_bpi": "4507040511_00010",
+      "nivel": "Complejo",
+      "importe": 0.0,
+      "categoria_bpi": "Consignment",
+      "decision_m1": "aprobado",
+      "razon": "Consignment: RPA aprueba por importe=0 sin evaluar contrato marco",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "BPI_40",
+      "caso_real_bpi": "4507009742_00010",
+      "nivel": "Complejo",
+      "importe": 57250.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "rechazado",
+      "razon": "Presupuesto insuficiente",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "BPI_41",
+      "caso_real_bpi": "4507012010_00010",
+      "nivel": "Complejo",
+      "importe": 23031.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Proveedor OK + presupuesto OK",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "aprobacion_manager",
+        "requiere_hil": false,
+        "nivel_riesgo": "bajo"
+      }
+    },
+    {
+      "caso_id": "BPI_42",
+      "caso_real_bpi": "4507022933_00050",
+      "nivel": "Complejo",
+      "importe": 0.0,
+      "categoria_bpi": "Consignment",
+      "decision_m1": "aprobado",
+      "razon": "Consignment: RPA aprueba por importe=0 sin evaluar contrato marco",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "BPI_43",
+      "caso_real_bpi": "4507034888_00010",
+      "nivel": "Complejo",
+      "importe": 0.0,
+      "categoria_bpi": "Consignment",
+      "decision_m1": "aprobado",
+      "razon": "Consignment: RPA aprueba por importe=0 sin evaluar contrato marco",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "BPI_44",
+      "caso_real_bpi": "4507029897_00040",
+      "nivel": "Complejo",
+      "importe": 132.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático BPI (≤2109€ P75 real)",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "BPI_45",
+      "caso_real_bpi": "4507027474_00010",
+      "nivel": "Complejo",
+      "importe": 372741.0,
+      "categoria_bpi": "3-way match, invoice after GR",
+      "decision_m1": "aprobado",
+      "razon": "Framework order: RPA aprueba sin verificar nivel de aprobación requerido",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "BPI_46",
+      "caso_real_bpi": "4507018411_00010",
+      "nivel": "Complejo",
+      "importe": 7693.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Proveedor OK + presupuesto OK",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "BPI_47",
+      "caso_real_bpi": "4507016996_00030",
+      "nivel": "Complejo",
+      "importe": 0.0,
+      "categoria_bpi": "Consignment",
+      "decision_m1": "aprobado",
+      "razon": "Consignment: RPA aprueba por importe=0 sin evaluar contrato marco",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "BPI_48",
+      "caso_real_bpi": "4508067170_00050",
+      "nivel": "Complejo",
+      "importe": 73.0,
+      "categoria_bpi": "3-way match, invoice before GR",
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático BPI (≤2109€ P75 real)",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "BPI_49",
+      "caso_real_bpi": "4507013026_00010",
+      "nivel": "Complejo",
+      "importe": 0.0,
+      "categoria_bpi": "Consignment",
+      "decision_m1": "aprobado",
+      "razon": "Consignment: RPA aprueba por importe=0 sin evaluar contrato marco",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    },
+    {
+      "caso_id": "BPI_50",
+      "caso_real_bpi": "4508062972_00001",
+      "nivel": "Complejo",
+      "importe": 510.0,
+      "categoria_bpi": "3-way match, invoice after GR",
+      "decision_m1": "aprobado",
+      "razon": "Importe dentro del límite automático BPI (≤2109€ P75 real)",
+      "escalo_hil": false,
+      "tiempo_seg": 0.0,
+      "tokens_usados": 0,
+      "ground_truth": {
+        "resultado": "escalacion_hil",
+        "requiere_hil": true,
+        "nivel_riesgo": "alto"
+      }
+    }
+  ]
+}
